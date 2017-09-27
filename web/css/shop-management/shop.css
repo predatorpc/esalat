@@ -1,0 +1,478 @@
+
+#shop_management {
+    margin-top: 50px ;
+}
+/* Набор кнопки */
+/*
+#shop_management .btn-success {
+    background: #f17503 none repeat scroll 0 0;
+    border: medium none;
+    color: #fff;
+    text-decoration: none;
+}
+#shop_management .btn-success:hover {
+    background: #f47e03 none repeat scroll 0 0;
+}
+#shop_management .btn-primary {
+    background-color: #f17503;
+    border: none;
+    color: #fff;
+    text-decoration: none;
+}
+
+#shop_management .btn-primary:focus,
+#shop_management .btn-primary:hover {
+    background-color: #f47e03;
+    color: #fff;
+}
+#shop_management .btn-danger {
+    border: medium none;
+    color: #fff;
+    text-decoration: none;
+}*/
+#shop_management  .general-image-variant-block.images .form-group {
+    min-width: 340px;
+}
+#shop_management  .general-image-variant-block.images .form-group .form-control{
+    display: block;
+    width: 100%;
+}
+#shop_management .general-image-variant-block.images .form-group label {
+    width: 100%;
+    margin-top: 10px;
+}
+#shop_management .general-image-variant-block .delete-image-block-new {
+    cursor: pointer;
+}
+/*
+#shop_management .btn-primary {
+    line-height: 22px;
+}*/
+.monthTitle{
+}
+.monthTitle,
+.getNewValue{
+    display: inline-block;
+    padding: 5px 10px;
+    background: rgba(0,0,0,0.45);
+    margin: 3px 5px;
+    color: #FFF;
+    cursor: pointer;
+    border-radius: 8px 8px 0 8px;
+}
+.monthTitle:hover,
+.getNewValue:hover{
+    background: rgba(0,0,0,0.75);
+    box-shadow: 0 0 10px 0px rgba(0,0,0,0.5);
+}
+.monthStatisticValue{
+    display:none;
+}
+.arrowMonthRight,
+.arrowMonthLeft{
+    display: inline-block;
+    padding: 5px 10px;
+    background: rgba(0,0,0,0.45);
+    margin: 3px 5px;
+    color: #FFF;
+    cursor: pointer;
+}
+.arrowMonthRight{
+    border-radius: 0 16px 16px 0;
+}
+.arrowMonthLeft{
+    border-radius: 16px 0px 0 16px;
+}
+.arrowMonthRight:hover,
+.arrowMonthLeft:hover{
+    background: rgba(0,0,0,0.75);
+    box-shadow: 0 0 10px 0px rgba(0,0,0,0.5);
+}
+.getNewValue.active,
+.monthVariant.active .monthTitle{
+    background: rgba(0,0,0,0.75);
+    box-shadow: 0 0 10px 0px rgba(0,0,0,0.5);
+}
+.monthVariantSimbil{
+    color: gold;
+    padding-left: 5px;
+    font-weight: 600;
+}
+.green {
+    color:#00aa00;
+}
+.grey {
+    color:#666;
+}
+.red {
+    color: #aa0000;
+}
+.bold{
+    font-weight: 600;
+}
+.cms-menu .navbar-nav > li{
+    margin-left: 0;
+    margin-right: 0;
+}
+.cms-menu .navbar-nav.nav li a{
+    font-size: 13px;
+    line-height: 21px;
+}
+.cms-menu .navbar-nav > li.active{
+    background: #73366a none repeat scroll 0 0;
+}
+.cms-menu .navbar-nav.nav li.active a:hover,
+.cms-menu .navbar-nav.nav li.active a{
+    background-color: #73366a;
+    color: #ffffff;
+}
+
+
+.switch-success{
+    background: rgba(0, 0, 0, 0) url("/files/design/result.png") repeat scroll center top / 100% auto;
+    cursor: pointer;
+    display: block;
+    height: 30px;
+    margin: 0 auto;
+    width: 70px;
+}
+.switch-danger{
+    background: rgba(0, 0, 0, 0) url("/files/design/result.png") repeat scroll center bottom / 100% auto;
+    cursor: pointer;
+    display: block;
+    height: 30px;
+    margin: 0 auto;
+    width: 70px;
+}
+
+.gallery-image-container img{
+    width: 100%;
+}
+
+.modal-gallery-check-image{
+    background: #fff none repeat scroll 0 0;
+    border: 3px solid green;
+    border-radius: 50%;
+    color: green;
+    font-weight: 600;
+    padding: 10px 13px;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+}
+.modal-gallery-buttons{
+    text-align: center;
+}
+.modal-gallery-buttons .add{
+    color: green;
+    cursor: pointer;
+    display: inline-block;
+    margin: 5px auto 10px;
+}
+.modal-gallery-buttons .remove{
+    color: red;
+    cursor: pointer;
+    display: inline-block;
+    margin: 5px auto 10px;
+}
+.modal-gallery-buttons span:hover{
+    font-weight: 600;
+}
+.variants .variant-body{
+    overflow: hidden;
+    height: auto;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #CCC;
+}
+.variants .variant-body.close{
+    height:1px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+    border-bottom: 0px solid #CCC;
+}
+.variants .variant-title{
+    cursor: pointer;
+    margin: 0 0 10px 0;
+}
+.variants .variant-title:hover{
+    color: green;
+}
+.statisticBlock {
+    margin-bottom:30px;
+}
+.statisticBlock .row{
+    margin-top:1.2px;
+    overflow: hidden;
+}
+.statisticBlock div.group {
+    background: #0C7CA8;
+    color: #ffffff;
+    font-weight: bold;
+    margin: 0px 0 0;
+    padding: 8px;
+    text-align: right;
+}
+.statisticBlock .group.visibleShopParams{
+    text-align: left;
+}
+.visibleShopParams .changeFieldUpdate{
+    cursor: pointer;
+    float: right;
+}
+.visibleShopParams .field{
+    display: none;
+}
+.visibleShopParams .set_ok{
+    cursor: pointer;
+    margin-left: 10px;
+}
+table{
+    font-family: Tahoma !important;
+    font-size: 11px !important;
+/*    line-height: 16px !important;*/
+}
+.pagination > li > a, .pagination > li > span {
+    color: #0c7ca8;
+}
+.pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus {
+    background-color: #0c7ca8;
+    border-color: #0c7ca8;
+}
+.buttonViewCount{
+    line-height: 21px;
+}
+.buttonViewCount a{
+    border-bottom:0 none;
+    padding: 2px 10px;
+    text-decoration: none;
+}
+.buttonViewCount a.active{
+    background: #8d6a88 none repeat scroll 0 0;
+    color: #fff;
+    padding: 2px 10px;
+}
+/*
+#shop_management .form-group label{
+    width:28%;
+    vertical-align: top;
+}
+.form-group .cke,
+.form-group .value,
+.form-group .form-control{
+    width:70%;
+    display: inline-block;
+}*/
+#shop_management .form-group .value{
+    margin: 0 !important;
+}
+#shop_management .form-group .value input{
+    width:100% !important;
+}
+#cms-goods div.group {
+    /*margin: 0 0 20px 0;*/
+}
+
+.variants{
+    overflow: hidden;
+}
+
+/*-----------------------------*/
+.dropzone {
+    border: 2px dashed #aaa;
+    color: #aaa;
+    float: left;
+    height: 200px;
+    line-height: 180px;
+    text-align: center;
+    width: 100%;
+}
+
+.dropzone.dragover {
+    color: green;
+    border: 2px dashed #000;
+}
+
+div.shop_goods_lists table tbody tr:nth-child(1) {
+    background: none;
+}
+div.shop_goods_lists table thead tr:nth-child(1) {
+    background: #73366A;
+    color: #fff;
+}
+div.shop_goods_lists table thead tr a:link,
+div.shop_goods_lists table thead tr a:visited,
+div.shop_goods_lists table thead tr a:hover,
+div.shop_goods_lists table thead tr a{
+    border-bottom: 0 none;
+    color:#FFF;
+    text-decoration: none;
+}
+
+/*Статистика дата */
+#dateFilterForm .name_label {
+    color: #464646;
+    display: block;
+    float: left;
+    font-size: 14px;
+    margin: 0 10px 0 0;
+    position: relative;
+    width: 115px;
+    bottom: -8px;
+}
+#dateFilterForm .container-input {
+    position: relative;
+    width: 100%;
+}
+#dateFilterForm label input.date {
+    margin: 5px 0px 10px;
+}
+.not-visible{
+     display: none;
+ }
+.order-report-comment-popup{
+    background: #fff none repeat scroll 0 0;
+    border: 3px double #73366a;
+    border-radius: 10px;
+    box-shadow: 0 25px 50px 18px rgba(0, 0, 0, 0.7);
+    min-height: 150px;
+    padding: 10px;
+    position: absolute;
+    right: 50px;
+    width: 50%;
+    z-index: 999;
+}
+.shops-order-report td{
+    /*    position: relative;*/
+}
+
+.button-save-status-order{
+    background: #73366a url("/images/discount.png") no-repeat scroll 28px 0;
+    border-radius: 2px;
+    color: #fff;
+    cursor: pointer;
+    display: inline-block;
+    padding: 5px;
+    text-align: center;
+    width: auto;
+}
+
+.button-save-comment-order{
+    background: #73366a url("/images/discount.png") no-repeat scroll 28px 0;
+    border-radius: 2px;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    margin: 10px auto;
+    padding: 5px;
+    text-align: center;
+    width: auto;
+}
+/*---Меню раздвежной---*/
+.sidebar-js {
+    left: 0;
+    position: absolute;
+    top: 15%;
+    z-index: 350;
+   /* transition: width 0.5s ease 0s;*/
+    display: none;
+}
+.sidebar-js .category___sidebar {
+    position: relative;
+    z-index: 50;
+    background: none;
+    padding: 15px 0;
+}
+.sidebar-js .category___sidebar a.white {
+    text-decoration: none;
+}
+.sidebar-js .category___sidebar a.white:hover {
+    text-decoration: underline;
+}
+.sidebar-js .category___sidebar h1.title {
+    color:#fff;
+    margin: 0px 0px 30px;
+}
+.sidebar-js div.br-sidebar {
+    background:#0c7ca8;
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 22%;
+    z-index: 10;
+}
+div.arrow-menu {
+    background: #0c7ca8 none repeat scroll 0 0;
+    border-radius: 0 5px 5px 0;
+    box-shadow: 0 0 3px #5a5a5a;
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px !important;
+    left: 0;
+    padding: 15px 20px 15px 10px;
+    position: fixed;
+    top: 50%;
+    z-index: 300;
+}
+div.arrow-menu::after {
+    border-color: transparent transparent transparent #fff;
+    border-style: solid;
+    border-width: 5px 0 5px 12px;
+    content: "→";
+    font-size: 0;
+    height: 0;
+    position: absolute;
+    right: 5px;
+    top: 20px;
+    width: 0;
+}
+div.arrow-menu:hover {
+    background: #0a90b2 none repeat scroll 0 0;
+}
+
+#br-shadow {
+    background: rgb(0,0,0);
+    background: rgba(0,0,0,0.5);
+    height: 100%;
+    left: 0;
+    position: fixed;
+    right: 0;
+    width: 100%;
+    z-index: 250;
+    display: none;
+    cursor: pointer;
+}
+/*Адаптация для моб версия меню*/
+@media only screen and (max-width: 500px) {
+    .sidebar-js {
+        background: #0c7ca8;
+        top: 0;
+        width: 100%;
+    }
+    .sidebar-js .br-sidebar {
+        display: none;
+    }
+}
+
+.product-tool-master{
+    display: inline-block;
+    padding: 2px 9px;
+    background: #700;
+    border-radius: 17px;
+    line-height: 2em;
+    color: #FFF;
+    font-weight: bold;
+    margin-left: 5px;
+}
+.product-tool-list{
+    display: inline-block;
+    padding: 2px 9px;
+    background: #070;
+    border-radius: 17px;
+    line-height: 2em;
+    color: #FFF;
+    font-weight: bold;
+    margin-left: 5px;
+}

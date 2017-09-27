@@ -1,0 +1,4731 @@
+/* Основной стиль */
+body {
+    background: #ffffff;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+    background: url("/templates/images/br.png") repeat;
+
+}
+table, td, form, div {
+    font-family: Tahoma;
+    font-size: 13px;
+    line-height: 16px;
+    color: #555555;
+    padding: 0px;
+    margin: 0px;
+    text-align: left;
+}
+input, textarea, select {
+    font-family: Tahoma;
+    font-size: 13px;
+    line-height: 16px;
+    color: #000000;
+    border: #d5d5d5 1px solid;
+    padding: 0px;
+    margin: 0px;
+    text-align: left;
+}
+textarea {
+    resize: none;
+}
+input.check, input.radio {
+    position: relative;
+    top: 2px;
+}
+/*Набор ссылки*/
+a:link, a:visited {
+    color: #73366a;
+    text-decoration: none;
+    border-bottom: #6e5e6c 1px solid;
+}
+a.black {
+    color: #505050;
+    border-bottom-color: #969696;
+}
+a.grey {
+    color: #888888;
+    border-bottom-color: #b8b8b8;
+}
+a.white {
+    color: #ffffff;
+    border-bottom-color: #ffffff;
+}
+a.white:hover {
+    border-bottom:none;
+    color: #ffffff;
+}
+a:hover {
+    color: #000000;
+    text-decoration: none;
+    border-bottom: 1px solid #666666;
+}
+a.dotted {
+    border-bottom-style: dotted;
+}
+a.no-border {
+    border-bottom: none;
+    color: #795f75;
+}
+a.no-border:hover {
+    color:#73366A;
+}
+a.nav {
+    color: #505050;
+    border-bottom: none;
+}
+a.nav:hover {
+    border-bottom: 1px solid #969696;
+}
+a.pun {
+    color:#73366A;
+    border-bottom: none;
+}
+a.menu {
+    color:#9c9c9c;
+    border-bottom: none;
+}
+a.menu-grey {
+    color:#5e5e5e;
+    border-bottom: none;
+}
+a.menu:hover,a.menu-grey:hover {
+    color:#73366A;
+}
+a.dashed:link, a.dashed:visited{
+    color:#73366A;
+    border-bottom: 1px dashed #73366A;
+}
+a.dashed:hover{
+    color: #44073b;
+    border-bottom: none;
+}
+a.purple {
+    color:#CAAEC7;
+    border-bottom: 1px dotted #CAAEC7;
+}
+a.purple:hover {
+    color: #96778e;
+}
+p {
+    padding: 0px 0px 10px 0px;
+    margin: 0px;
+}
+p.title {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 0px 0px 15px 0px;
+}
+p.caption {
+    font-family: Verdana;
+    font-size: 19px;
+    font-weight: bold;
+    padding: 0px 0px 15px 0px;
+}
+label {
+    margin: 0px 0px 0px 8px;
+}
+ul {
+    padding: 0px;
+    margin: 0px;
+}
+.min_string {
+    font-size: 12px;
+}
+ul li {
+    padding: 0px;
+    margin: 0px 0px 2px 24px;
+}
+img {
+    border: 0px;
+    padding: 0px;
+    margin: 0px;
+    vertical-align: top;
+}
+.clear {
+    font-size: 0px;
+    clear: both;
+}
+.hidden {
+    display: none  !important;
+}
+.hidden_r {
+    display: none;
+}
+.show_d {
+    display: block;
+}
+.show_r {
+    display: block !important;;
+}
+.nowrap {
+    white-space: nowrap;
+}
+.through {
+    text-decoration: line-through;
+}
+:focus {
+    outline: none;
+}
+img.ad {
+    width: 100%;
+}
+table.mob-table b {
+    display: none;
+}
+/*Полупрозрачность*/
+.opacity {
+    opacity: 0.50;
+    filter:progid:DXImageTransform.Microsoft.Alpha(opacity=50); /* фильтры для IE 5.5+ */
+    -moz-opacity: 0.50; /* Mozilla 1.6 и ниже */
+    -khtml-opacity: 0.50; /* Konqueror 3.1, Safari 1.1 */
+    transition: all 0.2s ease-in 0.01s;
+    -webkit-transition: all 0.2s ease-in 0.01s;
+    -moz-transition: all 0.2s ease-in 0.01s;
+    -o-transition: all 0.2s ease-in 0.01s;
+}
+.opacity:hover {
+    opacity: 100;
+}
+.error{
+    color: #de1600;
+}
+.success {
+    color: #2eca04;
+}
+/*Набор кнопки купить для карточки товара*/
+/*Цвет зеленый ссылка*/
+a.button_green {
+    background: #00a05c;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    display: block;
+    height: 36px;
+    width: 84px;
+    text-decoration: none;
+    border: medium none;
+    cursor: pointer;
+}
+a.button_green div {
+    color: #ffffff;
+    font-size: 16px;
+    padding: 9px 0px 0px;
+    position: relative;
+    text-align: center;
+}
+a.button_green:hover {
+    background: #009652;
+}
+/*Зеленый цвет кнопка*/
+button.button_green {
+
+}
+button.button_green:hover {
+
+}
+
+/*Зеленый цвет кнопка инпут*/
+input.button_green{
+    background: #00a05c;
+    border-bottom: 2px solid #028743;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    color: #fff;
+    font-weight: bold;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+input.button_green:hover {
+    background: #03924e;
+}
+/*Пунпурная цвет кнопка инпут*/
+input.button_pun{
+    background: #785573;
+    border-bottom: 2px solid #492644;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    color: #fff;
+    font-weight: bold;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+input.button_pun:hover {
+    background: #694664;
+}
+/*Пунпурная цвет кнопка div*/
+div.button_pun {
+    background: #785573;
+    padding: 10px 5px;
+    cursor: pointer;
+}
+div.button_pun:hover {
+    background: #783d77;
+}
+div.button_pun div {
+    color: #ffffff;
+    text-align: center;
+}
+div.button_pun.pr {
+    padding: 7px 5px;
+    width: 100px;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+}
+
+div.reset_button {
+    background: #D7D7D7;
+    padding: 10px 5px;
+    cursor: pointer;
+}
+div.reset_button div {
+    color: #5C5C5C;
+    text-align: center;
+}
+/* Затемнение экрана */
+#shadow {
+    width: 100%;
+    height: 100%;
+    background: url('/templates/images/window_shadow.png');
+    position: fixed;
+    z-index: 90;
+    display: none;
+}
+#shadow div.window {
+    width: 640px;
+    background: #ffffff;
+    margin: 30px auto;
+    box-shadow: 0px 0px 15px 0px #505050;
+    position: relative;
+    z-index: 92;
+    display: none;
+}
+#shadow div.window.min {
+    width: 400px;
+}
+#shadow div.load {
+    width: 50px;
+    height: 50px;
+    background: #ffffff url('/templates/images/window_load.gif') 50% 50% no-repeat;
+    border-radius: 4px;
+    margin: 120px auto;
+    position: relative;
+    z-index: 91;
+    display: none;
+}
+#shadow div.window div.close {
+    width: 20px;
+    height: 20px;
+    background: url('/templates/images/window_close.png') 0px 0px no-repeat;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+#shadow div.window div.close:hover {
+    background-position: 0px -20px;
+}
+#shadow div.window div.title {
+    font-family: Verdana;
+    font-size: 28px;
+    padding: 40px 30px 35px 30px;
+    text-align: center;
+}
+#shadow div.window div.title.min {
+    font-size: 20px;
+}
+#shadow div.window div.content {
+    padding: 0px 30px 40px 30px;
+}
+#shadow div.window div.content.min {
+    padding: 0px 30px 20px 30px;
+}
+#shadow div.window div.content.center {
+    text-align: center;
+}
+
+/* Форма */
+div.form {
+    width: 480px;
+    padding: 0px 0px 40px 0px;
+    margin: 0px auto;
+}
+div.form.min {
+    width: 240px;
+    padding: 0px 0px 40px 0px;
+    margin: 0px auto;
+}
+div.form div.item {
+    padding: 0px 0px 16px 0px;
+    position: relative;
+}
+div.form div.caption {
+    font-size: 11px;
+    background: #efefef;
+    border-radius: 4px 4px 0px 0px;
+    padding: 6px 4px 6px 8px;
+    margin: 0px 0px -2px 0px;
+}
+div.form div.caption.bottom {
+    border-radius: 0px 0px 4px 4px;
+    padding: 6px 8px 6px 4px;
+    margin: -2px 0px 0px 0px;
+    text-align: right;
+}
+div.form div.input {
+    border: #a27f9d 2px solid;
+    border-radius: 4px;
+    padding: 9px 10px 11px 10px;
+    position: relative;
+}
+div.form div.input.name {
+    background: url('/templates/images/input_name.png') 0% 50% no-repeat;
+    padding-left: 43px;
+}
+div.form div.input.password {
+    background: url('/templates/images/input_password.png') 0% 50% no-repeat;
+    padding-left: 43px;
+}
+div.form div.input.phone {
+    background: url('/templates/images/input_phone.png') 0% 50% no-repeat;
+    padding-left: 65px;
+}
+div.form div.input.card {
+    background: url('/templates/images/input_card.png') 0% 50% no-repeat;
+    padding-left: 43px;
+}
+div.form div.input.min {
+    margin-left: 118px;
+}
+div.form div.input div.label {
+    color: #aaaaaa;
+    position: absolute;
+    top: 9px;
+    left: 12px;
+}
+div.form div.input span {
+    color: #aaaaaa;
+    position: absolute;
+    top: 9px;
+    left: 12px;
+    display: none;
+}
+div.form div.input.name div, div.form div.input.name span, div.form div.input.password div, div.form div.input.password span, div.form div.input.phone div, div.form div.input.phone span, div.form div.input.card div, div.form div.input.card span {
+    left: 45px;
+}
+div.form div.input input.string {
+    width: 100%;
+    background: transparent;
+    border: 0px;
+}
+div.form div.input select.list {
+    width: 100%;
+    background: transparent;
+    border: 0px;
+    position: relative;
+    top: -1px;
+    left: -4px;
+}
+div.form div.input textarea.text {
+    width: 100%;
+    height: 134px;
+    background: transparent;
+    border: 0px;
+}
+div.form div.error {
+    line-height: 18px;
+    color: #cc3333;
+    padding: 0px 0px 16px  0px;
+    text-align: center;
+    display: none;
+}
+div.form div.error.open {
+    display: block;
+}
+div.form div.button {
+    width: 142px;
+    height: 36px;
+    background: #64415f;
+    border-radius: 4px;
+    margin: 0px auto;
+    cursor: pointer;
+}
+div.form div.button.min {
+    width: 84px;
+}
+div.form div.button div {
+    font-size: 16px;
+    color: #ffffff;
+    padding: 9px 0px 0px 0px;
+    text-align: center;
+}
+div.form div.button:hover {
+    background: #7b5876;
+}
+
+/*Набор текст конетента*/
+div.text {
+    font-size: 14px;
+    line-height: 20px;
+}
+div.min-text {
+    color: #888888;
+    font-size: 14px;
+    line-height: 17px;
+}
+.text-micro {
+    color: #828282;
+    font-size: 11px;
+}
+div.description-min {
+    color: #939393;
+    font-size: 11px;
+    padding: 5px 0px 0px;
+}
+span.description-min {
+
+}
+
+/* Скроллинг вверх */
+#to-top {
+    width: 55px;
+    height: 90px;
+    background: #ecf4fa url('/templates/images/to_top.png') 50% 50% no-repeat;
+    position: fixed;
+    top: 45px;
+    left: 10px;
+    z-index: 80;
+    cursor: pointer;
+    display: none;
+    opacity: 0.5;
+}
+#to-top:hover {
+    background-color: #ecf4fa;
+    opacity: 1;
+}
+
+/*Набор заголовок*/
+div.title-main,div.title.border {
+    font-size: 16px;
+    border-bottom: 1px solid #4C2947;
+    height: 28px;
+    margin: 0px 0px 22px;
+}
+div.title-main a.title-main {
+    color: #4c2947;
+    font-weight: normal;
+    border-bottom: medium none;
+}
+div.title-main a.title-main:hover{
+    color: #4c2947;
+}
+div.title.border h2 {
+    color: #4c2947;
+}
+div.container.my div.title h1{
+    margin: 20px 0px 0px !important;
+}
+/* Шаблон */
+#main {
+
+}
+#main div.container {
+    width: 1200px;
+    margin: 0px auto;
+}
+#main div.container div.content-text {
+    width: 900px;
+    float: left;
+    position: relative;
+    min-height: 200px;
+}
+#main div.container.text {
+    padding: 10px 0px 35px 0px;
+}
+#main div.div {
+    padding: 0px;
+}
+#main div.header div.top {
+    height: 35px;
+    background: #f8f8f8;
+    border-bottom: 1px solid #e1e1e1;
+    /*outline: 1px solid;*/
+}
+#main div.header div.top div.city {
+    float: left;
+    padding: 6px 0px 0px 0px;
+    height: 29px;
+}
+
+#main div.header div.top div.user {
+    float: right;
+    text-align: center;
+    /*width: 145px; */
+    padding: 2px 10px 0px 5px;
+    margin: 5px 0px 0px;
+}
+#main div.header div.top div.user.on {
+    width: auto;
+    padding: 2px 10px 0px 0px;
+}
+#main div.header div.top div.user a, #main div.header div.top div.user span {
+    margin: 0px 0px 0px 10px;
+}
+#main div.header div.top div.user img.icon-key {
+    left: 3px;
+    position: relative;
+    top: 5px;
+}
+
+#main div.header div.top div.user div.box {
+    background: #ffffff;
+    border: 1px solid #CCCCCC;
+    border-radius: 3px;
+    box-shadow: 0px 0px 10px -3px #888888;
+    -moz-box-shadow: 0px 0px 10px -3px #888888;
+    -webkit-box-shadow: 0px 0px 10px -3px #888888;
+    padding: 10px;
+    position: absolute;
+    top: 30px;
+    width: 100%;
+    max-width: 210px;
+    left: -4px;
+    display: none;
+    z-index: 10;
+}
+#main div.header div.top div.user div.box div.icon-top {
+    background: url("/templates/images/top.png") no-repeat;
+    height: 15px;
+    left: 20px;
+    position: absolute;
+    top: -9px;
+    width: 30px;
+}
+#main div.header div.top div.user div.balance {
+    display: inline-block;
+    margin: 0px 15px 0px 0px;
+    vertical-align: top;
+    position: relative;
+}
+#main div.header div.top div.user div.balance a {
+    margin: 0px 0px 0px 5px;
+}
+#main div.header div.top div.user div.balance span.name {
+    margin: 0px;
+    text-align: left;
+    width: 150px;
+}
+#main div.header div.top div.user div.balance div.money {
+    display: inline-block;
+    vertical-align: top;
+}
+/*Меню выпадшка*/
+#main div.header div.top div.user div.box-steer {
+    width: 150px;
+}
+#main div.header div.top div.user div.box-steer div.row div.i {
+    padding: 5px 0;
+}
+
+div.box-steer-goods{
+    width: 150px;
+}
+div.box-steer-goods div.row div.i{
+    padding: 5px 0;
+}
+
+
+#main div.header div.center {
+    padding: 0px ;
+}
+#main div.header div.center div.container {
+    border-bottom: 1px solid #d7d7d7;
+    height: 80px;
+}
+#main div.footer div.top {
+    /* background: #e0e0e0;*/
+    padding: 15px 0px 15px 0px;
+}
+#main div.footer div.top div.container {
+    background: #ffffff;
+}
+#main div.center div.container.center {
+
+}
+#main div.header {
+    min-height: 209px;
+    border-bottom: #e4e4e4 1px solid;
+    position: relative;
+    text-align: center;
+    background: #ffffff;
+}
+#main div.header div.logo {
+    width: 252px;
+    float: left;
+    padding: 21px 0px 0px;
+}
+#main div.header div.logo a {
+    border: 0px;
+    display: block;
+}
+#main div.header div.center div.row {
+    width: 512px;
+    float: left;
+    padding: 12px 0px 5px 0px;
+}
+#main div.header div.center div.row div.items {
+    font-size: 12px;
+    padding: 0px 0px 11px 1px;
+}
+#main div.header div.center div.row div.items a.item {
+    margin: 0px 16px 0px 0px;
+}
+#main div.header div.center div.compare {
+    /* background: url("/templates/images/compare.png") no-repeat scroll 18px 24px;*/
+    float: left;
+    padding: 40px 0 0px;
+    width: 141px;
+    cursor: pointer;
+    position: relative;
+}
+#main div.header div.center div.compare div {
+    font-size: 14px;
+    left: 63px;
+    position: relative;
+    top: -15px;
+    width: 65px;
+}
+#main div.header div.center div.favorites {
+    background: url("/templates/images/favorites.png") no-repeat scroll 23px 24px;
+    float: left;
+    padding: 40px 0 0px;
+    width: 130px;
+    cursor: pointer;
+    position: relative;
+}
+#main div.header div.center div.favorites div {
+    font-size: 14px;
+    left: 63px;
+    position: relative;
+    top: -15px;
+    width: 65px;
+}
+#main div.header div.center div.basket {
+    width: 164px;
+    float: left;
+    padding: 0px;
+    background: url("/templates/images/basket.png") no-repeat scroll 26px 24px;
+    position: relative;
+}
+#main div.header div.center div.basket a.basket {
+    border: 0px;
+    display: block;
+    margin: 22px 12px 0px 0px;
+}
+#main div.header div.center div.basket div.caption {
+    font-size: 14px;
+    font-weight: bold;
+    color: #383838;
+    padding: 4px 0px 0px 0px;
+    text-align: right;
+}
+#main div.header div.center div.basket div.money {
+    font-size: 14px;
+    color: #383838;
+    padding: 5px 0px 0px 0px;
+    text-align: right;
+}
+#main div.header div.center div.basket div.count,#main div.header div.center div.compare div.count,#main div.header div.center div.favorites div.count {
+    background:  url("/templates/images/basket_count.png") no-repeat;
+    height: 36px;
+    left: 47px;
+    position: absolute;
+    top: 22px;
+    width: 32px;
+}
+#main div.header div.center div.compare div.count, #main div.header div.center div.favorites div.count {
+    left: 38px;
+    top: 22px;
+    z-index: 5;
+}
+
+#main div.header div.center div.basket div.count div, #main div.header div.center div.compare div.count span, #main div.header div.center div.favorites div.count span {
+    color: #ffffff;
+    padding: 6px 0px 0px 0px;
+    text-align: center;
+    display: block;
+}
+
+/*Навигация*/
+#main div.header div.bottom {
+    /* outline: 2px solid salmon;*/
+}
+#main div.header div.bottom div.container {
+    border: medium none;
+    height: 93px;
+}
+#main div.header div.bottom div.navigation {
+    border-bottom: 5px solid #fdb813;
+    height: 88px;
+    position: relative;
+}
+#main div.header div.bottom div.navigation div.item {
+    float: left;
+    height: 93px;
+    text-align: center;
+    width: 133px;
+}
+#main div.header div.bottom div.navigation div.item.open {
+    background: url("/templates/images/menu_top.png") no-repeat scroll 35px 82px;
+}
+#main div.header div.bottom div.navigation div.item:hover{
+    background: #fdb813;
+}
+#main div.header div.bottom div.navigation div.item a {
+    border-bottom: medium none;
+    display: block;
+    padding: 14px 0px 0px;
+}
+#main div.header div.bottom div.navigation div.item a img {
+    height: 30px;
+}
+#main div.header div.bottom div.navigation div.item  a div {
+    font-family: verdana;
+    font-size: 10px;
+    font-weight: bold;
+    height: 35px;
+    margin: 5px 0px 0px;
+    overflow: hidden;
+    text-align: center;
+    text-transform: uppercase;
+    word-wrap: break-word;
+    color: #181818;
+    padding: 0px 2px;
+}
+
+/*Навигация меню бар*/
+#main div.header div.bottom div.navigation div.group-nav {
+    background: #fff ;
+    top: 93px;
+    display: block;
+    position: absolute;
+    padding: 5px 15px 5px;
+    z-index: 100;
+    display: none;
+}
+#main div.header div.bottom div.navigation div.group-nav div.block {
+    min-width: 200px;
+    display: table;
+}
+#main div.header div.bottom div.navigation div.group-nav div.name {
+    border-bottom: 1px solid #ebebeb;
+    color: #000;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 0px 0px 10px;
+    width: 165px;
+}
+#main div.header div.bottom div.navigation div.group-nav div.cell {
+    display: table-cell;
+}
+#main div.header div.bottom div.navigation div.group-nav div.cell-tag {
+    display: inline-block;
+    vertical-align: top;
+    padding: 0px 5px;
+    width: 170px;
+}
+#main div.header div.bottom div.navigation div.group-nav div.row {
+    margin: 0px 0px 15px;
+    width: 190px; /*190px;*/
+}
+#main div.header div.bottom div.navigation div.group-nav div.row div.i{
+    margin: 10px 0px;
+    padding: 0px 5px 0px 0px;
+}
+#main div.header div.bottom div.navigation div.group-nav div.row div.i a{
+    border-bottom: medium none;
+    color: #747474;
+    padding: 0px;
+}
+#main div.header div.bottom div.navigation div.group-nav div.row div.i a:hover{
+    color: #000000;
+}
+
+#main div.center {
+    padding: 15px 0px 50px 0px;
+}
+#main div.center.main {
+    padding: 0px;
+}
+/*Набор Заголовок*/
+#main div.center .title h1,
+#main div.center .title h2,
+#main div.center .title h3 {
+    font-family: Verdana;
+    font-size: 23px;
+    font-weight: normal;
+    line-height: normal;
+    padding: 0px 0px 25px 0px;
+    margin: 0px;
+    text-transform: uppercase;
+    white-space: pre-wrap;
+}
+#main div.center .title a {
+    border-bottom: 0px;
+}
+#main div.center div.title  h2 {
+    font-size: 19px;
+    margin: 20px 0px 0px;
+}
+#main div.center .title h3 {
+    font-size: 16px;
+    padding: 15px 0px 5px;
+}
+#main div.center .title-min {
+    font-family: Verdana;
+    font-size: 19px;
+    font-weight: bold;
+    line-height: normal;
+    padding: 0px 0px 20px 0px;
+    margin: 0px;
+    text-transform: uppercase;
+}
+/*Футор*/
+#main div.footer {
+    position: relative;
+    text-align: center;
+    background: #ffffff;
+    border-top: 1px solid #e4e4e4;
+    margin: 0px 0px -30px 0px;
+    /* border-top: 1px solid #E4E4E4;*/
+}
+#main div.footer div.row {
+    border-right: 1px solid #e1e1e1;
+    float: left;
+    width: 305px;
+}
+#main div.footer div.logo div.items {
+    padding: 0px 0px 0px 0px;
+}
+#main div.footer div.row div.logo {
+    border-bottom: 1px solid #e1e1e1;
+    margin: 0px 0px 8px;
+    padding: 5px 0px 11px;
+    width: 260px;
+}
+#main div.footer div.social {
+    float: left;
+    margin: 5px 13px 0px;
+}
+#main div.footer div.social a {
+    margin: 0px 15px 0px 0px;
+}
+#main div.footer div.menu {
+    width: 33%;
+    float: left;
+}
+#main div.footer div.menu div.items {
+    padding: 3px 0px 0px 43px;
+}
+#main div.footer div.menu div.items div.item {
+    float: left;
+    margin: 0px 0px 10px 2px;
+    width: 140px;
+}
+#main div.footer div.address {
+    float: left;
+    padding: 0px 0px 0px 20px;
+    width: 245px;
+}
+#main div.footer div.address div.email {
+    font-size: 15px;
+    background: url("/templates/images/address.png") no-repeat scroll 0 5px;
+    padding: 0px 0px 0px 26px;
+    margin: 0px 0px 20px 0px;
+}
+#main div.footer div.address div.map {
+    background: url("/templates/images/address.png") no-repeat scroll 0 -30px;
+    font-size: 15px;
+    padding: 0px 0px 10px 26px;
+}
+#main div.footer div.address div.description {
+    color: #9c9c9c;
+    padding: 0px 0px 0px 27px;
+    width: 145px;
+}
+#main div.footer div.copyright {
+    color: #a6a6a6;
+    float: left;
+    font-family: Arial;
+    font-size: 13px;
+    padding: 2px 0px 5px;
+    width: 146px;
+}
+#main div.footer div.contacts {
+    float: left;
+    width: 229px;
+}
+#main div.footer div.contacts div.phone {
+    background: url("/templates/images/phone.png") no-repeat scroll 30px 5px;
+    font-family: verdana;
+    font-size: 20px;
+    padding: 4px 0px 10px;
+    text-align: right;
+    color: #73366a;
+}
+#main div.footer div.contacts div.call{
+    text-align: right;
+    font-size: 14px;
+}
+#main div.footer div.contacts div.time{
+    color: #9c9c9c;
+    margin: 15px 0px 0px;
+    text-align: right;
+    font-size: 12px;
+}
+#main div.footer div.contacts div.time p.time {
+    font-size: 11px;
+}
+#main div.footer div.contacts div.version {
+    text-align: right;
+}
+#main div.footer div.block div.message-error {
+    padding: 0px;
+    text-align: center;
+}
+#main div.footer div.payments {
+    padding: 7px 0px 0px 0px;
+}
+#main div.footer div.payments div {
+    color: #a6a6a6;
+    font-size: 12px;
+    padding: 0px 0px 5px;
+}
+#main div.footer div.payments img {
+    margin: 0;
+    width: 60px;
+}
+
+/*Поиск*/
+#main div.search {
+    margin: 10px 54px 0px 0px;
+    position: relative;
+    width: 497px;
+}
+#main div.search div.input {
+    background: url('/templates/images/search.png') 0px 0px no-repeat;
+    padding: 10px 58px 9px 10px;
+    position: relative;
+    overflow: hidden;
+}
+#main div.search div.input input {
+    width: 100%;
+    font-family: Arial;
+    font-size: 13px;
+    font-style: italic;
+    border: 0px;
+    padding: 2px 0px 2px 0px;
+    background: transparent;
+    position: relative;
+    z-index: 2;
+}
+#main div.search div.input div {
+    font-family: Arial;
+    font-size: 13px;
+    font-style: italic;
+    color: #aaaaaa;
+    overflow: hidden;
+    white-space: nowrap;
+    position: absolute;
+    top: 12px;
+    left: 15px;
+    z-index: 1;
+}
+#main div.search div.button {
+    background: url("/templates/images/search_button.png") no-repeat;
+    cursor: pointer;
+    height: 28px;
+    position: absolute;
+    right: 10px;
+    top: 6px;
+    width: 32px;
+    z-index: 3;
+}
+#main div.search div.button:hover {
+    background: url('/templates/images/search_button.png') 0px 0px no-repeat;
+    background-position: -33px 0px;
+}
+
+#main div.search div.details {
+    font-size: 12px;
+    padding: 4px 0px 0px 1px;
+}
+/* Путь */
+div.path {
+    padding: 0px 0px 15px 0px;
+}
+div.groups {
+    padding: 0px 0px 0px 0px;
+}
+div.groups.subgroups {
+    margin: 0px 0px 0px 0px;
+}
+div.groups div.item {
+    float: left;
+    margin: 0px 0px 25px 0px;
+    position: relative;
+}
+div.groups div.item a {
+    width: 220px;
+    height: 220px;
+    display: block;
+    background: #efefef;
+    border: 0px;
+}
+div.groups div.item a.subgroup {
+    height: 170px;
+}
+div.groups div.item div.image {
+    padding: 10px 0px 0px 0px;
+    text-align: center;
+    height: 150px;
+    overflow: hidden;
+}
+div.groups div.item div.image img {
+    width: 200px;
+}
+div.groups div.item div.image.cat img {
+    width: 150px;
+}
+div.groups div.item div.image.good {
+    height: 180px;
+    overflow: hidden;
+    padding: 50px 0px 0px;
+}
+div.groups div.item div.image.good img {
+    width: 240px;
+}
+div.groups div.item div.bottom {
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+}
+div.groups div.item div.bottom div.name {
+    font-size: 15px;
+    line-height: 18px;
+    color: #ffffff;
+    padding: 8px 10px 10px 10px;
+    position: relative;
+    z-index: 2;
+}
+div.groups div.item div.bottom div.shadow {
+    width: 100%;
+    height: 100%;
+    background: url('/templates/images/shadow.png');
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    z-index: 1;
+}
+div.groups div.item a.subgroup div.bottom {
+    bottom: 10px;
+}
+div.groups div.item a.subgroup div.bottom div.name {
+    padding-left: 20px;
+}
+div.groups div.item a.subgroup div.bottom div.shadow {
+    width: 200px;
+    left: 10px;
+}
+div.groups div.item:hover div.bottom div.shadow {
+    opacity: 0.5;
+}
+div.groups div.item a:hover {
+    background-color: #d89bcf !important;
+}
+div.groups div.item-space {
+    width: 25px;
+    height: 170px;
+    float: left;
+}
+/*Стикер для группы товаров*/
+div.groups.subgroups div.stickers {
+    position: absolute;
+    right: -20px;
+    top: 0;
+    width: 100%;
+}
+div.groups.subgroups div.stickers div.news {
+    width: 60px;
+    height: 60px;
+    background-image: url("/templates/images/stickers/news.png");
+}
+div.groups.subgroups div.stickers div.bonus {
+    width: 60px;
+    height: 60px;
+    background-image: url("/templates/images/stickers/bonus.png");
+}
+div.groups.subgroups div.stickers div.count {
+    background: #6b3463;
+    color: #fff;
+    font-weight: bold;
+    padding: 3px 7px 4px;
+    position: inherit;
+    right: 14px;
+    top: 14px;
+}
+/* Список групп сайдбар */
+div.groups-list {
+    width: 223px;
+    float: left;
+    position: relative;
+    padding: 0px 10px;
+    clear: both;
+}
+div.groups-list div.items {
+
+}
+div.groups-list div.items div.item {
+    border-top: 1px solid  #e4e4e4;
+    position: relative;
+    width: 218px;
+    padding: 11px 0px 11px 0px;
+}
+div.groups-list div.items div.item.open {
+    color: #ffffff;
+    background: #00a05c;
+    border-radius: 4px;
+}
+div.groups-list div.items div.item div.name {
+    margin: 0px 0px 8px 0px;
+    font-size: 14px;
+    font-weight: bold;
+}
+div.groups-list div.items div.item div.name a.open,div.groups-list div.items div.item div.row div.i a.open {
+    border-bottom: 1px solid #6e5e6c;
+    color: #6e5e6c;
+}
+div.groups-list div.items div.item div.title,
+div.groups-list div.items div.cat div.title  {
+    font-size: 14px;
+    font-weight: bold;
+    margin: 10px 0px 0px;
+}
+div.groups-list div.items div.item div.title a, div.groups-list div.items div.cat div.title a{
+    color: #5c5c5c;
+}
+div.groups-list div.items div.item div.row {
+    padding: 8px 0px 0px 15px;
+}
+div.groups-list div.items div.item div.row div.i{
+    font-size: 14px;
+    margin: 0px 0px 9px;
+}
+div.groups-list div.items div.cat {
+    border: 1px solid #e4e4e4;
+    padding: 10px 0px 0px 20px;
+    width: 195px;
+}
+div.groups-list div.items div.cat div.i {
+    font-size: 14px;
+    margin: 10px 0px;
+    padding: 0px 5px 0px 0px;
+}
+div.groups-list div.items div.cat div.i.groups {
+    cursor: pointer;
+    color: #4C2947;
+}
+div.groups-list div.items div.cat div.i.groups:hover {
+    color: #73366a;
+}
+div.groups-list div.items div.cat div.row {
+    padding: 0px 0px 0px 10px;
+}
+div.groups-list div.items div.cat div.i.active div {
+    background: #603d5b;
+    border-radius: 3px;
+    color: #fff;
+    margin: 0px 6px 0px -10px;
+    padding: 3px 5px 4px 10px;
+}
+div.groups-list div.items div.cat div.show {
+    padding: 5px 0px 15px;
+}
+
+div.groups-list div.items div.cat div.reset {
+    font-size: 14px;
+    font-weight: bold;
+    padding: 10px 0px 25px 13px;
+}
+
+/* Фильтр */
+div.groups-list div.filter {
+    border: #a56e9d 3px solid;
+    padding: 10px 0px 10px 0px;
+    margin: 25px 15px 0px 0px;
+    position: relative;
+}
+div.groups-list div.filter div.caption {
+    font-weight: bold;
+    padding: 0px 10px 9px 10px;
+}
+div.groups-list div.filter div.item {
+    padding: 1px 10px 1px 10px;
+}
+div.groups-list div.filter div.item.other {
+    display: none;
+}
+div.groups-list div.filter div.others {
+    font-size: 11px;
+    padding: 4px 10px 0px 10px;
+    text-align: right;
+}
+div.groups-list div.filter div.filter-count {
+    width: 160px;
+    height: 56px;
+    background: url('/templates/images/filter_count.png') 0px 0px no-repeat;
+    position: absolute;
+    left: 180px;
+    top: -9px;
+    z-index: 101;
+}
+div.groups-list div.filter div.filter-count div {
+    color: #ffffff;
+    padding: 19px 0px 0px 32px;
+}
+div.groups-list div.filter div.filter-count div a {
+    margin: 0px 0px 0px 24px;
+}
+
+/* Слайдер */
+div.slides {
+    float: left;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+    width: 600px; /*640px;*/
+    margin: 0 20px;
+}
+div.slides div.items {
+    /* width: 430px;
+     height: 360px;*/
+}
+div.slides div.items div.item {
+    width: 600px ;/*430px;*/
+    height: 360px;
+    position: absolute;
+    z-index: -1;
+}
+div.slides div.items div.item img {
+    width: 600px; /*640px;*/
+    height: 400px;
+}
+div.slides div.items div.item.open {
+    z-index: 1;
+}
+div.slides div.triggers {
+    bottom: 12px;
+    height: 16px;
+    left: 15px;
+    position: absolute;
+    z-index: 2;
+}
+div.slides div.triggers div {
+    background: #959595;
+    border-radius: 40px;
+    cursor: pointer;
+    float: left;
+    height: 10px;
+    width: 10px;
+    margin: 0px 5px 0px 0px;
+}
+div.slides div.triggers div.open {
+    background: #73366A;
+}
+/*Баннер*/
+div.poster {
+    float: left;
+}
+div.poster div.max{
+    height: 400px;
+    overflow: hidden;
+    width: 238px;
+}
+/*Баннеры*/
+div.posters {
+    float: left;
+    height: 365px;
+    width: 315px;
+}
+div.posters.min {
+    width: 270px;
+    height: 365px;
+    float: right;
+}
+div.posters div.item.min {
+    width: 285px;
+    float: left;
+}
+div.posters div.item.min img {
+    width: 320px;
+}
+div.posters.block div.item.min.center img {
+    width: 286px;
+}
+div.posters div.top,div.posters div.bottom  {
+    margin: 0px 0px 20px 0px;
+    height: 190px;
+    overflow: hidden;
+    width: 320px;
+}
+div.posters div.top,div.posters div.bottom img {
+}
+/*Баннер вниз*/
+div.posters.block {
+    float: unset;
+    height: auto;
+    margin: 20px 0px 0px;
+    width: auto;
+}
+div.posters.block div.item {
+    float: left;
+}
+div.posters.block div.item.max {
+    height: 245px;
+    overflow: hidden;
+    width: 590px;
+    margin: 0px 22px 0px 0px;
+}
+div.posters.block div.item.max img {
+    width: 590px;
+}
+div.posters.block div.item.min {
+    width: 285px;
+    height: 246px;
+    overflow: hidden;
+}
+div.posters.block div.item.min img {
+    width: 285px;
+}
+div.posters.block div.item.min.center {
+    margin: 0px 17px 0px 0px;
+    padding: 0px !important;
+}
+div.posters_content {
+    float: right;
+    height: 365px;
+    width: 285px;
+    margin:0px 0px 0px 5px;
+}
+div.posters_content div.item {
+    margin: 0px 5px 10px;
+}
+div.posters_content div.item div {
+    margin: 0px 0px 10px;
+}
+div.posters_content div.item a {
+    border: 0px;
+}
+div.posters_content div.item img {
+    width: 280px;
+}
+div.poster div.max,div.slides,div.posters div.top, div.posters div.bottom,div.posters.block div.item.max,div.posters.block div.item.min {
+    box-shadow: 0px 3px 7px -6px #373737;
+    -moz-box-shadow: 0px 3px 7px -6px #373737;
+    -webkit-box-shadow: 0px 3px 7px -6px #373737;
+}
+/*баннеры для групп товаров*/
+div.poster-groups {
+    margin: 0px 0px 23px;
+}
+div.poster-groups div.item {
+}
+div.poster-groups div.item div.block-1,
+div.poster-groups div.item div.block-2,
+div.poster-groups div.item div.block-3,
+div.poster-groups div.item div.block-4{
+    box-shadow: 0px 5px 10px -6px #888888;
+    -moz-box-shadow: 0px 5px 10px -6px #888888;
+    -webkit-box-shadow: 0px 5px 10px -6px #888888;
+}
+div.poster-groups div.item div.block-1 {
+    float: left;
+    width: 465px;
+    margin: 0px 23px 23px 0px;
+}
+div.poster-groups div.item div.block-2{
+    float: left;
+    width: 221px;
+    margin: 0px 23px 0px 0px;
+}
+div.poster-groups div.item div.block-3{
+    float: left;
+    margin: 0px 23px 0px 0px;
+    width: 710px;
+}
+div.poster-groups div.item div.block-4{
+    display: inline-block;
+    vertical-align: top;
+    width: 222px;
+}
+/* Инфо*/
+div.main-info {
+    margin: 53px 0px 53px;
+}
+div.main-info div.item {
+    float: left;
+    height: 84px;
+    width: 300px;
+}
+
+div.main-info div.item div {
+    font-size: 17px;
+    padding: 28px 0px 0px 80px;
+}
+div.main-info div.item img {
+    height: 107px;
+}
+/* Вкладки */
+div.tabs-items {
+    position: relative;
+    top: 5px;
+}
+div.tabs-items div.item {
+    float: left;
+    padding: 19px 20px 15px 20px;
+}
+div.tabs-items div.item span {
+    font-size: 15px;
+    color: #8D6A88;
+    border-bottom: #dedede 1px dotted;
+    margin: 0px;
+    cursor: pointer;
+}
+div.tabs-items div.item span:hover {
+    color: #3a3a3a;
+    border-bottom-color: #969696;
+}
+div.tabs-items div.item.open {
+    background: #f3f3f3;
+    border-top: #dedede 1px solid;
+    border-left: #dedede 1px solid;
+    border-right: #dedede 1px solid;
+    padding: 14px 19px 15px 19px;
+}
+div.tabs-items div.item.open span {
+    color: #3a3a3a;
+    border: 0px;
+    position: relative;
+    top: 4px;
+}
+div.tabs-contents {
+    border: #dedede 1px solid;
+    padding: 30px 20px 25px 20px;
+}
+div.tabs-contents div.item {
+    display: none;
+}
+div.tabs-contents div.item.open {
+    display: block;
+}
+/*Привью в список товаров*/
+div.center div.menu-block {
+    padding: 5px 0px;
+    /* height: 210px;*/
+    margin: 0px 0px 30px;
+}
+div.center div.menu-block div.item-b {
+    position: relative;
+    float: left;
+}
+div.center div.menu-block div.item-b div.favorite_list, div.center div.menu-block div.item-b div.basket {
+    background: rgba(0, 0, 0, 0) url("/templates/images/fav_list.png") no-repeat scroll -57px 0;
+    cursor: pointer;
+    height: 42px;
+    position: absolute;
+    right: 18px;
+    top: 15px;
+    width: 42px;
+    border-radius: 70px;
+    -moz-border-radius: 70px;
+    -webkit-border-radius: 70px;
+    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.6);
+    z-index: 85;
+}
+div.center div.menu-block div.item-b div.favorite_list:hover {
+    background-position: -57px -53px;
+}
+div.center div.menu-block div.item-b div.basket:hover {
+    background-position: 0px -53px;
+}
+div.center div.menu-block div.item-b div.basket {
+    background-position: 0px 0px;
+    top: 70px;
+}
+div.center div.menu-block  a{
+    display: block;
+    /* float: left;*/
+    opacity: 0.50;
+    filter:progid:DXImageTransform.Microsoft.Alpha(opacity=50); /* фильтры для IE 5.5+ */
+    -moz-opacity: 0.50; /* Mozilla 1.6 и ниже */
+    -khtml-opacity: 0.50; /* Konqueror 3.1, Safari 1.1 */
+    transition: all 0.2s ease-in 0.01s;
+    -webkit-transition: all 0.2s ease-in 0.01s;
+    -moz-transition: all 0.2s ease-in 0.01s;
+    -o-transition: all 0.2s ease-in 0.01s;
+}
+div.center div.menu-block a:hover,div.center div.menu-block a.open {
+    opacity: 100;
+    box-shadow: 0px 5px 10px -6px #888888;
+    -moz-box-shadow: 0px 5px 10px -6px #888888;
+    -webkit-box-shadow: 0px 5px 10px -6px #888888;
+}
+div.center div.menu-block  div.images {
+    max-height: 290px;
+    overflow: hidden;
+    max-width: 305px;
+    position: relative;
+}
+div.center div.menu-block div.images div.bottom {
+    background: rgb(255, 255, 255);
+    background: rgba(255, 255, 255, 0.8);
+    bottom: 0px;
+    font-size: 19px;
+    padding: 18px 0px;
+    position: absolute;
+    width: 100%;
+    margin: 0px 0px 20px;
+}
+div.center div.menu-block div.images div.bottom div.name {
+    font-size: 19px;
+    text-align: center;
+    text-transform: uppercase;
+}
+div.center div.menu-block div.item-space {
+    float: left;
+    height: 12px;
+    width: 16px;
+}
+/*Набор групп меню */
+div.center div.menu-block.level-2 {
+}
+div.center div.menu-block.level-2 div.images {
+    max-width: 466px;
+}
+div.center div.menu-block.level-2 div.item-space {
+    width: 23px;
+}
+
+/* Список товаров */
+div.goods {
+    padding: 0px 0px 0px 0px;
+    position: relative;
+    min-height: 300px;
+}
+div.goods.catalog {
+    /*margin: 0px 0px 0px 245px;*/
+    float: left;
+    width: 956px;
+}
+div.catalog div.min-text, div.groups.subgroups div.min-text {
+    color: #6d6d6d;
+    font-size: 14px;
+    line-height: 17px;
+    padding: 10px 0px 20px;
+}
+/*Групп товаров*/
+div.goods div.items {
+    padding: 0px 0px 0px 0px;
+}
+div.goods div.items div.item {
+    width: 225px;
+    height: 375px;
+    float: left;
+}
+div.goods div.items div.item div.content {
+    border: 1px solid #eaeaea;
+    box-shadow: 0px 0px 8px -1px #adadad;
+    -moz-box-shadow: 0px 0px 8px -1px #adadad;
+    -webkit-box-shadow: 0px 0px 8px -1px #adadad;
+    margin: 5px 0px 0px;
+    padding: 15px 0px 15px;
+    position: relative;
+    background: #ffffff;
+    height: 323px;
+}
+div.goods div.items div.item div.row {
+    position: absolute;
+    bottom: 0px;
+    display: flex;
+}
+/*Набор иконки кнопки*/
+div.goods div.items div.item div.row div.icon-compare {
+    background: url("/templates/images/icon_button.png") no-repeat;
+    height: 100%;
+    margin: 0px auto;
+    width: 100%;
+}
+div.goods div.items div.item div.row div.icon-compare:hover {
+    background-position: 0px -53px;
+}
+div.goods div.items div.item div.row div.icon-favorite {
+    background: url("/templates/images/mobil/icon_favorite.png") no-repeat;
+    height: 100%;
+    background-position: center top;
+    width: 100%;
+}
+div.goods div.items div.item div.row div.icon-favorite:hover ,div.goods div.items div.item div.row div.icon-favorite.on {
+    background-position: center -53px ;
+    background-color: #FDB813;
+}
+div.goods div.items div.item div.row div.icon-basket {
+    background:  url("/templates/images/mobil/icon_basket.png") no-repeat;
+    height: 100%;
+    background-position: center top;
+    width: 100%;
+}
+div.goods div.items div.item div.row div.icon-basket:hover,div.goods div.items div.item div.row div.icon-basket.on  {
+    background-position: center -53px ;
+    background-color: #FDB813;
+}
+div.goods div.items div.item div.row div.compare {
+    cursor: pointer;
+    border-top: 1px solid #E1E1E1;
+    width: 73px;
+    height: 50px;
+    float: left;
+}
+div.goods div.items div.item div.row div.compare.details,
+div.goods div.items div.item div.row div.icon-compare:hover,
+div.goods div.items div.item div.row div.favorite.details {
+    cursor: initial;
+    background-position: inherit;
+}
+div.goods div.items div.item div.row div.icon-favorite.details:hover {
+    background-position: top;
+    background-color: #ffffff;
+}
+div.goods div.items div.item div.row div.favorite {
+    /*border-left: 1px solid #E1E1E1;*/
+    border-right: 1px solid #E1E1E1;
+    border-top: 1px solid #E1E1E1;
+    cursor: pointer;
+    float: left;
+    height: 50px;
+    width: 111px;
+    background-color: #ffffff;
+}
+div.goods div.items div.item div.row div.favorite div.icon-button.fav {
+    background-position: -32px 0px;
+}
+div.goods div.items div.item div.row div.basket {
+    border-top: 1px solid #E1E1E1;
+    cursor: pointer;
+    width: 111px;
+    height: 50px;
+    float: left;
+    background-color: #ffffff;
+}
+div.goods div.items div.item div.image {
+    width: 220px;
+    height: 190px;
+    text-align: center;
+    overflow: hidden;
+    transition: all 0.2s ease-in 0.01s;
+    -webkit-transition: all 0.2s ease-in 0.01s;
+    -moz-transition: all 0.2s ease-in 0.01s;
+    -o-transition: all 0.2s ease-in 0.01s;
+}
+/*Показывать вариация*/
+div.goods div.items div.var div.image {
+    height: 140px; !important;
+    transition: all 0.2s ease-in 0.01s;
+    -webkit-transition: all 0.2s ease-in 0.01s;
+    -moz-transition: all 0.2s ease-in 0.01s;
+    -o-transition: all 0.2s ease-in 0.01s;
+}
+div.goods div.items div.var div.tags {
+    display: block !important;
+}
+
+div.goods div.items div.item div.image img {
+    max-height: 220px;
+    max-width: 220px;
+    /*
+     -webkit-transform: scale(1.1);
+       -moz-transform: scale(1.1);
+        -o-transform: scale(1.1);
+     */
+}
+div.goods div.items div.item div.image a {
+    border: 0px;
+}
+div.goods div.items div.item div.group {
+    color: #b3b3b3;
+    font-size: 11px;
+    overflow: hidden;
+    padding: 0px 18px;
+    white-space: nowrap;
+    height: 14px;
+}
+div.goods div.items div.item div.name {
+    margin: 10px 15px 0px 15px;
+}
+div.goods div.items div.item div.name div {
+    font-size: 16px;
+    height: 40px;
+    line-height: 20px;
+    overflow: hidden;
+    margin: 0px 0px 10px;
+}
+div.goods div.items div.item div.tags {
+    margin: 3px 0px 3px 0px;
+    display: none;
+}
+div.goods div.items div.item div.tags div.tags-items {
+    height: 47px;
+    overflow: hidden;
+}
+div.goods div.items div.item div.tags div.tags-items div.tags-item {
+    height: 15px;
+    position: relative;
+}
+div.goods div.items div.item div.tags div.tags-items div.tags-item div {
+    font-size: 11px;
+    line-height: 15px;
+    color: #999999;
+    padding: 0px;
+    margin: 0px 15px 0px 15px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+div.goods div.items div.item div.tags div.tags-items div.tags-item div:hover {
+    /* */
+}
+div.goods div.items div.item div.tags div.tags-items div.tags-item div span {
+    color: #cccccc;
+    margin: 0px 5px 0px 0px;
+}
+div.goods div.items div.item div.soon {
+    font-size: 9px;
+    height: 17px;
+    margin: 2px 0px;
+    padding: 0px 15px;
+}
+div.goods div.items div.item div.price, div.goods div.items div.item div.bonus {
+    font-size: 22px;
+    font-weight: normal;
+    padding: 0px 10px 0px 15px;
+}
+div.goods div.items div.item div.price.normal {
+    font-size: 18px;
+    float: left;
+}
+div.goods div.items div.item div.price.discount {
+    bottom: 73px;
+    color: #ee3333;
+    font-size: 19px;
+    font-weight: bold;
+    text-align: right;
+    padding-right: 15px;
+    white-space: nowrap;
+}
+div.goods div.items div.item div.price-normal {
+    font-size: 12px;
+    font-weight: bold;
+    color: #929292;
+    position: absolute;
+    bottom: 4px;
+    text-decoration: line-through;
+}
+div.goods div.items div.item a.button {
+    width: 84px;
+    height: 36px;
+    background: #73366A;
+    border-radius: 4px;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    cursor: pointer;
+    display: block;
+}
+div.goods div.items div.item a.button div {
+    font-size: 16px;
+    color: #ffffff;
+    padding: 9px 0px 0px 0px;
+    text-align: center;
+}
+div.goods div.items div.item a.button:hover {
+    background: #8D6A88;
+}
+div.goods div.items div.item div.button {
+    width: 84px;
+    height: 36px;
+    background: #64415f;
+    border-radius: 4px;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    cursor: pointer;
+}
+div.goods div.items div.item div.button div {
+    font-size: 16px;
+    color: #ffffff;
+    padding: 9px 0px 0px 0px;
+    text-align: center;
+}
+div.goods div.items div.item div.button:hover {
+    background: #7b5876;
+}
+div.goods div.items div.item div.count {
+    width: 80px;
+    color: #7b7b7b;
+    padding: 0px 0px 0px 0px;
+    text-align: center;
+    position: absolute;
+    right: 12px;
+    bottom: 19px;
+}
+div.goods div.items div.item div.count span {
+    padding: 0px 0px 0px 0px;
+}
+div.goods div.items div.item div.count div.plus {
+    width: 17px;
+    height: 17px;
+    background: url('/templates/images/count_plus.png') 0px 0px no-repeat;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    cursor: pointer;
+}
+div.goods div.items div.item div.count div.minus {
+    width: 17px;
+    height: 17px;
+    background: url('/templates/images/count_minus.png') 0px 0px no-repeat;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    cursor: pointer;
+}
+div.goods div.items div.item div.count div.plus:hover, div.goods div.items div.item div.count div.minus:hover {
+    background-position: 0px -17px;
+}
+div.goods div.items div.item div.no {
+    bottom: 20px;
+    color: #7b7b7b;
+    font-size: 12px;
+    height: 39px;
+    position: relative;
+    top: 35px;
+    width: 100px;
+    margin: 0px 0px 0px auto;
+}
+/*Стикеры */
+div.goods div.items div.item div.stickers {
+    position: absolute;
+    top: -5px;
+    left: 19px;
+}
+div.goods div.items div.item div.stickers div {
+    width: 40px;
+    height: 53px;
+    float: left;
+}
+div.goods div.items div.item div.stickers div.discount {
+    background: url('/templates/images/stickers/discount.png') 0px 0px no-repeat;
+    background-size: 33px;
+}
+div.goods div.items div.item div.stickers div.news {
+    background: url('/templates/images/stickers/news.png') 0px 0px no-repeat;
+    background-size: 33px;
+}
+div.goods div.items div.item div.stickers div.hit {
+    background: url('/templates/images/stickers/hit.png') 0px 0px no-repeat;
+    background-size: 33px;
+}
+div.goods div.items div.item div.stickers div.bonus {
+    background: url('/templates/images/stickers/bonus.png') 0px 0px no-repeat;
+    background-size: 33px;
+}
+div.goods div.items div.item div.manager {
+    width: 100%;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    display: none;
+}
+div.goods div.items div.item div.manager div.items {
+    padding: 6px 6px 6px 6px;
+    background: #e9eef2;
+}
+div.goods div.items div.item div.manager div.i {
+    width: 32px;
+    height: 24px;
+    float: left;
+    background-position: 0px 0px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    opacity: 0.75;
+}
+div.goods div.items div.item div.manager div.edit {
+    background-image: url('/templates/images/manager/edit.png');
+}
+div.goods div.items div.item div.manager div.discount {
+    background-image: url('/templates/images/manager/discount.png');
+}
+div.goods div.items div.item div.manager div.delete {
+    width: 24px;
+    float: right;
+    background-image: url('/templates/images/manager/delete.png');
+    opacity: 0;
+}
+div.goods div.items div.item div.manager:hover div.delete {
+    opacity: 0.75;
+}
+div.goods div.items div.item:hover div.manager {
+    display: block;
+}
+div.goods div.items div.item div.manager div.i:hover {
+    background-position: 0px -24px;
+    opacity: 1;
+}
+div.goods div.items div.item div.manager div.disabled {
+    background-position: 0px -48px;
+}
+div.goods div.items div.item div.manager div.position {
+    background: url('/templates/images/manager/arrow.png') 0px 0px no-repeat;
+    cursor: all-scroll;
+    background-size: 25px;
+    margin: 0px 0px 0px 6px;
+}
+div.goods div.items div.item-space {
+    width: 18px;
+    height: 350px;
+    float: left;
+}
+/*Товар услуги*/
+div.goods div.items.services div.item {
+    height: auto;
+    width: 305px;
+    padding: 6px 0px 0px;
+    margin: 0px 16px 10px 0px;
+}
+div.goods div.items.services div.item div.name a {
+    color: #73366a;
+}
+div.goods div.items.services div.item.item-stop {
+    margin-right: 0px;
+}
+div.goods div.items.services div.item div.content {
+    padding: 0px;
+    margin: 0px;
+    border: none;
+    height: 212px;
+}
+div.goods div.items.services div.item div.image {
+    float: none;
+    height: 168px;
+    margin: 0px;
+    width: auto;
+}
+div.goods div.items.services div.item div.image img {
+    width: 100%;
+}
+div.goods div.items.services div.item div.block {
+    position: absolute;
+    top: 15px;
+    background: url('/templates/images/br_op.png') repeat;
+    padding: 10px 0px;
+}
+div.goods div.items.services div.item div.price {
+    float: left;
+    width: 170px;
+    padding: 12px 0px 12px 11px;
+}
+div.goods div.items.services div.item div.price.price-discount {
+    color: #7d7d7d;
+    font-size: 18px;
+}
+div.goods div.items.services div.item div.price span.discount_price {
+    color: #ed1c24;
+    left: 15px;
+    position: relative;
+    font-size: 22px;
+}
+div.goods div.items.services div.item div.name div {
+    height: auto;
+    margin: 0px;
+    font-size:17px;
+
+}
+div.goods div.items.services div.item div.group {
+    font-size: 14px;
+    padding: 3px 15px;
+    color:#5b5b5b;
+}
+div.goods div.items.services div.item div.row {
+    display: block;
+    height: auto;
+    margin: 0px;
+    border: none;
+}
+div.goods div.items.services div.item div.row div.icon-favorite {
+    background-position: -19px -2px;
+}
+div.goods div.items.services div.item div.row div.icon-basket {
+    background-position: -17px -2px;
+}
+div.goods div.items.services div.item div.row div.icon-favorite:hover,div.goods div.items.services div.item div.row div.icon-favorite.on {
+    background-position: -19px -55px;
+}
+div.goods div.items.services div.item div.row div.icon-basket:hover,div.goods div.items.services div.item div.row div.icon-basket.on {
+    background-position: -17px -55px;
+}
+div.goods div.items.services div.item div.row div.basket,
+div.goods div.items.services div.item div.row div.favorite {
+    border: medium none;
+    height: 44px;
+    width: 62px;
+    background:url("/templates/images/grey.png") repeat-y left;
+}
+div.goods div.items.services div.item div.stickers {
+    bottom: 40px;
+    left: 0px;
+    top: auto;
+    width: 100px;
+}
+div.goods div.items.services div.item div.stickers div.discount_flag {
+    background: url("/templates/images/stickers/discount_flag.png") no-repeat;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px 0px;
+    text-align: center;
+    width: 95px;
+    height: 21px;
+}
+div.goods div.items.services div.item div.stickers div.promo_flag {
+    background: url("/templates/images/stickers/promo_flag.png") no-repeat;
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px 0px;
+    text-align: center;
+    width: 167px;
+    height: 21px;
+}
+
+/* Сортировка товаров */
+div.goods div.orders {
+    font-size: 11px;
+    position: absolute;
+    top: -30px;
+    right: 0px;
+}
+div.goods div.orders span {
+    color: #a0a0a0;
+    color: #a0a0a0;
+    margin: 0px 5px 0px 0px;
+}
+div.goods div.orders a {
+    margin: 0px 5px 0px 5px;
+}
+div.goods div.orders a.open {
+    color: #000000;
+    border-bottom: #666666 1px solid;
+}
+
+/*Тэги и фильтр товара*/
+div.goods.catalog div.tags {
+    margin: 0px 0px 30px 0px;
+}
+div.goods.catalog div.tags div.row {
+    position: relative;
+}
+div.goods.catalog div.tags div.cell{
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+}
+div.goods.catalog div.tags div.item,div.goods.catalog div.tags div.filter-count {
+    padding: 8px 20px 8px 20px;
+    border: 2px solid #4C2947;
+    min-width: 60px;
+    margin: 0px 5px 10px 0px;
+    cursor: pointer;
+}
+div.goods.catalog div.tags div.item.big {
+    padding: 8px 45px 8px 20px;
+    border: 2px solid #4C2947;
+    min-width: 60px;
+    margin: 0px 5px 10px 0px;
+    cursor: pointer;
+}
+div.goods.catalog div.tags div.filter-count {
+    background: #fdb813;
+    border: 2px solid #eba612;
+    width: 70px;
+    position: relative;
+}
+div.goods.catalog div.tags div.filter-count div.name {
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: bold;
+}
+div.goods.catalog div.tags div.item.open,
+div.goods.catalog div.tags div.item:hover{
+    background: #4c2947;
+}
+div.goods.catalog div.tags div.item.open div.name,
+div.goods.catalog div.tags div.item:hover div.name{
+    color: #ffffff;
+}
+div.goods.catalog div.tags div.item div.name {
+    color: #4C2947;
+    font-family: Arial;
+    font-weight: bold;
+    text-align: center;
+}
+div.goods.catalog div.tags div.item.tag div.close {
+    width: 35px;
+    height: 33px;
+    position: absolute;
+    top: 0px;
+    right: 7px;
+    background: url("/templates/images/close_tag.png") no-repeat scroll center center;
+    background-color: #4C2947;
+    border-left: 1px solid #5F3859;
+    cursor: pointer;
+}
+div.goods.catalog div.tags div.row div.filter{
+    background: #ffffff;
+    border: 1px solid #CCCCCC;
+    border-radius: 3px;
+    box-shadow: 0px 0px 10px -3px #888888;
+    -moz-box-shadow: 0px 0px 10px -3px #888888;
+    -webkit-box-shadow: 0px 0px 10px -3px #888888;
+    padding: 10px;
+    position: absolute;
+    top: 40px;
+    display: none;
+    min-width: 225px;
+    z-index: 20;
+}
+div.goods.catalog div.tags div.row div.filter.slider {
+    min-width: 200px;
+}
+div.goods.catalog div.tags div.row div.icon-top, div.icon-top {
+    background: url("/templates/images/top.png") no-repeat;
+    height: 15px;
+    left: 20px;
+    position: absolute;
+    top: -9px;
+    width: 30px;
+}
+div.box-steer-goods div.icon-top {
+    background: url("/templates/images/top.png") no-repeat;
+    transform: rotateZ(269deg);
+    height: 25px;
+    left: -11px;
+    position: absolute;
+    top: 10px;
+    width: 30px;
+}
+div.goods.catalog div.tags div.row div.filter div.block{
+    max-height: 408px;
+    min-height: 208px;
+    overflow: auto;
+}
+div.goods.catalog div.tags div.row div.filter div.cell{
+    float: left;
+    max-width: 235px;
+    min-width: 100px;
+    margin: 0px 0px 0px;
+}
+/* Ползунок*/
+div.goods.catalog div.tags div.row div.filter.slider input {
+    padding: 5px 3px;
+    width: 90px;
+}
+div.goods.catalog div.tags div.row div.filter.slider div.block {
+    min-height: 120px;
+}
+div.goods.catalog div.tags div.row div.filter.slider div.block div.cell {
+    margin: 0px 0px 12px;
+}
+/* Ширина слайдера */
+div.slider-tags {
+    margin: 0px 5px;
+    width: 178px;
+}
+.ui-slider {
+    position: relative;
+}
+/* Ползунок */
+.ui-slider .ui-slider-handle {
+    position: absolute;
+    z-index: 2;
+    width: 21px;
+    height: 21px;
+    background: url(/templates/images/bag.png) no-repeat;
+    cursor: pointer
+}
+a.ui-slider-handle {
+    border: none;
+}
+.ui-slider .ui-slider-range {
+    position: absolute;
+    z-index: 1;
+    font-size: .7em;
+    display: block;
+    border: 0;
+    overflow: hidden;
+}
+.ui-slider-horizontal {
+    height: 3px;
+}
+.ui-slider-horizontal .ui-slider-handle {
+    top: -9px;
+    margin-left: -6px;
+}
+.ui-slider-horizontal .ui-slider-range {
+    top: 0;
+    height: 100%;
+}
+.ui-slider-horizontal .ui-slider-range-min {
+    left: 0;
+}
+.ui-slider-horizontal .ui-slider-range-max {
+    right: 0;
+}
+.ui-widget-content {
+    border: 1px solid #D4D4D4;
+    background: #fff;
+}
+.ui-widget-header {
+    border: 1px solid #D4D4D4;
+    background: #583E54;
+}
+div.goods.catalog div.tags div.row div.filter div.name{
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0px 0px 10px;
+}
+div.goods.catalog div.tags div.row div.filter div.i{
+    margin: 0px 0px 5px;
+}
+div.goods.catalog div.tags div.row div.filter div.i label{
+    margin: 0px 8px;
+    color:#5e5e5e;
+}
+div.button_box {
+    background: #cccccc;
+    bottom: 0px;
+    cursor: pointer;
+    left: 0px;
+    padding: 10px 0px;
+    position: absolute;
+    right: 0px;
+    display: none;
+}
+div.button_box:hover {
+    background: #bcbcbc;
+}
+div.button_box div {
+    text-align: center;
+    color: #000;
+}
+/* Карточка товара */
+div.good {
+    padding: 0px 0px 40px 0px;
+}
+div.position_good {
+    bottom: 25px;
+    float: right;
+    position: relative;
+}
+div.position_good div.count {
+    font-style: italic;
+    font-size: 14px;
+    font-weight: bold;
+}
+/*Перелист твоар*/
+div.good div.list-good {
+    left: 0px;
+    position: fixed;
+    right: 0px;
+    z-index: 80;
+}
+div.good div.list-good div.prev {
+    width: 45px;
+    height: 40px;
+    background: url('/templates/images/icon_arrow.png') no-repeat scroll -180px 0;
+    position: absolute;
+    top: 45px;
+    right: 50px;
+    z-index: 10;
+    /* background-color: #0000FF;*/
+}
+div.good div.list-good div.prev:hover {
+    background-position: -121px 0;
+}
+div.good div.list-good div.next {
+    width: 45px;
+    height: 40px;
+    background: url('/templates/images/icon_arrow.png') no-repeat scroll 4px 0;
+    position: absolute;
+    top: 45px;
+    left: 50px;
+    z-index: 150;
+    /* background-color: #0000FF;*/
+}
+div.good div.list-good div.next:hover {
+    background-position: -55px 0;
+}
+div.good  div.image-block {
+    float: left;
+    padding: 5px 10px;
+    width: 475px;
+}
+div.good div.image-block div.image {
+    border: 1px solid #D7D7D7;
+    max-height: 512px;
+    padding: 60px 0px 60px;
+    position: relative;
+    text-align: center;
+    width: 472px;
+    background: #ffffff;
+    box-shadow: 0 6px 10px -10px #b1b1b1;
+}
+div.good div.image-block div.image img {
+    /*width: 320px;*/
+    width: 100%;
+}
+
+/*Набор стикеры*/
+div.good div.image-block div.image div.discount {
+    left: 21px;
+    position: absolute;
+    top: -4px;
+    width: 200px;
+    z-index: 90;
+}
+div.good div.image-block div.image div.discount div.stock_icon,
+div.good div.image-block div.image  div.discount div.new_icon,
+div.good div.image-block div.image  div.discount div.hit_icon {
+    height: 54px;
+    width: 45px;
+    float: left;
+    margin: 0px 10px 0px 0px;
+}
+div.good div.image-block div.image div.discount div.stock_icon {
+    background: url("/templates/images/stickers/discount.png") no-repeat;
+}
+div.good div.image-block div.image  div.discount div.new_icon {
+    background: url("/templates/images/stickers/news.png") no-repeat;
+}
+div.good div.image-block div.image  div.discount div.hit_icon {
+    background: url("/templates/images/stickers/hit.png") no-repeat;
+}
+/*Сравнить и мои желание*/
+div.good div.image-block div.image div.compare {
+    background: url("/templates/images/fav.png") no-repeat;
+    cursor: pointer;
+    height: 44px;
+    position: absolute;
+    top: 14px;
+    width: 43px;
+    right: 75px;
+    z-index: 85;
+}
+div.good div.image-block div.image div.compare:hover, div.good div.image-block div.image div.compare.on {
+    background-position: 0px -53px;
+}
+div.good div.image-block div.image div.favorite {
+    background: url("/templates/images/fav.png") no-repeat scroll -57px 0;
+    cursor: pointer;
+    height: 44px;
+    position: absolute;
+    right: 18px;
+    top: 15px;
+    width: 43px;
+    z-index: 85;
+}
+div.good div.image-block div.image div.favorite:hover, div.good div.image-block div.image div.favorite.on {
+    background-position: -57px -53px;
+}
+/*Карусель*/
+div.good div.image-block div.images {
+    margin: 11px 0px 0px 75px;
+}
+div.good div.image-block div.images.left {
+    margin: 11px 0px 0px 0px;
+}
+div.good div.image-block div.images.center {
+    margin: 11px 0px 0px 160px;
+}
+div.good div.image-block div.images div.item {
+    border: 1px solid #d7d7d7;
+    float: left;
+    margin: 0px 13px 10px 0px;
+    max-height: 98px;
+    min-height: 50px;
+    overflow: hidden;
+    width: 70px;
+    background: #ffffff;
+}
+div.good div.image-block div.images div.item.open,
+div.good div.image-block div.images div.item:hover {
+    outline: 2px solid #d7d7d7;
+}
+div.good div.image-block div.images div.item img {
+    cursor: pointer;
+    width: 100%;
+}
+div.good div.image-block div.image div.manager{
+    width: 100%;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+}
+
+div.good div.image-block div.image div.manager div.items{
+    padding: 6px 6px 6px 6px;
+    background: #e9eef2;
+}
+
+div.good div.image-block div.image div.manager div.items div.edit{
+    background-image: url('/templates/images/manager/edit.png');
+    width: 32px;
+    height: 24px;
+    /* float: left; */
+    background-position: 0px 0px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    opacity: 0.75;
+    position: relative;
+    left: 215px;
+}
+
+div.good div.details {
+    float: left;
+    padding: 0px 0px 0px 20px;
+    width: 685px;
+}
+div.good div.details div.no {
+    color: #ed1c24;
+    font-size: 16px;
+    font-weight: bold;
+}
+div.good div.details div.title h1 {
+    padding: 0px 0px 5px !important;
+}
+div.good div.details span.name {
+    color:#939393;
+}
+div.good div.details div.goods-all {
+    margin: 25px 0px 25px 0px;
+}
+div.good div.details div.goods-all div.item-space {
+    background: #c2c2c2;
+    float: left;
+    height: 22px;
+    margin: 0 18px;
+    width: 1px;
+}
+div.good div.details div.goods-all div.all{
+    font-weight: bold;
+    float: left;
+}
+div.good div.details div.price {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 44px 10px 0px 0px;
+
+}
+div.good div.details div.price.price_old {
+    color: #73737c;
+    float: left;
+    font-size: 23px;
+    font-weight: normal;
+}
+div.good div.details div.price.discount {
+    color: #ed1c24;
+    font-size: 30px;
+    margin: 41px 0 10px;
+}
+div.good div.details div.options.off {
+    height: 45px;
+}
+div.good div.details div.options div.caption {
+    padding: 0px 0px 7px 0px;
+    color: #939393;
+}
+div.good div.details div.options div.items {
+    float: left;
+    padding: 0px 0px 0px 0px;
+}
+div.good div.details div.options a.item {
+    background: #fff none repeat scroll 0 0;
+    border: 0 none;
+    box-shadow: 0px 0px 3px 0px #a7a7a7;
+    color: #929292;
+    display: block;
+    float: left;
+    font-size: 15px;
+    margin: 0px 10px 10px 0px;
+    padding: 9px 30px;
+    white-space: nowrap;
+}
+
+div.good div.details div.options div.goodVariant {
+    background: #fff none repeat scroll 0 0;
+    border: 0 none;
+    box-shadow: 0px 0px 3px 0px #a7a7a7;
+    color: #929292;
+    display: block;
+    float: left;
+    font-size: 15px;
+    margin: 0px 10px 10px 0px;
+    padding: 9px 30px;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+div.good div.details div.options a.table-size {
+    position: relative;
+    top: 5px;
+}
+div.good div.details div.options a.item:hover {
+    color: #ffffff;
+    background: #4C2947;
+}
+div.good div.details div.options div.disabledPick{
+    cursor: default !important;
+    background: #e8e8e8;
+}
+div.good div.details div.options div.disabledPick:hover{
+    background: #e8e8e8 !important;
+    color: #929292 !important;
+}
+div.good div.details div.options div.goodVariant:hover {
+    color: #ffffff;
+    background: #4C2947;
+}
+div.good div.details div.options div.open {
+    color: #ffffff;
+    background: #5f3c5a;
+}
+div.good div.details div.options .color {
+    padding: 0px !important;
+    margin: 0px 5px 0px 0px !important;
+    box-shadow: 0px 0px 0px 0px !important;
+}
+div.good div.details div.options .color div {
+    width: 15px;
+    height: 15px;
+    border: 1px solid #bcbcbc;
+}
+div.good div.details div.options .color.open div,div.good div.details div.options .color:hover {
+    outline: 1px solid #b7b7b7;
+}
+
+div.good div.details a.button_orange {
+    background: #fdb813;
+    border: medium none;
+    cursor: pointer;
+    display: block;
+    height: 53px;
+    width: 219px;
+}
+div.good div.details a.button_orange div {
+    background: url("/templates/images/basket_button.png") no-repeat scroll 38px 14px;
+    color: #ffffff;
+    font-size: 16px;
+    padding: 19px 0px 5px;
+    text-align: center;
+
+}
+div.good div.details a.button_orange:hover {
+    background: #FFC41F;
+}
+div.good div.details div.button {
+    width: 84px;
+    height: 36px;
+    background: #64415f;
+    border-radius: 4px;
+    cursor: pointer;
+}
+div.good div.details div.button div {
+    font-size: 16px;
+    color: #ffffff;
+    padding: 9px 0px 0px 0px;
+    text-align: center;
+    position: relative;
+}
+div.good div.details div.button:hover {
+    background: #7b5876;
+}
+
+div.good div.details div.times {
+    width: 84px;
+    background: #00a05c;
+    border-radius: 4px;
+    box-shadow: 0px 1px 1px 0px #cccccc;
+    position: absolute;
+    left: 0px;
+    z-index: 10;
+    display: none;
+}
+div.good div.details div.times div.i {
+    font-size: 11px;
+    color: #ffffff;
+    border-radius: 4px;
+    padding: 3px 0px 3px 0px;
+    text-align: center;
+    cursor: pointer;
+}
+div.good div.details div.times div.i:hover {
+    background: #017845;
+}
+div.good div.details div.count-min {
+    color: #939393;
+    margin:5px 0px 5px 0px;
+}
+div.good div.details div.name {
+    margin: 34px 0px 0px;
+    color: #939393;
+}
+div.good div.details div.count {
+    color: #7b7b7b;
+    height: 30px;
+    margin: 8px 0px 31px;
+    position: relative;
+    width: 196px;
+}
+div.good div.details div.count span.num {
+    padding: 5px 0 8px 10px;
+    width: 116px;
+    float: left;
+    border: 1px solid #b2b2b2;
+    border-right: none;
+    background: #ffffff;
+}
+div.good div.details div.count div.plus {
+    background: url("/templates/images/icon_count.png") no-repeat scroll -35px 0;
+    cursor: pointer;
+    float: left;
+    height: 31px;
+    width: 34px;
+}
+div.good div.details div.count div.minus {
+    background: url("/templates/images/icon_count.png") no-repeat;
+    border-right: 1px solid #70466a;
+    cursor: pointer;
+    float: left;
+    height: 31px;
+    width: 34px
+}
+div.good div.details div.count div.minus:hover {
+    background-position: 0px -31px;
+}
+div.good div.details div.count div.plus:hover {
+    background-position: -35px -31px;
+}
+div.good div.details div.options {
+    margin: 20px 0px 25px;
+}
+
+div.good div.details div.statistics {
+    margin: 30px 0px 30px 0px;
+}
+div.good div.details div.statistics div.item {
+    color: #939393;
+    padding: 5px 0px 0px 0px;
+}
+div.good div.details div.statistics div.item div {
+    width: 145px;
+    float: left;
+    color: #cccccc;
+}
+div.good div.details div.share {
+    margin: 0px;
+}
+div.good div.details div.share a{
+    border: none;
+    text-decoration: none !important;
+}
+/*Инфо в карточка товара*/
+div.good div.details div.info {
+    border-top: 1px solid #D7D7D7;
+    margin: 30px 0px 0px 7px;
+    padding: 28px 0px 28px 0px;
+    width: 695px;
+    height: 57px;
+    border-bottom: 1px solid #D7D7D7;
+}
+div.good div.details div.info div.item {
+    float: left;
+    padding: 0px 0px 12px 0px;
+    width: 205px;
+    position: relative;
+}
+div.good div.details div.info div.item.return {
+    width: 185px;
+}
+div.good div.details div.info div.item div.title {
+    color: #73366a;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 4px 8px 2px 32px;
+}
+div.good div.details div.info div.icon-delivery,
+div.good div.details div.info div.icon-g,
+div.good div.details div.info div.icon-return {
+    background: url("/templates/images/info.png") no-repeat;
+    height: 30px;
+    left: 0;
+    position: absolute;
+    width: 24px;
+}
+div.good div.details div.info div.icon-g {
+    background-position: -28px 0px;
+}
+div.good div.details div.info div.icon-return {
+    background-position: -57px 0px;
+}
+div.good div.details div.info div.description {
+    width: auto;
+    float: none;
+    font-size: 14px;
+    outline: medium none;
+    padding: 0px 8px 4px 32px;
+    margin: 5px 0px 0px 0px;
+}
+div.good div.description div.item table.more {
+    margin: 30px 0px 0px 0px;
+}
+div.good div.description div.item table.more td {
+    padding: 0px 40px 15px 0px;
+}
+
+/*
+div.good div.details div.rating {
+    width: 82px;
+    height: 16px;
+    background: url('/templates/images/good_rating.png') 0px 0px no-repeat;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+div.good div.details div.rating.rating-1 {
+    background-position: 0px -16px;
+}
+div.good div.details div.rating.rating-2 {
+    background-position: 0px -32px;
+}
+div.good div.details div.rating.rating-3 {
+    background-position: 0px -48px;
+}
+div.good div.details div.rating.rating-4 {
+    background-position: 0px -64px;
+}
+div.good div.details div.rating.rating-5 {
+    background-position: 0px -80px;
+}
+*/
+
+div.good div.description{
+    float: left;
+    margin: 20px 0px 0px;
+    padding: 0px 0px 0px 30px;
+    width: 675px;
+}
+#good div.description div.title h2 {
+    font-size: 23px;
+}
+div.good div.comments {
+    float: left;
+    margin: 45px 0px 0px;
+    padding: 0px 0px 0px 10px;
+    position: relative;
+    width: 482px;
+}
+div.good div.comments legend {
+    font-size: 23px;
+    text-transform: uppercase;
+}
+div.good div.comments fieldset {
+    border: 1px solid #DEDEDE;
+}
+div.good div.comments div.items {
+    max-height: 380px;
+    overflow: auto;
+}
+div.good div.comments div.item {
+    padding: 15px 0px 22px 10px;
+    border-bottom: 1px solid #d7d7d7;
+}
+div.good div.comments div.item div.name {
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0px 0px 18px;
+}
+div.good div.comments div.item span.date {
+    color: #7b7b7b;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0px 0px 0px 10px;
+}
+div.good div.comments div.item div.text {
+
+}
+div.good div.comments div.item div.rating {
+    color: #343434;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 10px 0px;
+}
+div.good div.comments div.item div.rating span{
+    font-weight: normal;
+}
+div.good div.comments div.button_pun {
+    background: #4c2947;
+    margin: 20px auto;
+    width: 240px;
+    cursor: pointer;
+}
+div.good div.comments div.button_pun:hover {
+    background: #371432;
+}
+div.good div.comments div.button_pun div{
+    color: #fff;
+    padding: 10px 0px;
+    text-align: center;
+}
+
+/* Магазины */
+div.shops div.item {
+    width: 285px;
+    height: 170px;
+    float: left;
+}
+div.shops div.item div.data {
+    height: 150px;
+    background: #ffffff;
+    border: #cccccc 1px solid;
+    overflow: hidden;
+}
+div.shops div.item div.data:hover {
+    background: #a27f9d;
+    border: #999999 1px solid;
+}
+div.shops div.item div.data div.logo {
+    width: 100%;
+    vertical-align: middle;
+    display: -moz-inline-box;
+    display: inline-block;
+    text-align: center;
+}
+div.shops div.item div.data div.logo img {
+    max-width: 240px;
+    max-height: 105px;
+}
+div.shops div.item div.data div.logo div {
+    font-size: 18px;
+    line-height: 24px;
+    padding: 0px 20px 0px 20px;
+    text-align: center;
+}
+div.shops div.item div.data div.helper {
+    height: 100%;
+    vertical-align: middle;
+    display: -moz-inline-box;
+    display: inline-block;
+}
+div.shops div.item div.data a {
+    border: 0px;
+}
+div.shops div.item-space {
+    width: 20px;
+    height: 170px;
+    float: left;
+}
+
+/* Магазин */
+div.shop div.image {
+    width: 280px;
+    float: right;
+    position: relative;
+    top: -10px;
+}
+div.shop div.image img {
+    max-width: 280px;
+    max-height: 120px;
+}
+div.shop div.description {
+    margin: 0px 380px 0px 0px;
+}
+
+/* Корзина (список товаров) */
+div.basket-goods {
+    width: 900px;
+    float: left;
+    padding: 0px 0px 60px 0px;
+    position: relative;
+}
+div.basket-goods table {
+    width: 100%;
+    border-bottom: #d5dfe6 1px solid;
+    padding: 0px 0px 0px 0px;
+}
+div.basket-goods table tr.top td {
+    border-top: #d5dfe6 1px solid;
+}
+div.basket-goods table th {
+    color: #ffffff;
+    background: #8d6a88;
+    padding: 7px 0px 7px 0px;
+    text-align: center;
+}
+div.basket-goods table td {
+    padding: 14px 0px 16px 0px;
+}
+div.basket-goods table td span.discount {
+    width: 100%;
+    color: #cc3333;
+    text-align: center;
+    position: absolute;
+    top: 25px;
+    left: 0px;
+}
+div.basket-goods table td.discount {
+    padding: 0px;
+    text-align: center;
+    vertical-align: middle;
+}
+div.basket-goods table td.discount img {
+    width: 30px;
+    height: 30px;
+    opacity: 0.75;
+}
+div.basket-goods table .image {
+    width: 100px;
+    text-align: center;
+}
+div.basket-goods table .image img {
+    width: 80px;
+}
+div.basket-goods table td.type-name {
+    font-weight: bold;
+    background: #d5dfe6;
+    padding: 10px 0px 10px 10px;
+}
+div.basket-goods table td.shop-image {
+    text-align: center;
+}
+div.basket-goods table td.shop-image img {
+    width: 80px;
+}
+div.basket-goods table td.shop-name {
+    padding: 10px 0px 0px 0px;
+}
+div.basket-goods table td.shop-name a {
+    font-weight: bold;
+}
+div.basket-goods table td.name div.group {
+    font-size: 12px;
+    padding: 2px 0px 1px 0px;
+}
+div.basket-goods table td.name div.name {
+    font-size: 18px;
+    line-height: 24px;
+}
+div.basket-goods table td.name div.tags {
+    font-size: 12px;
+    line-height: 14px;
+    color: #909090;
+    padding: 4px 0px 0px 0px;
+    position: relative;
+}
+div.basket-goods table td.name div.tags span.select {
+    cursor: pointer;
+}
+div.basket-goods table td.name div.tags span.select.error {
+    color: #cc3333;
+    border-bottom: #cc3333 1px dotted;
+}
+div.basket-goods table td.name div.tags div.items {
+    background: #8d6a88;
+    border-radius: 4px;
+    box-shadow: 0px 1px 1px 0px #cccccc;
+    padding: 5px 0px 5px 0px;
+    position: absolute;
+    top: 22px;
+    left: -10px;
+    z-index: 10;
+    display: none;
+}
+div.basket-goods table td.name div.tags div.items div.item {
+    padding: 5px 6px 5px 10px;
+}
+div.basket-goods table td.name div.tags div.items div.item span.name {
+    color: #cccccc;
+    margin: 0px 6px 0px 0px;
+}
+div.basket-goods table td.name div.tags div.items div.item span.i {
+    color: #ffffff;
+    border-radius: 4px;
+    padding: 2px 6px 3px 6px;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap;
+}
+div.basket-goods table td.name div.tags div.items div.item span.i:hover {
+    background: #6c4967;
+}
+div.basket-goods table td.name div.tags div.items div.item span.i.open {
+    background: #6c4967;
+}
+div.basket-goods table td.name div.tags div.items div.item span.i.disabled {
+    color: #999999;
+    background: none;
+    cursor: default;
+}
+div.basket-goods table td.shop {
+    min-height: 40px;
+    vertical-align: middle;
+}
+div.basket-goods table td.shop div.min_order {
+    padding: 5px 0px 0px 0px;
+}
+div.basket-goods table .count {
+    width: 130px;
+}
+div.basket-goods table .count div.count {
+    width: 80px;
+    color: #7b7b7b;
+    padding: 0px 0px 0px 0px;
+    margin: 0px auto;
+    text-align: center;
+    position: relative;
+}
+div.basket-goods table .count div.count span {
+    padding: 0px 0px 0px 0px;
+}
+div.basket-goods table .count div.count div.plus {
+    width: 17px;
+    height: 17px;
+    background: url('/templates/images/count_plus.png') 0px 0px no-repeat;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    cursor: pointer;
+}
+div.basket-goods table .count div.count div.minus {
+    width: 17px;
+    height: 17px;
+    background: url('/templates/images/count_minus.png') 0px 0px no-repeat;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    cursor: pointer;
+}
+div.basket-goods table .count div.count div.plus:hover, div.basket-goods table .count div.count div.minus:hover {
+    background-position: 0px -17px;
+}
+div.basket-goods table .price, div.basket-goods table .money {
+    width: 120px;
+}
+div.basket-goods table td.price div, div.basket-goods table td.money div {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+}
+div.basket-goods table td.no-variation div {
+    display: none;
+}
+div.basket-goods div.time {
+    padding: 0px 38px 0px 0px;
+    text-align: right;
+    position: relative;
+}
+div.basket-goods div.time span {
+    color: #606060;
+    margin: 0px 8px 0px 0px;
+    position: relative;
+}
+div.basket-goods div.time div.times {
+    width: 180px;
+    background: #8d6a88;
+    border-radius: 4px;
+    box-shadow: 0px 1px 1px 0px #cccccc;
+    position: absolute;
+    top: 20px;
+    right: 22px;
+    z-index: 10;
+    display: none;
+}
+div.basket-goods div.time div.times div.i {
+    color: #ffffff;
+    border-radius: 4px;
+    padding: 5px 0px 5px 0px;
+    text-align: center;
+    cursor: pointer;
+}
+div.basket-goods div.times div.i:hover, div.basket-goods div.times div.i.set {
+    background: #6c4967;
+}
+div.basket-goods table .delete {
+    width: 60px;
+}
+div.basket-goods table .delete div {
+    width: 15px;
+    height: 15px;
+    background: url('/templates/images/basket_delete.png') 0px 0px no-repeat;
+    margin: 0px auto;
+    cursor: pointer;
+}
+div.basket-goods table .delete div {
+    width: 15px;
+    height: 15px;
+    background: url('/templates/images/basket_delete.png') 0px 0px no-repeat;
+    margin: 0px auto;
+    cursor: pointer;
+}
+div.my_favorites table .delete div {
+    width: 15px;
+    height: 15px;
+    background: url('/templates/images/basket_delete.png') 0px 0px no-repeat;
+    margin: 0px auto;
+    cursor: pointer;
+}
+div.my_favorites table .delete div:hover {
+    background-position: 0px -15px;
+}
+div.basket-goods table .change_status input[type='checkbox'] {
+    width: 15px;
+    height: 15px;
+    margin: 0px auto;
+    display: block;
+}
+div.basket-goods table .delete div:hover {
+    background-position: 0px -15px;
+}
+div.basket-goods div.deliveries-date-container {
+    position: relative;
+    margin: 0px 0px 0px 625px;
+}
+div.basket-goods div.deliveries-date-container div.load {
+    height: 30px;
+    background: url('/templates/images/window_load.gif') 0% 50% no-repeat;
+    position: absolute;
+    top: 64px;
+    left: -5px;
+    display: none;
+}
+div.basket-goods div.deliveries-date-container div.load div {
+    padding: 7px 0px 0px 32px;
+}
+div.basket-goods div.deliveries-date-container div.load.open {
+    display: block;
+}
+div.basket-goods div.deliveries-date-container div.deliveries-date {
+    padding: 10px 0px 0px 0px;
+    position: relative;
+}
+div.basket-goods div.deliveries-date div.error {
+    color: #cc3333;
+}
+div.basket-goods div.deliveries-date div.load {
+    height: 30px;
+    background: url('/templates/images/window_load.gif') 0% 50% no-repeat;
+    display: none;
+}
+div.basket-goods div.deliveries-date div.load div {
+    padding: 7px 0px 0px 32px;
+}
+div.basket-goods div.deliveries-date div.load.open {
+    display: block;
+}
+div.basket-goods div.deliveries {
+    padding: 10px 0px 0px 0px;
+    float: left;
+    margin: 0px 0px 0px 100px;
+}
+div.basket-goods div.deliveries div.item {
+    padding: 5px 0px 4px 0px;
+}
+div.basket-goods div.deliveries div.item div.subitems {
+    padding: 8px 0px 4px 21px;
+    display: none;
+}
+div.basket-goods div.deliveries div.item div.subitems.open {
+    display: block;
+}
+div.basket-goods div.deliveries div.item div.subitems input {
+    padding: 2px 2px 2px 2px;
+}
+div.basket-goods div.deliveries div.item div.subitems select {
+    padding: 2px 2px 2px 0px;
+}
+div.basket-goods div.details {
+    padding: 24px 0px 0px 0px;
+    position: relative;
+}
+div.basket-goods div.details div.sum {
+    padding: 0px 0px 0px 0px;
+}
+div.basket-goods div.details div.sum div.i {
+    font-family: verdana;
+    font-size: 19px;
+    font-weight: bold;
+    padding: 6px 0px 6px 0px;
+    text-align: right;
+    position: relative;
+}
+div.basket-goods div.details div.sum div.i span.info {
+    width: 300px;
+    color: #cc3333;
+    text-align: left;
+    position: absolute;
+    right: -315px;
+}
+div.basket-goods div.details div.load {
+    width: 36px;
+    height: 36px;
+    background: url('/templates/images/window_load.gif') 50% 50% no-repeat;
+    position: absolute;
+    right: 156px;
+    bottom: -60px;
+    display: none;
+}
+div.basket-goods div.details div.error {
+    font-size: 16px;
+    color: #cc3333;
+    position: absolute;
+    right: 166px;
+    bottom: -49px;
+}
+div.basket-goods div.details div.promo {
+    width: 320px;
+    height: 80px;
+    position: absolute;
+    top: 30px;
+    left: 0px;
+}
+div.basket-goods div.details div.promo input {
+    width: 110px;
+    padding: 6px 3px 6px 3px;
+    text-align: center;
+    text-transform: uppercase;
+}
+div.basket-goods div.details div.promo div.caption {
+    font-family: verdana;
+    font-size: 19px;
+    font-weight: bold;
+    padding: 0px 0px 15px 0px;
+}
+div.basket-goods div.details div.promo div.discount {
+    background: url('/templates/images/discount.png') 0px 0px no-repeat;
+    padding: 6px 0px 6px 30px;
+    white-space: nowrap;
+    position: absolute;
+    top: 32px;
+    left: 130px;
+}
+div.basket-goods div.details div.promo div.discount.ok {
+    background-position: 0px -28px;
+}
+div.basket-goods div.details div.promo div.discount.error {
+    color: #cc3333;
+    background-position: 0px -56px;
+}
+div.basket-goods div.button {
+    width: 142px;
+    height: 36px;
+    background: #64415f;
+    border-radius: 4px;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    cursor: pointer;
+}
+div.basket-goods div.button div {
+    font-size: 16px;
+    color: #ffffff;
+    padding: 9px 0px 0px 0px;
+    text-align: center;
+}
+div.basket-goods div.button:hover {
+    background: #7b5876;
+}
+div.basket-goods div.text {
+    padding: 20px 0px 0px 0px;
+    text-align: right;
+}
+div.basket-goods div.text_min {
+    padding: 0px !important;
+    text-align: left;
+}
+div.basket-goods div.form-delivery {
+    padding: 0px !important;
+}
+div.basket-goods div.form-delivery select {
+    margin-bottom: 8px;
+}
+div.basket-goods div.form-delivery a {
+    font-weight: bold;
+}
+/* Способы доставки */
+div.my-deliveries {
+    padding: 24px 0px 16px 0px;
+    position: relative;
+}
+div.my-deliveries div.item {
+    padding: 5px 0px 5px 0px;
+}
+div.my-deliveries div.item.add {
+    padding-left: 21px;
+}
+/* Способы оплаты */
+div.my-payments {
+    padding: 24px 0px 16px 0px;
+    position: relative;
+}
+div.my-payments div.item {
+    padding: 10px 0px 10px 0px;
+}
+div.my-payments div.item div {
+    font-size: 11px;
+    color: #afafaf;
+    padding: 3px 0px 0px 21px;
+}
+div.my-payments div.item div p {
+    padding: 0px 0px 3px 0px;
+}
+#main div.container.my {
+    min-height: 380px;
+}
+/* Меню (ЛК) */
+div.my-menu {
+    background: #f8f9f9;
+    border-top: #caadc6 1px solid;
+    border-left: #caadc6 1px solid;
+    border-right: #caadc6 1px solid;
+    padding: 0px 0px 0px 0px;
+}
+div.my-menu a.item {
+    width: 160px;
+    float: left;
+    border: 0px;
+    display: block;
+}
+div.my-menu a.item div {
+    font-size: 14px;
+    color: #73366a;
+    border-right: #73366a 1px solid;
+    padding: 14px 0px 14px 0px;
+    text-align: center;
+}
+div.my-menu div.item {
+    width: 160px;
+    float: left;
+    background: #73366a;
+}
+div.my-menu div.item div {
+    font-size: 14px;
+    color: #ffffff;
+    border-right: #caadc6 1px solid;
+    padding: 14px 0px 14px 0px;
+    text-align: center;
+}
+div.my-menu div.line {
+    height: 6px;
+    background: #73366a;
+}
+
+/* Список (ЛК) */
+div.my-list {
+    border-left: #caadc6 1px solid;
+    border-right: #caadc6 1px solid;
+    border-bottom: #caadc6 1px solid;
+    padding: 0px 0px 0px 0px;
+    position: relative;
+}
+div.my-list table {
+    width: 100%;
+}
+div.my-list table tr.grey {
+    background: #f0f0f0;
+}
+div.my-list table th {
+    background: #8d6a88;
+    color: #fff;
+    padding: 10px 5px;
+    text-align: center;
+}
+div.my-list table td {
+    padding: 10px 10px 10px 10px;
+}
+div.my-list table td.min {
+    width: 100px;
+    padding: 10px 0px 10px 0px;
+    text-align: center;
+}
+div.my-list table td.date {
+    width: 100px;
+    padding: 10px 5px 10px 5px;
+    text-align: center;
+}
+div.my-list table td.datetime {
+    width: 145px;
+    padding: 10px 0px 10px 0px;
+    text-align: center;
+}
+div.my-list table td.code {
+    width: 100px;
+    padding: 10px 0px 10px 0px;
+    text-align: center;
+}
+div.my-list table td.money {
+    width: 100px;
+    padding: 10px 0px 10px 0px;
+    text-align: center;
+}
+div.my-list table td.count {
+    width: 75px;
+    padding: 10px 0px 10px 0px;
+    text-align: center;
+}
+div.my-list table td.delivery {
+    width: 125px;
+}
+div.my-list table td.delivery span.return {
+    color: #73366A;
+}
+div.my-list table td.delivery span.time {
+    color: #cf0101;
+}
+div.my-list table td span.bonus {
+    color: #73366A;
+}
+div.my-list table td a {
+    border: 0px;
+}
+div.my-list a.button {
+    width: 142px;
+    height: 36px;
+    /*  background: url('/templates/images/button.png') 0px 0px repeat-x;*/
+    border: 0px;
+    border-radius: 5px;
+    padding: 0px 0px 0px 0px;
+    position: absolute;
+    top: -100px;
+    right: 0px;
+}
+div.my-list a.button.min {
+    width: 84px;
+}
+div.my-list a.button div {
+    font-size: 14px;
+    color: #ffffff;
+    padding: 10px 0px 0px 0px;
+    text-align: center;
+}
+div.my-list a.button:hover {
+    background-position: 0px -36px;
+}
+div.my-list td.basket {
+    position: relative;
+}
+div.my-list div.add_basket,.my-table div.add_basket {
+    background: rgba(0, 0, 0, 0) url("/templates/images/add_basket.png") no-repeat scroll 0 0 / 32px auto;
+    cursor: pointer;
+    height: 30px;
+    margin: 0 auto;
+    width: 34px;
+}
+div.my-list td.basket div.no_good,.my-table div.div.no_good {
+    background: rgba(0, 0, 0, 0) url("/templates/images/add_basket.png") no-repeat scroll 0 0 / 32px auto;
+    cursor: pointer;
+    height: 30px;
+    margin: 0 auto;
+    width: 34px;
+}
+div.my-list div.add_basket:hover,.my-table div.add_basket:hover {
+    background-position: 0 -32px;
+}
+div.my-list div.add_basket.no,.my-table div.add_basket.no {
+    background-position: 0 -64px;
+}
+div.my-list div.ok {
+    color: #73366a;
+    font-size: 12px;
+    font-weight: bold;
+}
+div.my-list div.no {
+    color: #ed1c24;
+    font-size: 12px;
+    font-weight: bold;
+}
+/* Форма (ЛК) */
+div.my-form {
+    border-left: #c5cdd3 1px solid;
+    border-right: #c5cdd3 1px solid;
+    border-bottom: #c5cdd3 1px solid;
+    padding: 0px 0px 0px 0px;
+    position: relative;
+}
+
+/* */
+div.form-pay {
+    padding: 30px 0px 30px 0px;
+}
+div.form-pay div.money {
+    padding: 0px 0px 10px 0px;
+    display: inline-block;
+    vertical-align: top;
+}
+div.form-pay input.money {
+    padding: 5px 5px 6px 5px;
+    margin: 0px 10px 0px 0px;
+}
+div.form-pay div.save_card {
+    margin: 10px 0px 0px 0px;
+}
+div.form-pay div.save_card label {
+    margin: 0px 0px 0px 5px;
+    position: relative;
+    top: -2px;
+    font-size: 12px;
+    font-weight: bold;
+}
+div.form-pay div.save_card div.type_card {
+    margin: 20px 0px 0px 0px;
+}
+div.form-pay div.save_card div.type_card input {
+    margin: 0px 0px 8px 0px;
+}
+div.form-pay div.save_card div.type_card a {
+    margin: 0px 0px 0px 20px;
+    vertical-align: super;
+}
+div.form-pay div.success {
+    /* */
+}
+div.form-pay div.fail {
+    color: #cc3333;
+}
+div.form-pay form.mt20 {
+    margin-top: 30px;
+}
+div.form-pay form.mt20 div.text_min {
+    margin: 5px 0px 0px 0px;
+}
+div.form-pay form.mt20 div.error,div.form-pay form.mt20 div.success {
+    margin-top: 5px;
+}
+div.form-pay form.money {
+    border-bottom: 1px solid #cbcbcb;
+    padding: 0px 0px 20px;
+}
+/*Баланс*/
+div.form-pay div.my-balance {
+    margin: 0px 0px 20px 0px;
+    padding: 5px 0px 5px 0px;
+    border-bottom: 1px solid #cbcbcb;
+}
+div.form-pay div.my-balance div.item {
+    margin: 0px 0px 10px 0px;
+}
+div.form-pay div.my-balance div.item span.name {
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0px 5px 0px 0px;
+}
+div.form-pay div.my-balance div.item div.money {
+    padding: 0px;
+}
+div.form-pay div.my-balance div.item div.text-micro {
+    padding: 3px 0px 3px 0px;
+}
+div.form-pay div.button {
+    display: inline-block;
+    vertical-align: top;
+}
+/*Промокод в (ЛК)*/
+div.my-promo {
+    padding: 30px 0px;
+}
+div.my-promo div.info {
+    margin: 15px 0;
+}
+div.my-promo div.info div.code,
+div.my-promo div.info div.balance {
+    font-size: 14px;
+    padding: 5px 0px;
+}
+div.my-promo div.info div.row {
+    margin: 5px 0px 5px 0px;
+}
+div.my-promo div.row div.title {
+    font-size: 14px;
+    margin: 0px 0px 10px;
+}
+div.my-promo div.info div.i {
+    display: inline;
+    font-size: 10px;
+    font-weight: bold;
+    padding: 0px 15px 0px 15px;
+    vertical-align: top;
+    position: relative;
+}
+div.my-promo div.info div.i div.scale {
+    border-left: 1px solid #b4b4b4;
+    position: absolute;
+    height: 55px;
+    right: -3px;
+    top: 0px;
+}
+div.my-promo div.info div.row div.progess {
+    background: #87ceeb none repeat scroll 0 0;
+    padding: 5px 0px;
+    margin: 5px 0px;
+}
+div.my-promo div.info div.row div.progess span {
+    font-weight: bold;
+    margin: 0px 0px 0px 5px;
+    font-size: 10px;
+}
+div.my-promo div.order-promo {
+    font-size: 14px;
+    margin: 15px 0px 0px;
+}
+div.my-promo div.order-promo span.money {
+    margin: 0px 10px 0px 0px;
+}
+div.my-promo div.calendar {
+    margin: 0px 0px 10px;
+    float: left;
+}
+div.my-promo div.button {
+    float: right;
+    position: relative;
+    top: -13px;
+    width: 126px;
+}
+div.my-promo div.report {
+    margin: 20px 0px;
+}
+/* Зум */
+a.cloud-zoom {
+    border: none;
+}
+.cloud-zoom-lens {
+    border: 4px solid #795674;
+    margin:-4px;
+    background-color: #fff;
+    cursor: move;
+}
+.cloud-zoom-title {
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute !important;
+    background-color: #000;
+    color :#fff;
+    padding: 3px;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 10px;
+    top: 0px;
+}
+.cloud-zoom-wrap {
+    top: 0px;
+    z-index: 70;
+    position: relative;
+}
+.cloud-zoom-big {
+    border: 4px solid #714e6c;
+    overflow: hidden;
+}
+.cloud-zoom-loading {
+    color: white;
+    background: #222;
+    padding: 3px;
+    border: 1px solid #000;
+}
+/*Дубль Гис*/
+#map {
+    padding: 15px 0px 0px 0px;
+}
+#map div.clubs {
+    margin: 0px 0px 20px 0px;
+}
+#map div.clubs div.item {
+    margin: 0px 0px 8px;
+}
+#map div.clubs div.item a {
+    padding: 3px 8px;
+    border-radius: 3px;
+    border: medium none;
+}
+#map div.clubs div.item a.open {
+    background: #73366A none repeat scroll 0 0;
+    color: #fff;
+}
+/*Карусель*/
+div.carousel_shop  {
+    padding: 55px 0px;
+    position: relative;
+}
+div.carousel_button_bottom, div.carousel_button_top {
+    left: 61px;
+    position: absolute;
+    width: 40px;
+    position: absolute;
+    cursor: pointer;
+    height: 40px;
+}
+
+/* картинка с вниз кнопкой */
+div.carousel_button_bottom, div.carousel_button_top.disabled {
+    background: url(/templates/images/icon_arrow.png) no-repeat;
+    bottom: 0px;
+    background-position: -50px 0px;
+}
+div.carousel_button_bottom:hover {
+    background-position: -50px -59px;
+}
+/* картинка с верх кнопкой */
+div.carousel_button_top, div.carousel_button_bottom.disabled {
+    background: url(/templates/images/icon_arrow.png) no-repeat;
+    top: 0px;
+}
+div.carousel_button_top:hover {
+    background-position: 0px -59px;
+}
+div.carousel_button_top.disabled,div.carousel_button_bottom.disabled {
+    display: none;
+}
+#loadAjax {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    background: none;
+    width: 2.875em;
+    height: 2.875em;
+    margin-left: -1.4375em;
+    margin-top: -1.4375em;
+    z-index: 210;
+    display: none;
+}
+#loadAjax, div.loader {
+    height: 4.76em;
+    margin: 0px;
+    padding: 0.0625em;
+    width: 4.75em;
+}
+#loadAjax div.loader {
+    background: url("/templates/images/ajax_load.gif") no-repeat;
+}
+/*Прелоудер для кнопки*/
+div.button_load {
+    background: rgba(0, 0, 0, 0) url("/templates/images/window_load.gif") no-repeat scroll 50% 50%;
+    height: 50px;
+    width: 50px;
+    margin: auto;
+    display: none;
+}
+
+/*ДЛя списка заказов у поставщиков*/
+.open_comment_shop{
+    color: #73366A;
+    text-decoration: none;
+    border-bottom: #8D6A88 1px solid;
+    cursor: pointer;
+}
+.open_comment_shop:hover{
+    color: #000;
+}
+
+.cancel_order{
+    color: #A00000;
+    text-decoration: none;
+    border-bottom: #A00000 1px solid;
+    cursor: pointer;
+}
+.cancel_order:hover{
+    color: #000;
+}
+
+.restor_order{
+    color: #73366A;
+    text-decoration: none;
+    border-bottom: #8D6A88 1px solid;
+    cursor: pointer;
+}
+.restor_order:hover{
+    color: #000;
+}
+
+.button_ok{
+    width: 70px;
+    text-align: center;
+    background: url('/templates/images/discount.png') #73366A no-repeat;
+    background-color: #73366A;
+    background-position: 28px 0px;
+    color: #fff;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 2px;
+    padding: 5px;
+}
+
+.button_ok.ok{
+    background: url('/templates/images/discount.png') no-repeat;
+    background-position: 28px -33px;
+    -moz-transition: background-color 0.8s 0.1s ease;
+    -o-transition: background-color 0.8s 0.1s ease;
+    -webkit-transition: background-color 0.8s 0.1s ease;
+}
+
+
+.tr30{
+    height: 30px;
+}
+.aresize{
+    resize: auto;
+}
+
+.order_info{
+    margin: 10px 0px;
+    height: 10px;
+}
+.order_info > span {
+    font-weight: bold;
+}
+.table_sellers{
+    width: 100%;
+    border: 1px solid #8D6A88;
+}
+.table_sellers_th{
+    background-color: #8D6A88;
+    color: #fff;
+    height: 30px;
+}
+
+.table_sellers_th>th:first-child{
+    padding-left:5px;
+}
+.table_sellers>th:first-child{
+    padding: 5px;
+}
+.table_sellers td:first-child {
+    padding-left: 5px;
+}
+.table_sellers td{
+    border-bottom: 1px solid #8D6A88;
+}
+.table_sellers tr:last-child td{
+    border-bottom: none;
+}
+.table_sellers tr:nth-child(2n+1){
+    background-color:#F0F0F0 ;
+}
+
+.table_sellers tr:first-child {
+    background-color: #8D6A88;
+}
+.change_status{
+    color: #8D6A88;
+    text-decoration: none;
+    border-bottom: #8D6A88 1px solid;
+    cursor: pointer;
+}
+.pages_wrapper{
+    margin-top: 20px;
+}
+
+a.page{
+    display: inline-block;
+    width: 20px;
+    /* height: 20px; */
+    background-color: #73366A;
+    text-align: center;
+    color: #fff !important;
+    margin-left:5px;
+}
+
+.page.active{
+    display: inline-block;
+    width: 20px;
+    text-align: center;
+    magin-left:0px;
+}
+div.my-address div.add {
+    font-weight: bold;
+    height: 40px;
+    padding: 0 0 0 5px;
+}
+table.my-table {
+    border-collapse: collapse;
+    width: 100%;
+}
+table.my-table.min {
+    margin: 0;
+}
+table.my-table tr:nth-of-type(2n+1) {
+    background: #eee none repeat scroll 0 0;
+}
+table.my-table th {
+    background: #8d6a88 none repeat scroll 0 0;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 12px 0 12px 10px;
+    text-align: center;
+}
+table.my-table td {
+    font-size: 14px;
+    padding: 20px 0 20px 10px;
+    text-align: center;
+}
+table.my-table td.number {
+    width: 40px;
+}
+table.my-table td.images {
+    width: 80px;
+    padding: 0px 5px;
+}
+table.my-table td.images img {
+    width: 100%;
+}
+/*Адресс*/
+div.my-address table.my-table input {
+    padding: 5px 3px;
+}
+div.my-address table.my-table span.phone {
+    padding: 0px 5px 0px 0px;
+}
+div.my-address table.my-table textarea {
+    padding: 5px 3px;
+    width: 160px;
+}
+div.my-address table.my-table select {
+    padding: 3px;
+}
+div.my-address table.my-table div.error {
+    color: #ee3333;
+}
+#city div.item {
+    padding: 0px 0px 5px;
+    font-size: 14px;
+}
+/*Всплывашка при добавления корзина*/
+#basket-messages {
+    border: 1px solid #9f7c9a;
+    bottom: 10px;
+    box-shadow: 0px 0px 7px -1px #876482;
+    height: 100px;
+    left: 20px;
+    position: fixed;
+    width: 260px;
+    z-index: 80;
+    background: rgb(141,106,136);
+    background: rgba(141,106,136, 0.8);
+    display: none;
+}
+
+#basket-messages div.title {
+    font-size: 14px;
+    margin: 42px auto;
+    text-align: center;
+    color: #ffffff;
+}
+#basket-messages div.close {
+    background: url("/templates/images/popup_close.png") no-repeat scroll 0 0 / 15px auto;
+    cursor: pointer;
+    height: 15px;
+    position: absolute;
+    right: 8px;
+    top: 10px;
+    width: 17px;
+}
+#basket-messages div.close:hover {
+    background-position: 0px -15px;
+}
+
+.h1_goods{
+    font-family: Verdana;
+    font-size: 20px;
+    font-weight: normal;
+    line-height: normal;
+    padding: 0px 0px 15px;
+    margin: 0px;
+    text-transform: uppercase;
+    white-space: pre-wrap;
+}
+/*Категория для товаров*/
+div.category-goods {
+    content: " ";
+    margin: 0px 0px 10px;
+    overflow: hidden
+}
+div.category-goods div.item {
+    float: left;
+    margin: 0px 15px 15px 0px;
+    width: 179px;
+    box-shadow: 0px 1px 5px -1px;
+    -webkit-box-shadow: 0px 1px 5px -1px;
+    -moz-box-shadow: 0px 1px 5px -1px;
+}
+div.category-goods div.item.item-stop {
+    margin-right: 0px;
+}
+div.category-goods div.item div.image {
+    overflow: hidden;
+    vertical-align: top;
+    width: 180px;
+}
+div.category-goods div.item div.name {
+    padding: 10px 0px 10px 10px;
+    background: #ffffff;
+}
+div.category-goods div.item div.name div{
+    color: #73366a;
+    font-size: 16px;
+}
+
+.h1_goods{
+    font-family: Verdana;
+    font-size: 20px;
+    font-weight: normal;
+    line-height: normal;
+    padding: 0px 0px 15px;
+    margin: 0px;
+    text-transform: uppercase;
+    white-space: pre-wrap;
+}
+
+.chainEditGoods{
+    list-style: none;
+}
+.chainName,.tagName{
+    cursor: pointer;
+}
+.chainName.activeChainName{
+    background-color: #73366A;
+    color:#fff;
+}
+
+.chainName:hover,.tagName:hover {
+    background-color: #73366A;
+    color:#fff;
+}
+.chainEditGoods ul{
+    display: none;
+    list-style: none;
+    cursor: pointer;
+}
+/*Сплывающий подсказка*/
+.steer {
+    position: relative;
+}
+.steer div.box-steer {
+    background: #ffffff;
+    border: 1px solid #CCCCCC;
+    border-radius: 3px;
+    box-shadow: 0px 0px 10px -3px #888888;
+    -moz-box-shadow: 0px 0px 10px -3px #888888;
+    -webkit-box-shadow: 0px 0px 10px -3px #888888;
+    padding: 10px;
+    position: absolute;
+    top: 30px;
+    width: 100%;
+    max-width: 210px;
+    left: 0px;
+    display: none;
+    z-index: 210;
+}
+
+div.box-steer-goods {
+    background: #ffffff;
+    border: 1px solid #CCCCCC;
+    border-radius: 3px;
+    box-shadow: 0px 0px 10px -3px #888888;
+    -moz-box-shadow: 0px 0px 10px -3px #888888;
+    -webkit-box-shadow: 0px 0px 10px -3px #888888;
+    padding: 0px 10px 10px 0px;
+    position: absolute;
+    width: 100%;
+    max-width: 210px;
+    margin-top: -33px;
+    margin-left: 207px;
+    display: none;
+    z-index: 210;
+}
+div.box-steer-goods:hover {
+    display:block;
+}
+
+.steer div.box-steer div.icon-top {
+    background: url("/templates/images/top.png") no-repeat;
+    height: 15px;
+    left: 20px;
+    position: absolute;
+    top: -9px;
+    width: 30px;
+}.windowEditGood form {
+     outline: 1px solid chartreuse;
+     width:50%;
+     display: block;
+     float: left;
+
+ }
+
+.searchTag,.searchGroupTag,.searchGroupTagSelect{
+    width:124px !important;
+}
+
+.buttonAddTag{
+    width: 82px;
+    height: 18px;
+    display: inline-block;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 2px;
+    background-color: #73366A;
+    color: #fff;
+}
+
+.labelAddGood{
+    display: inline-block;
+    width: 124px;
+    padding-left: 12px;
+}
+
+.placeTags, .placeTagsOptions{
+    min-height: 100px;
+    border: 1px dashed;
+    width: 477px;
+    margin-top: 10px;
+    padding: 5px;
+}
+
+.buttonAddTagGroupOptions {
+    width: 135px;
+    height: 18px;
+    display: inline-block;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 2px;
+    background-color: #73366A;
+    color: #fff;
+}
+
+.labelAddGoodOptions{
+    display: inline-block;
+    width: 70px;
+    padding-left: 12px;
+}
+.wrapperAddTagsOptions{
+    margin-top:10px;
+    margin-bottom: 10px;
+}
+
+.wrapperEditButton{
+    float: right;
+    clear: both;
+}
+.buttonEditGood{
+    background-color: #73366A;
+    color: #fff;
+    display:inline-block;
+    margin-left: 5px;
+    padding: 5px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.buttonAddTagOptions{
+    width: 56px;
+    margin-left: 20px;
+    height: 18px;
+    display: inline-block;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 2px;
+    background-color: #73366A;
+    color: #fff;
+}
+
+.deleteGroupTagOption{
+    display: inline-block;
+    border: 1px solid #5A5A5A;
+    padding: 1px;
+    border-radius: 50%;
+    width: 15px;
+    text-align: center;
+    margin-left: 9px;
+    background-color: #cc3333;
+    color: #fff;
+    font-weight: bold;
+}
+
+.editAction{
+    cursor: pointer;
+}
+
+.choiseTag,.tagsInGroup{
+    display: inline-block;
+    border-radius: 5px;
+    border: 1px solid #000;
+    padding: 2px;
+    background: #f39c12;
+    color: #fff;
+    margin-right: 2px;
+    cursor: pointer;
+}
+
+.disableTag{
+    background-color: #555555;
+}
+
+.groupTagName{
+    font-size: 12px;
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.rightContentEditGood{
+    outline: 1px saddlebrown solid;
+    float: left;
+    outline: 1px saddlebrown solid;
+    width: 50%;
+}
+
+.rightContentEditGood table{
+    width:50%;
+}
+
+.variations{
+    background-color: #FDB813;
+    height: 20px;
+    color: #fff;
+    padding-left: 10px;
+}
+
+.midlSelect{
+    width: 190px !important;
+}
+/*Список товаров избраный*/
+div.my_favorites {
+    padding: 0px 1px 80px 0px;
+}
+div.my_favorites div.title {
+    margin: 5px 0 15px;
+}
+div.my_favorites div.title h3 {
+    font-size: 18px !important;
+    display: inline-block;
+}
+div.my_favorites div.add-groups {
+    margin: 0px 0px 15px;
+}
+div.my_favorites div.add-groups a {
+    font-size: 14px;
+    font-weight: bold;
+}
+div.my_favorites input.string {
+    padding: 5px 3px;
+}
+div.my_favorites div.add-box {
+    border-radius: 3px;
+    margin: 10px 0px;
+    padding: 15px;
+    background: #d3d3d3;
+    display: none;
+}
+div.my_favorites div.add-box span.name {
+    color: #282828;
+    margin: 0px 5px 0px 0px;
+}
+div.my_favorites div.add-box div.button_pun.pr {
+    display: inline-block;
+    margin: 0px 0px 0px 10px;
+}
+div.my_favorites div.icon-edit {
+    background: url("/templates/images/manager/edit.png") no-repeat;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    margin: 0px 0px 0px 10px;
+    vertical-align: text-bottom;
+    cursor: pointer;
+    background-size: 20px;
+}
+div.my_favorites div.edit div.button_pun.pr {
+    display: inline-block;
+    margin: 0px 0px 0px 10px;
+}
+div.my_favorites div.icon-edit:hover,div.my_favorites div.icon-delete:hover {
+    background-position: 0px -20px;
+}
+div.my_favorites div.icon-delete {
+    background: url("/templates/images/manager/delete.png") no-repeat;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    margin: 0px 0px 0px 10px;
+    vertical-align: text-bottom;
+    cursor: pointer;
+    background-size: 20px;
+}
+div.my_favorites .money, div.my_favorites .discount_money {
+    font-weight: bold;
+}
+div.my_favorites .discount_money {
+    color: #ED1C24;
+}
+div.my_favorites div.edit  {
+    display: none;
+    float: left;
+}
+div.my_favorites .total {
+    float: right;
+    margin: 5px 0px 0px;
+}
+div.my_favorites .total div.item {
+    font-size: 16px;
+    margin: 0px 0px 5px;
+}
+div.my_favorites .total div.item span {
+    display: inline-block;
+    font-weight: bold;
+    width: 70px;
+}
+div.goods div.favorite_groups {
+    background: #fdb813;
+    border-radius: 2px;
+    bottom: 0px;
+    display: none;
+    left: 0px;
+    padding: 13px 6px;
+    position: absolute;
+    width: 100px;
+    z-index: 20;
+}
+div.good div.favorite_groups {
+    background: #af8caa;
+    border-radius: 2px;
+    display: none;
+    padding: 22px 6px;
+    position: absolute;
+    right: 0;
+    top: 12px;
+    width: 95px;
+    z-index: 100;
+}
+div.goods div.favorite_groups div.block select,div.good div.favorite_groups div.block select {
+    font-size: 10px;
+    padding: 3px 1px;
+    width: 100px;
+    cursor: pointer;
+}
+.fa-sort-amount-asc{
+    font-size: 10px !important;
+    color: #9c9c9c;
+    position: relative;
+    margin-left: 5px;
+}
+.fa-sort-amount-asc.sortableDesc{
+    transform: rotateX(180deg);
+    top: -2px;
+}
+/*Загрузка контент*/
+div.content_load {
+    display: none;
+    margin: 40px auto 0px;
+    width: 248px;
+}
+div.content_load div{
+    background: url('/templates/images/content_load.gif') no-repeat;
+    height: 24px;
+    margin: 3px 0px 0px;
+    height: 24px;
+    background-size: 145px;
+    background-position: center;
+}
+div.content_load span {
+    color: #4c2947;
+    font-size: 14px;
+}
+.chain_select {
+    display: block;
+}
+
+.hide{
+    display:none;
+}
+.go_gl_basket{
+    background: #785573 none repeat scroll 0% 0%;
+    border-bottom: 2px solid #492644;
+    border-radius: 3px;
+    color: #FFF;
+    font-weight: bold;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin: 0 20px 0 0px;
+}
+/*Форма для пользователя*/
+div.user-form {
+    padding: 5px 0;
+}
+div.user-form span.min-text {
+    color: #757575;
+    font-size: 11px;
+}
+div.user-form div.title {
+    font-size: 14px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+div.user-form form.border {
+    border: 1px solid #cccccc;
+    border-radius: 3px;
+    padding: 10px 25px;
+    width: 174px;
+}
+div.user-form div.item {
+    margin: 5px 0 3px;
+}
+div.user-form div.item span.name {
+    font-weight: bold;
+}
+div.user-form div.item input.string {
+    margin: 3px 10px 0px 0px;
+    padding: 5px 0 5px 5px;
+}
+div.user-form div.item textarea.text {
+    margin: 3px 0 0;
+    padding: 3px 0 3px 5px;
+    width: 163px;
+}
+div.user-form div.item input.money, div.user-form div.item input.password {
+    margin: 2px 0 0;
+    padding: 3px 0 3px 3px;
+    width: 108px;
+}
+div.user-form div.messages {
+}
+div.user-form div.success {
+    color: #028236;
+    font-weight: bold;
+}
+div.user-form div.error,#valid {
+    color: #aa2222;
+    margin: 2px;
+}
+div.user-form div.button {
+}
+span.bold{
+    font-weight: bold;
+}
+.viewCountOrders{
+    margin-top: 30px;
+}
+.viewCountOrders div{
+    padding: 0px 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.viewCountOrders div>span{
+    font-weight: bold;
+}
+
+.viewFilterOrders{
+    padding-top: 18px;
+    margin-top: 27px;
+    float: left;
+    /*border-left: 2px solid #8D6A88;*/
+    height: 56px;
+    padding-left: 5px;
+}
+
+.wrapperFilter{
+    margin-right: 79px;
+}
+
+.wrapperFilter, .wrapperFilter>.calendar-prom{
+    display: inline-block;
+
+}
+
+.wrapperFilter input[type="text"]{
+    width: 82px;
+    padding: 0px 5px;
+}
+.submitFilter{
+    padding: 5px 10px !important;
+    background: #73366A !important;
+    color: #fff !important;
+    border-radius: 4px !important;
+}
+
+.wrapperFilter span.titleFilter{
+    display: block;
+    font-weight: bold;
+}
+
+/*Промо код*/
+.promo_bg{
+    background: url('/templates/images/promo_bg.jpg') no-repeat scroll 0 0 / 100% 100%;
+}
+div.promo_bg .promo{
+    width: 450px;
+    margin: 0px auto;
+    padding: 20px;
+    background: none 0% 0% repeat scroll rgb(231, 158, 66);
+    border-radius: 20px;
+}
+div.promo_bg .input_forever{
+    border: 2px solid #A27F9D;
+    border-radius: 4px;
+    padding: 9px 10px 11px;
+    position: relative;
+    width: 96%;
+
+}
+div.promo_bg .button_forever{
+    width: 100%;
+    height: 42px;
+    background: #64415F none repeat scroll 0% 0%;
+    border-radius: 6px;
+    margin: 10px auto 0 auto;
+    cursor: pointer;
+    font-size: 16px;
+    color: #FFF;
+    padding: 9px 0px 9px 0px;
+    text-align: center;
+}
+div.promo_bg .promo p.font_size{
+    font-size:11px;
+}
+div.promo_bg .promo .text2 {
+    color: #fff;
+    font-size: 14px;
+    line-height: 20px;
+}
+div.catalog_description{
+    margin: 0 0 35px 0;
+}
+
+/*Личный кабинет поставщика*/
+div.shop_goods_lists{
+    padding: 20px 0px 0px 0px;
+}
+
+div.shop_goods_lists table{
+    width:100%;
+}
+
+div.shop_goods_lists table td{
+    padding: 5px 0px;
+    border: none;
+}
+
+div.shop_goods_lists table tr:nth-child(2n+1){
+    background: #fff;
+}
+
+div.shop_goods_lists table thead tr:nth-child(1){
+    background: #73366A;
+    color: #fff;
+}
+
+div.button_href{
+    display: inline-block;
+    background: #73366A;
+    padding: 5px 10px;
+}
+div.button_href > a{
+    color:#fff;
+    text-decoration: none;
+    border-bottom: 0px;
+
+}
+div.shop_goods_filter_wrapper{
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+div.shop_goods_filter_wrapper span{
+    display: inline-block;
+    background: #73366A;
+    padding: 5px 10px;
+    cursor: pointer;
+    color: #fff;
+}
+div.shop_goods_filter_wrapper input[type="text"],div.shop_goods_filter_wrapper select{
+    padding:5px 10px;
+    margin-right: 20px;
+}
+
+.logout-form{
+    display:inline;
+}
+.logout-form button{
+    color: #505050;
+    margin: 0 0 0 10px;
+    padding: 0;
+    border-top: 0 none;
+    border-bottom: 1px solid #969696;
+    line-height: 17px;
+}
+div.cms-menu li {
+    width: 160px;
+    float: left;
+    border: 0px;
+    display: block;
+    line-height: 16px;
+    font-family: Tahoma;
+    font-size: 13px;
+}
+div.cms-menu li a {
+    font-size: 14px;
+    color: #73366a;
+    display: block;
+    border-right: #73366a 1px solid;
+    border-bottom: 1px solid #73366a;
+    padding: 14px 0px 14px 0px;
+    text-align: center;
+    line-height: 19px;
+}
+div.cms-menu nav > .container{
+    margin: 0;
+    padding: 0;
+}
+div.cms-menu .container > div{
+    margin: 0;
+    padding: 0;
+}
+div.cms-menu nav{
+    margin-bottom: 0;
+    border: 0 none;
+}
+div.cms-menu nav li{
+    margin-bottom: 0;
+}
+thead a:link, thead a:visited{
+    border-bottom: 0 none;
+    color: #FFF;
+}

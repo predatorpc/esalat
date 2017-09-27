@@ -1,0 +1,2938 @@
+/*Подключения стиль crop*/
+/*@import "/systems/jquery/crop/imgareaselect-default.css";*
+/*Reset boostrap 3*/
+
+/*----*/
+#center{
+    padding: 0px 30px;
+}
+div.content.cms a.btn{
+    color: #fff;
+    text-decoration: none;
+}
+div.content.cms .label {
+    border-radius: inherit;
+    color: inherit;
+    display: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+    padding: inherit;
+    text-align: inherit;
+    vertical-align: inherit;
+    white-space: inherit;
+}
+.desktop-hidden {
+    display: none;
+}
+
+div.content.cms .table {
+    margin-bottom: 0;
+    max-width: none;
+    /*width: auto;*/
+}
+
+div.content.cms table, div.content.cms td, div.content.cms form, div.content.cms div {
+    font-family: Tahoma;
+    font-size: 13px;
+    line-height: 16px;
+}
+
+div.content.cms select:disabled {
+    color: #555555;
+    background: #eeeeee;
+}
+
+#center div.content.cms {
+    margin: 0 -30px 30px;
+}
+
+/* Меню (ЛК) */
+div.cms-menu {
+    background: #f8f9f9;
+    border-top: rgba(12, 124, 168, 0.4) 1px solid;
+    border-left: rgba(12, 124, 168, 0.4) 1px solid;
+    border-right: rgba(12, 124, 168, 0.4) 1px solid;
+    padding: 0px 0px 0px 0px;
+}
+
+div.cms-menu a.item {
+    width: 130px;
+    float: left;
+    border: 0px;
+    display: block;
+    text-decoration: none;
+}
+
+div.cms-menu a.item div {
+    color: #0C7CA8;
+    border-right: #0C7CA8 1px solid;
+    border-bottom: 1px solid #0C7CA8;
+    font-size: 12px;
+    padding: 10px 0;
+    text-align: center;
+}
+
+div.cms-menu a.item.open {
+    background: #0C7CA8;
+}
+
+div.cms-menu a.item.open div {
+    color: #ffffff;
+}
+
+div.cms-menu div.line {
+    height: 6px;
+    background: #0C7CA8;
+}
+
+/* Группа данных */
+#cms-form div.group {
+    font-weight: bold;
+    color: #ffffff;
+    background: #8d6a88;
+    padding: 8px 8px 8px 8px;
+    margin: 20px 0px 0px 0px;
+}
+
+/* Список и форма товаров */
+#cms-form {
+    padding: 0px 0px 0px 0px;
+}
+
+#cms-form div.list {
+    width: 570px;
+    float: left;
+    padding: 20px 0px 0px 0px;
+}
+
+#cms-form div.list div.menu {
+    padding: 0px 0px 15px 0px;
+}
+
+#cms-form div.list div.filter {
+    background: #f8f3d6;
+    border: rgba(12, 124, 168, 0.4) 1px solid;
+    padding: 10px 10px 10px 10px;
+    margin: 0px 0px 15px 0px;
+    position: relative;
+}
+
+#cms-form div.list div.filter div.input {
+    margin: 0px 80px 0px 0px;
+}
+
+#cms-form div.list div.filter div.input input.max {
+    width: 100%;
+    border: rgba(12, 124, 168, 0.4) 1px solid;
+    padding: 4px 4px 4px 4px;
+}
+
+#cms-form div.list div.filter div.button {
+    width: 60px;
+    color: #ffffff;
+    background: #8d6a88;
+    padding: 5px 0px 5px 0px;
+    text-align: center;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    cursor: pointer;
+}
+
+#cms-form div.list div.filter div.button:hover {
+    background: #0C7CA8;
+}
+
+#cms-form div.list div.items {
+    height: 500px;
+    padding: 0px 1px 0px 0px;
+    overflow-y: scroll;
+}
+
+#cms-form div.list div.items table.list-data {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#cms-form div.list div.items table.list-data th {
+    font-size: 10px;
+    font-weight: normal;
+    color: #909090;
+    padding: 0px 0px 4px 4px;
+    text-align: left;
+    vertical-align: bottom;
+}
+
+#cms-form div.list div.items table.list-data td {
+    border: rgba(12, 124, 168, 0.4) 1px solid;
+    padding: 4px 4px 4px 4px;
+}
+
+#cms-form div.list div.items table.list-data tr.grey td {
+    background: #f8f8f8;
+}
+
+#cms-form div.list div.items table.list-data tr.item:hover td {
+    background: #f8f3d6;
+}
+
+#cms-form div.list div.items table.list-data .no {
+    width: 30px;
+    color: #999999;
+}
+
+#cms-form div.list div.items table.list-data .date {
+    width: 80px;
+    padding: 0px 0px 0px 0px;
+    text-align: center;
+}
+
+#cms-form div.list div.items table.list-data .phone {
+    width: 100px;
+}
+
+#cms-form div.form {
+    width: 570px;
+    float: right;
+    padding: 0px 0px 0px 0px;
+}
+
+#cms-form div.form table.form-data {
+    width: 100%;
+}
+
+#cms-form div.form table.form-data tr.grey td {
+    background: #f8f8f8;
+}
+
+#cms-form div.form table.form-data td {
+    padding: 5px 0px 5px 0px;
+    position: relative;
+}
+
+#cms-form div.form table.form-data td span.prefix {
+    color: #999999;
+    position: absolute;
+    left: -20px;
+    top: 8px;
+}
+
+#cms-form div.form table.form-data td.name {
+    width: 180px;
+    vertical-align: top;
+}
+
+#cms-form div.form table.form-data td.name div {
+    padding: 3px 0px 0px 8px;
+}
+
+#cms-form div.form table.form-data td.name span.i {
+    color: #cc0000;
+    margin: 0px 0px 0px 4px;
+}
+
+#cms-form div.form table.form-data td span.value {
+    margin: 0px 0px 0px 5px;
+}
+
+#cms-form div.form table.form-data td input.string {
+    width: 240px;
+    padding: 2px 4px 2px 4px;
+}
+
+#cms-form div.form table.form-data td input.string.min {
+    width: 80px;
+}
+
+#cms-form div.form table.form-data td input.string.max {
+    width: 540px;
+}
+
+#cms-form div.form table.form-data td textarea.text {
+    width: 540px;
+    height: 125px;
+    padding: 2px 4px 2px 4px;
+}
+
+#cms-form div.form table.form-data td textarea.text.min {
+    height: 80px;
+}
+
+#cms-form div.form table.form-data td textarea.text.max {
+    height: 250px;
+}
+
+#cms-form div.form table.form-data td select.list {
+    width: 250px;
+    padding: 1px 4px 1px 0px;
+}
+
+#cms-form div.form table.form-data td select.list.min {
+    width: 125px;
+}
+
+#cms-form div.form table.form-data td select.list.max {
+    width: 540px;
+}
+
+#cms-form div.form table.form-data td input.error, #cms-form div.form table.form-data td textarea.error, #cms-form div.form table.form-data td select.error {
+    background: #ffaaaa;
+    border: #cc3333 1px solid;
+}
+
+#cms-form div.form table.form-data td label {
+    margin: 0px 0px 0px 4px;
+}
+
+/* Варианты товаров */
+#cms-form div.form table.good-variations {
+    width: 100%;
+    padding: 5px 0px 5px 0px;
+}
+
+#cms-form div.form table.good-variations td {
+    padding: 2px 0px 2px 0px;
+    vertical-align: top;
+}
+
+#cms-form div.form table.good-variations td.i {
+    width: 40px;
+    color: #999999;
+    text-align: center;
+}
+
+#cms-form div.form table.good-variations td span.name {
+    color: #0C7CA8;
+    border-bottom: #0C7CA8 1px dotted;
+    cursor: pointer;
+}
+
+#cms-form div.form table.good-variations td span.name.grey {
+    color: #cccccc;
+    border-bottom: #cccccc 1px dotted;
+}
+
+#cms-form div.form table.good-variations td.description {
+    width: 75px;
+}
+
+#cms-form div.form table.good-variations td.images {
+    width: 60px;
+}
+
+#cms-form div.form table.good-variations td.count {
+    width: 60px;
+}
+
+#cms-form div.form table.good-variations td.count div {
+    text-align: right;
+}
+
+#cms-form div.form table.good-variations td.price {
+    width: 80px;
+}
+
+#cms-form div.form table.good-variations td.price div {
+    padding: 0px 10px 0px 0px;
+    text-align: right;
+}
+
+#cms-form div.form table.good-variations tr.variation {
+    display: none;
+}
+
+#cms-form div.form table.good-variations tr.variation.add {
+    display: table-row;
+}
+
+#cms-form div.form div.variation {
+    position: relative;
+    padding: 5px 0px 0px 0px;
+}
+
+#cms-form div.form div.variation div.i {
+    padding: 5px 0px 5px 0px;
+}
+
+#cms-form div.form div.variation div.i.grey {
+    background: #f8f8f8;
+}
+
+#cms-form div.form div.variation div.name {
+    width: 170px;
+    float: left;
+    padding: 3px 0px 0px 0px;
+    text-align: right;
+}
+
+#cms-form div.form div.variation div.value {
+    margin: 0px 0px 0px 180px;
+    position: relative;
+}
+
+#cms-form div.form div.variation div.value span.info {
+    color: #999999;
+    margin: 0px 0px 0px 5px;
+}
+
+#cms-form div.form div.variation div.value div.values {
+    background: #f8f8f8;
+    border: #d5d5d5 1px solid;
+    padding: 5px 5px 5px 5px;
+    position: absolute;
+    top: 21px;
+    left: 0px;
+    z-index: 80;
+    display: none;
+}
+
+#cms-form div.form div.variation div.value div.values div {
+    padding: 2px 4px 2px 4px;
+    cursor: pointer;
+}
+
+#cms-form div.form div.variation div.value div.values div:hover {
+    background: #eeeeee;
+}
+
+#cms-form div.form div.variation div.value input.string {
+    width: 175px;
+    padding: 2px 4px 2px 4px;
+}
+
+#cms-form div.form div.variation div.value input.string.max {
+    width: 540px;
+}
+
+#cms-form div.form div.variation div.value input.string.min {
+    width: 125px;
+}
+
+#cms-form div.form div.variation div.value input.count {
+    width: 80px;
+    padding: 2px 4px 2px 4px;
+}
+
+#cms-form div.form div.variation div.value input.money {
+    width: 80px;
+    padding: 2px 4px 2px 4px;
+}
+
+#cms-form div.form div.variation div.value input.error, #cms-form div.form div.variation div.value textarea.error, #cms-form div.form div.variation div.value select.error {
+    background: #ffaaaa;
+    border: #cc3333 1px solid;
+}
+
+#cms-form div.form div.variation div.value div.load {
+    width: 18px;
+    height: 18px;
+    background: url('/images/load_min.gif') 50% 50% no-repeat;
+    position: absolute;
+    top: 2px;
+    left: 165px;
+    display: none;
+}
+
+#cms-form div.form div.variation span.tag {
+    font-size: 10px;
+    color: #ffffff;
+    background: #8d6a88;
+    border-radius: 2px;
+    padding: 1px 4px 2px 4px;
+    margin: 0px 0px 0px 4px;
+}
+
+#cms-form div.form div.variation span.tag a {
+    border: 0px;
+}
+
+#cms-form div.form div.variation div.variations-status {
+    color: #ffffff;
+    background: #8d6a88;
+    padding: 5px 7px 5px 7px;
+    position: absolute;
+    right: 3px;
+    bottom: 3px;
+}
+
+#cms-form div.form div.variation div.variations-status:hover {
+    background: #0C7CA8;
+}
+
+#cms-form div.form div.variation-description {
+    padding: 5px 0px 0px 180px;
+}
+
+#cms-form div.form div.variation-description div.caption {
+    color: #999999;
+    padding: 0px 0px 10px 0px;
+}
+
+#cms-form div.form div.variation-description div.caption span {
+    color: #0C7CA8;
+    border-bottom: #0C7CA8 1px dotted;
+    cursor: pointer;
+}
+
+#cms-form div.form div.variation-description div.text {
+    padding: 0px 0px 10px 0px;
+    display: none;
+}
+
+#cms-form div.form div.variation-images {
+    padding: 0px 0px 15px 180px;
+}
+
+#cms-form div.form div.variation-images div.caption {
+    color: #999999;
+    padding: 0px 0px 10px 0px;
+}
+
+#cms-form div.form div.variation-images div.caption span {
+    color: #0C7CA8;
+    border-bottom: #0C7CA8 1px dotted;
+    cursor: pointer;
+}
+
+#cms-form div.form div.variation-images div.images {
+    padding: 0px 0px 20px 0px;
+    display: none;
+}
+
+#cms-form div.form div.variation-images div.images div.i {
+    width: 110px;
+    height: 85px;
+    /* float: left;*/
+    position: relative;
+}
+
+#cms-form div.form div.variation-images div.images div.i img {
+    max-width: 100px;
+    max-height: 75px;
+}
+
+#cms-form div.form div.variation-images div.images div.i div.image-delete {
+    width: 16px;
+    height: 16px;
+    background: #ffffff url('/images/delete_min.png') 0px 0px no-repeat;
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    opacity: 0.75;
+    cursor: pointer;
+}
+
+#cms-form div.form div.variation-images div.images div.i div.image-delete:hover {
+    background-position: 0px -16px;
+    opacity: 1;
+}
+
+.fileinput-button {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.fileinput-button input {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 0;
+    opacity: 0;
+    -ms-filter: 'alpha(opacity=0)';
+    font-size: 200px;
+    direction: ltr;
+    cursor: pointer;
+}
+
+.fileinput-progress {
+    height: 32px;
+}
+
+.fileinput-progress div {
+    width: 0%;
+    height: 22px;
+    background: url('/systems/jquery/upload/progress.gif') repeat-x;
+    border-radius: 4px;
+}
+
+#cms-form div.form div.buttons {
+    padding: 10px 0px 0px 0px;
+    text-align: right;
+}
+
+#cms-form div.form div.buttons input.button {
+    width: 102px;
+    color: #ffffff;
+    background: #8d6a88;
+    border: 0px;
+    padding: 5px 0px 5px 0px;
+    margin: 0px 3px 0px 0px;
+    text-align: center;
+}
+
+#cms-form div.form div.buttons input.button:hover {
+    background: #0C7CA8;
+}
+
+#cms-form-lists form {
+    margin: 20px 0px;
+}
+
+#cms-form-lists form input, #cms-form-lists form select {
+    width: 300px;
+    padding: 2px;
+}
+
+#cms-form-lists form textarea {
+    width: 500px;
+    height: 150px;
+}
+
+.gl_buttton_save {
+    width: 100% !important;
+}
+
+.gl_add_form {
+    padding: 20px 0;
+}
+
+.gl_add_form tr {
+    border-bottom: 2px;
+}
+
+.bordered {
+    margin: 20px 0px;
+}
+
+.bordered tr:hover {
+    background: #fbf8e9;
+    -o-transition: all 0.1s ease-in-out;
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -ms-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+}
+
+.bordered td, .bordered th {
+    border-top: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+.bordered th {
+    background-color: #dce9f9;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#ebf3fc), to(#dce9f9));
+    background-image: -webkit-linear-gradient(top, #ebf3fc, #dce9f9);
+    background-image: -moz-linear-gradient(top, #ebf3fc, #dce9f9);
+    background-image: -ms-linear-gradient(top, #ebf3fc, #dce9f9);
+    background-image: -o-linear-gradient(top, #ebf3fc, #dce9f9);
+    background-image: linear-gradient(top, #ebf3fc, #dce9f9);
+    -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, .8) inset;
+    -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, .8) inset;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, .8) inset;
+    border-top: none;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, .5);
+}
+
+.bordered td:first-child, .bordered th:first-child {
+    border-left: none;
+}
+
+.bordered th:first-child {
+    -moz-border-radius: 6px 0 0 0;
+    -webkit-border-radius: 6px 0 0 0;
+    border-radius: 6px 0 0 0;
+}
+
+.bordered th:last-child {
+    -moz-border-radius: 0 6px 0 0;
+    -webkit-border-radius: 0 6px 0 0;
+    border-radius: 0 6px 0 0;
+}
+
+.bordered th:only-child {
+    -moz-border-radius: 6px 6px 0 0;
+    -webkit-border-radius: 6px 6px 0 0;
+    border-radius: 6px 6px 0 0;
+}
+
+.bordered tr:last-child td:first-child {
+    -moz-border-radius: 0 0 0 6px;
+    -webkit-border-radius: 0 0 0 6px;
+    border-radius: 0 0 0 6px;
+}
+
+.bordered tr:last-child td:last-child {
+    -moz-border-radius: 0 0 6px 0;
+    -webkit-border-radius: 0 0 6px 0;
+    border-radius: 0 0 6px 0;
+}
+
+.add_chain_h {
+    display: none;
+    margin: 6px 0px;
+}
+
+.show_add_good_id {
+    display: none;
+}
+
+.gl_banner {
+    float: left;
+    padding: 0px 8px 10px 0px;
+}
+
+.gl_good_list, .gl_chain {
+    width: 300px;
+}
+
+.gl_buttton {
+    background-color: #0C7CA8;
+    border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 11px;
+    margin: 0px 0px 0px 10px;
+    padding: 5px 7px;
+}
+
+a.gl_buttton {
+    color: #fff;
+}
+
+.gl_add_form tr {
+    padding: 10px 0px;
+}
+
+div.cms_wrapper_tags_tabs {
+    height: 500px;
+    width: auto;
+    float: left;
+    clear: both;
+    margin-bottom: 10px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+div.cms_wrapper_tags_tabs table {
+    width: auto;
+}
+
+div.cms_wrapper_tags_tabs table tr td {
+    padding-left: 10px;
+}
+
+h3.cms_title_tags {
+    float: left;
+    clear: both;
+}
+
+input.button {
+    width: 102px;
+    color: #ffffff;
+    background: #8d6a88;
+    border: 0px;
+    padding: 5px 0px 5px 0px;
+    margin: 0px 3px 0px 0px;
+    text-align: center;
+}
+
+.cms_wrapper_no_confirm_goods {
+    margin: 10px 0px;
+}
+
+.cms_wrapper_no_confirm_goods select {
+    margin-right: 10px;
+}
+
+/* Отчет по заказам */
+#cms-reports label {
+    display: inline;
+    font-weight: normal;
+    margin-bottom: 0;
+    max-width: none;
+}
+
+#cms-reports {
+    padding: 0 30px 0 0;
+    width: 1215px;
+}
+#cms-reports th.money {
+    position: relative;
+}
+#cms-reports div.toggleCloseAll {
+    border-bottom: 1px dashed #d94040;
+    cursor: pointer;
+    opacity: 0.5;
+    position: absolute;
+    right: 17px;
+    bottom: 20px;
+    white-space: pre;
+    color:#d94040;
+    font-size: 11px;
+}
+#cms-reports div.toggleCloseAll:hover {
+    opacity: 100;
+}
+#cms-reports div.toggleClose {
+    position: absolute;
+    right: 40px;
+    top: 50px;
+    cursor: pointer;
+}
+#cms-reports  .toggle {
+    display: none;
+}
+#cms-reports div.toggleClose::after{
+    content: "";
+    border: 12px solid transparent;
+    border-top: 12px solid #656565;
+    position: absolute;
+}
+#cms-reports div.filter {
+    height: 110px;
+    position: relative;
+}
+
+#cms-reports div.filter.min {
+    height: 66px;
+    position: relative;
+}
+
+#cms-reports div.filter div.filter-store {
+    width: 364px;
+    height: 26px;
+    position: absolute;
+    top: -60px;
+    left: 0px;
+}
+
+#cms-reports div.filter div.filter-store div.label {
+    width: 140px;
+    float: left;
+    padding: 5px 12px 0px 0px;
+    text-align: right;
+}
+
+#cms-reports div.filter div.filter-store select {
+    width: 224px;
+    border: #0C7CA8 1px solid;
+    padding: 4px 0px 4px 0px;
+    text-align: center;
+}
+
+#cms-reports div.filter div.filter-date {
+    width: 370px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+#cms-reports div.filter div.filter-date select.type {
+    width: 110px;
+    float: left;
+    border: #0C7CA8 1px solid;
+    padding: 3px 3px 3px 0px;
+}
+
+#cms-reports div.filter div.filter-date div.label {
+    width: 30px;
+    float: left;
+    padding: 5px 0px 0px 0px;
+    text-align: center;
+}
+
+#cms-reports div.filter div.filter-date div.calendar {
+    float: left;
+}
+#cms-reports div.filter div.filter-date div.calendar-fast {
+    position: absolute;
+    top: -26px;
+}
+#cms-reports div.filter div.filter-date div.calendar-fast a{
+    color:#0C7CA8;
+    border-color: #0c8abb;
+    margin-right: 15px;
+}
+#cms-reports div.filter div.filter-order-id {
+    width: 240px;
+    height: 26px;
+    position: absolute;
+    top: 36px;
+    left: 0px;
+}
+
+#cms-reports div.filter div.filter-order-id div.label {
+    width: 140px;
+    float: left;
+    padding: 5px 12px 0px 0px;
+    text-align: right;
+}
+
+#cms-reports div.filter div.filter-order-id input {
+    width: 110px;
+    border: #0C7CA8 1px solid;
+    padding: 4px 0px 4px 0px;
+    text-align: center;
+}
+
+#cms-reports div.filter div.filter-status {
+    width: 240px;
+    height: 26px;
+    position: absolute;
+    top: 72px;
+    left: 0px;
+}
+
+#cms-reports div.filter div.filter-status div.label {
+    width: 140px;
+    float: left;
+    padding: 5px 12px 0px 0px;
+    text-align: right;
+}
+
+#cms-reports div.filter div.filter-status select {
+    width: 110px;
+    border: #0C7CA8 1px solid;
+    padding: 4px 0px 4px 0px;
+}
+#cms-reports div.filter div.filter-shops{
+    position: absolute;
+    top: 0px;
+    left: 390px;
+}
+#cms-reports div.filter .input-form {
+    position: absolute;
+    top: 72px;
+}
+#cms-reports div.filter .input-form input {
+    border: 1px solid #0c7ca8;
+    padding: 5px 0 5px 5px;
+    width: 201px;
+}
+
+#cms-reports div.filter div.filter-users {
+    position: absolute;
+    top: 0px;
+    left: 614px;
+}
+
+#cms-reports div.filter div.filter-drivers {
+    position: absolute;
+    top: 0px;
+    left: 838px;
+}
+
+#cms-reports div.filter div.filter-codes {
+    position: absolute;
+    top: 0px;
+    left: 838px;
+}
+#cms-reports div.filter div.filter-codes.no-promo.basket_sort {
+    top: -53px;
+}
+#cms-reports div.filter div.filter-codes.no-promo {
+    top: -31px;
+}
+#cms-reports div.filter div.filter-codes.no-promo label {
+    position: relative;
+    top: -2px;
+}
+#cms-reports div.filter div.auto-search {
+    width: 202px;
+    background: #f0f0f0;
+}
+
+#cms-reports div.filter div.auto-search div.group {
+    font-size: 11px;
+    position: absolute;
+    top: -32px;
+    left: 4px;
+    white-space: nowrap;
+}
+#cms-reports div.filter div.auto-search div.group.group-1 {
+    top: -45px;
+}
+#cms-reports div.filter div.auto-search div.group.group-2 {
+    top: -25px;
+}
+#cms-reports div.filter div.auto-search div.group label {
+    margin-right: 10px;
+}
+
+#cms-reports div.filter div.auto-search input.search {
+    width: 200px;
+    border: #0C7CA8 1px solid;
+    padding: 4px 4px 4px 4px;
+}
+
+#cms-reports div.filter div.auto-search div.auto-search-label {
+    color: #999999;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+
+#cms-reports div.filter div.auto-search div.auto-search-values {
+    width: 206px;
+    height: 85px;
+    padding: 2px 0px 0px 4px;
+    overflow-y: auto;
+}
+
+#cms-reports div.filter div.auto-search div.auto-search-values span.item {
+    font-size: 11px;
+    border-bottom: #888888 1px dotted;
+    margin: 0px 8px 0px 0px;
+    cursor: pointer;
+}
+
+#cms-reports div.filter div.auto-search div.auto-search-load {
+    width: 18px;
+    height: 18px;
+    background: url('/images/load_min.gif') 50% 50% no-repeat;
+    position: absolute;
+    top: 4px;
+    right: 7px;
+    display: none;
+}
+
+#cms-reports div.filter div.auto-search div.auto-search-all {
+    width: 18px;
+    height: 18px;
+    background: url('/images/auto_search_all.png') 0px 0px no-repeat;
+    position: absolute;
+    top: 4px;
+    right: 7px;
+    opacity: 0.75;
+    cursor: pointer;
+}
+
+#cms-reports div.filter div.auto-search div.auto-search-all:hover {
+    opacity: 1;
+}
+
+#cms-reports div.filter div.auto-search div.auto-search-all.open {
+    background-position: 0px -18px;
+}
+
+#cms-reports div.filter div.auto-search div.auto-search-items {
+    width: 200px;
+    max-height: 375px;
+    background: #ffffff;
+    border: #0C7CA8 2px solid;
+    box-shadow: 0px 0px 6px #606060;
+    padding: 1px 1px 0px 1px;
+    position: absolute;
+    top: 25px;
+    left: 0px;
+    z-index: 8;
+    overflow-y: scroll;
+    display: none;
+}
+
+#cms-reports div.filter div.auto-search div.auto-search-items div.item {
+    font-size: 11px;
+    background: #f8f3d6;
+    padding: 2px 4px 2px 4px;
+    margin: 1px 1px 2px 1px;
+    cursor: pointer;
+}
+
+#cms-reports div.filter div.auto-search div.auto-search-items div.item:hover {
+    background: #e5dfbf;
+}
+
+#cms-reports div.filter div.filter-type_id,
+#cms-reports div.filter div.filter-default {
+    width: 120px;
+    height: 26px;
+    position: absolute;
+    top: -38px;
+    right: 0px;
+}
+
+#cms-reports div.filter div.filter-default {
+    top: -75px;
+}
+
+#cms-reports div.filter div.filter-type_id select,
+#cms-reports div.filter div.filter-default select {
+    width: 120px;
+    float: left;
+    border: #0C7CA8 1px solid;
+    padding: 3px 3px 3px 0px;
+}
+
+#cms-reports div.filter div.filter-type {
+    width: 120px;
+    height: 26px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+#cms-reports div.filter div.filter-type select {
+    width: 120px;
+    float: left;
+    border: #0C7CA8 1px solid;
+    padding: 3px 3px 3px 0px;
+}
+
+#cms-reports div.filter div.filter-delivery {
+    width: 120px;
+    height: 26px;
+    position: absolute;
+    top: 36px;
+    right: 0px;
+}
+
+#cms-reports div.filter div.filter-delivery select {
+    width: 120px;
+    float: left;
+    border: #0C7CA8 1px solid;
+    padding: 3px 3px 3px 0px;
+}
+
+#cms-reports div.filter div.filter-load {
+    width: 24px;
+    height: 24px;
+    background: url('/images/load_filter.gif') 50% 50% no-repeat;
+    position: absolute;
+    right: 135px;
+    bottom: 11px;
+    display: none;
+}
+
+#cms-reports div.filter.min div.filter-load {
+    bottom: 41px;
+}
+
+#cms-reports div.filter div.filter-button {
+    width: 120px;
+    color: #ffffff;
+    background: #0C7CA8;
+    padding: 6px 0px 8px;
+    text-align: center;
+    position: absolute;
+    right: 0px;
+    bottom: 10px;
+    cursor: pointer;
+    margin: 0px;
+}
+
+#cms-reports div.filter.min div.filter-button {
+    bottom: 40px;
+
+}
+
+#cms-reports div.filter div.filter-button:hover {
+    background: #0d94c9;
+}
+
+#cms-reports div.info {
+    background: #f8f3d6;
+    border: rgba(12, 124, 168, 0.4) 1px solid;
+    padding: 15px 20px 15px 20px;
+    margin: 10px 0px 20px 0px;
+    position: relative;
+}
+
+#cms-reports div.info span.info {
+    font-size: 10px;
+    color: #ffffff;
+    background: #d94040;
+    border-radius: 6px;
+    padding: 0px 4px 0px 4px;
+    margin: 0px 0px 0px 5px;
+    cursor: help;
+    opacity: 0.75;
+}
+
+#cms-reports div.info div.info-count {
+    float: left;
+}
+
+#cms-reports div.info div.info-count b {
+    font-size: 48px;
+    line-height: 48px;
+}
+
+#cms-reports div.info div.info-goods {
+    float: left;
+    line-height: 18px;
+    border-right: #dddddd 1px solid;
+    padding: 0px 20px 0px 0px;
+    margin: 0px 0px 0px 30px;
+}
+
+#cms-reports div.info div.info-pays {
+    float: left;
+    line-height: 18px;
+    border-right: #dddddd 1px solid;
+    padding: 0px 20px 0px 0px;
+    margin: 0px 0px 0px 20px;
+}
+
+#cms-reports div.info div.info-comission {
+    float: left;
+    line-height: 18px;
+    border-right: #dddddd 1px solid;
+    padding: 0px 20px 0px 0px;
+    margin: 0px 0px 0px 20px;
+}
+
+#cms-reports div.info div.info-delivery {
+    float: left;
+    line-height: 18px;
+    border-right: #dddddd 1px solid;
+    padding: 0px 20px 0px 0px;
+    margin: 0px 0px 0px 20px;
+}
+
+#cms-reports div.info div.info-cancel {
+    float: left;
+    line-height: 18px;
+    margin: 0px 0px 0px 0px;
+   /* margin: 0px 0px 0px 20px;*/
+}
+#cms-reports div.info div.info-goods-all {
+    float: left;
+    line-height: 18px;
+    margin: 0px 0px 0px 20px;
+}
+#cms-reports div.info div.exports-xls {
+    width: 24px;
+    height: 32px;
+    background: url('/images/exports_xls.png') 50% 50% no-repeat;
+    position: absolute;
+    top: 10px;
+    right: 44px;
+    cursor: pointer;
+    opacity: 0.75;
+}
+
+#cms-reports div.info div.exports-xls:hover {
+    opacity: 1;
+}
+
+#cms-reports div.info div.exports-xml {
+    width: 24px;
+    height: 32px;
+    background: url('/images/exports_xml.png') 50% 50% no-repeat;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    opacity: 0.75;
+}
+
+#cms-reports div.info div.exports-xml:hover {
+    opacity: 1;
+}
+
+#cms-reports div.items {
+    padding: 0px 0px 0px 0px;
+}
+
+#cms-reports div.items div.item {
+    margin: 0px 0px 30px 0px;
+    position: relative;
+}
+
+#cms-reports div.items div.item:hover {
+    background: #f8f8f8;
+}
+
+#cms-reports div.items div.item div.order {
+    padding: 4px 8px 4px 8px;
+}
+
+#cms-reports div.items div.item div.order span {
+    font-weight: bold;
+}
+
+#cms-reports div.items div.item div.user {
+    padding: 0px 8px 4px 8px;
+}
+
+#cms-reports div.items div.item div.user span {
+    color: #909090;
+}
+
+#cms-reports div.items div.item div.user span.staff {
+    color: #ebebf8;
+    background: #7c7ce2;
+    border-radius: 3px;
+    padding: 0px 5px 2px 5px;
+    margin: 0px 0px 0px 8px;
+    white-space: nowrap;
+}
+
+#cms-reports div.items div.item div.code {
+    padding: 0px 8px 4px 8px;
+}
+
+#cms-reports div.items div.item div.code span {
+    color: #909090;
+}
+
+#cms-reports div.items div.item div.comments {
+    padding: 0px 8px 0px 8px;
+}
+
+#cms-reports div.items div.item div.comments span {
+    color: #909090;
+}
+
+#cms-reports div.items div.item div.comments span.comments {
+    color: #7c7ce2;
+}
+
+#cms-reports div.items table.reports {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#cms-reports div.items table.reports th {
+    font-size: 10px;
+    font-weight: normal;
+    color: #909090;
+    padding: 0px 0px 8px 0px;
+    text-align: center;
+    vertical-align: bottom;
+}
+
+#cms-reports div.items table.reports td {
+    background: #f8f8f8;
+    border: rgba(12, 124, 168, 0.4) 1px solid;
+}
+
+#cms-reports div.items table.reports tr.item:hover td {
+    background: #f8f3d6;
+}
+
+#cms-reports div.items table.reports tr.disabled {
+    opacity: 0.5;
+}
+
+#cms-reports div.items table.reports tr.grey td {
+    background: #f4f4f4;
+}
+
+#cms-reports div.items table.reports tr.total td {
+    background: #e8e3c6;
+}
+
+#cms-reports div.items table.reports td.image {
+    width: 100px;
+    text-align: center;
+    vertical-align: top;
+}
+
+#cms-reports div.items table.reports td.image img {
+    max-width: 100px;
+}
+
+#cms-reports div.items table.reports td.image div.variation-id {
+    font-size: 11px;
+    color: #ffffff;
+    background: #000000;
+    padding: 0px 4px 0px 4px;
+    margin: 2px 0px 0px 2px;
+    position: absolute;
+    opacity: 0.75;
+}
+
+#cms-reports div.items table.reports td.name {
+    padding: 4px 8px 4px 8px;
+    position: relative;
+}
+
+#cms-reports div.items table.reports td.name div.shop {
+    color: #888888;
+    padding: 0px 0px 2px 0px;
+    position: relative;
+}
+
+#cms-reports div.items table.reports span.cancel, #cms-reports div.items table.reports span.return {
+    color: #d94040;
+    border-bottom: #d94040 1px dotted;
+    position: absolute;
+    top: 4px;
+    right: 8px;
+    cursor: pointer;
+    opacity: 0.5;
+    display: none;
+}
+
+#cms-reports div.items table.reports span.cancel:hover, #cms-reports div.items table.reports span.return:hover {
+    opacity: 1;
+}
+
+#cms-reports div.items table.reports tr:hover span.cancel, #cms-reports div.items table.reports tr:hover span.return {
+    display: inline;
+}
+
+#cms-reports div.items table.reports td.name div.tags {
+    color: #aaaaaa;
+    padding: 2px 0px 0px 0px;
+}
+
+#cms-reports div.items table.reports td.status {
+    width: 180px;
+    line-height: 20px;
+    padding: 4px 0px 4px 0px;
+    text-align: center;
+}
+
+#cms-reports div.items table.reports td.status span.status {
+    border-bottom: #555555 1px dotted;
+    cursor: pointer;
+}
+
+#cms-reports div.items table.reports td.status span.status:hover {
+    color: #000000;
+}
+
+#cms-reports div.items table.reports td.status span.status-no, #cms-reports div.items table.reports td.status span.status-cancel {
+    color: #d94040;
+}
+
+#cms-reports div.items table.reports td.status div.item-status {
+    width: 500px;
+    background: #eeeeee;
+    box-shadow: 0px 0px 6px #606060;
+    padding: 10px 0px 5px 0px;
+    margin: 10px 0px 0px 10px;
+    position: absolute;
+    z-index: 8;
+    display: none;
+}
+
+#cms-reports div.items table.reports td.status div.item-status div {
+    padding: 0px 10px 5px 10px;
+}
+
+#cms-reports div.items table.reports td.status div.item-status div span {
+    color: #888888;
+}
+
+#cms-reports div.items table.reports td.status div.item-status div span.auto {
+    color: #0088ff;
+}
+#cms-reports .dashed {
+    color: #0088ff;
+    border-color:#0088ff;
+}
+#cms-reports div.items table.reports td.comission {
+    width: 100px;
+    line-height: 20px;
+    padding: 4px 0px 4px 0px;
+    text-align: center;
+}
+
+#cms-reports div.items table.reports td.comission span.comission-percent {
+    color: #888888;
+}
+
+#cms-reports div.items table.reports td.count span.count-save {
+    color: #888888;
+}
+
+#cms-reports div.items table.reports td.date {
+    width: 80px;
+    padding: 4px 0px 4px 0px;
+    text-align: center;
+}
+
+#cms-reports div.items table.reports td.time {
+    width: 70px;
+    padding: 4px 0px 4px 0px;
+    text-align: center;
+}
+
+#cms-reports div.items table.reports td.datetime {
+    width: 120px;
+    padding: 4px 0px 4px 0px;
+    text-align: center;
+}
+
+#cms-reports div.items table.reports td.money {
+    width: 90px;
+    padding: 4px 0px 4px 0px;
+    text-align: center;
+}
+
+#cms-reports div.items table.reports td.money.min {
+    width: 70px;
+    position: relative;
+}
+
+#cms-reports div.items table.reports td.money.min input {
+    width: 31px;
+    padding: 2px 0px 2px 0px;
+    text-align: center;
+}
+
+#cms-reports div.items table.reports td.money.min div.save {
+    width: 26px;
+    font-size: 11px;
+    color: #ffffff;
+    background: #0C7CA8;
+    border-radius: 3px;
+    padding: 1px 0px 1px 0px;
+    text-align: center;
+    position: absolute;
+    top: 6px;
+    right: 4px;
+    cursor: pointer;
+    display: none;
+}
+
+#cms-reports div.items table.reports td.money.min div.surcharge-save:hover {
+    background: #692c60;
+}
+
+#cms-reports div.items table.reports td.bonus {
+    width: 90px;
+    padding: 4px 0px 4px 0px;
+    text-align: center;
+}
+
+#cms-reports div.items table.reports td.count {
+    width: 70px;
+    padding: 4px 0px 4px 0px;
+    text-align: center;
+}
+
+#cms-reports div.items table.reports td.order-id {
+    width: 100px;
+    padding: 4px 0px 4px 0px;
+    text-align: center;
+}
+
+#cms-reports div.items table.reports td.user-name {
+    /*width: 250px;*/
+    padding: 4px 4px 4px 4px;
+}
+
+#cms-reports div.items table.reports td.user-name select.drivers {
+    width: 100%;
+}
+
+#cms-reports div.items table.reports td.status {
+    padding: 4px 4px 4px 4px;
+}
+
+#cms-reports div.items table.reports tr.delivery td {
+    background: #f8f3d6;
+}
+
+#cms-reports div.items table.reports tr.delivery td.description {
+    padding: 4px 8px 8px 8px;
+    position: relative;
+}
+
+#cms-reports div.items table.reports tr.delivery td.description span.delivery-cancel {
+    color: #d94040;
+    border-bottom: #d94040 1px dotted;
+    position: absolute;
+    top: 4px;
+    right: 8px;
+    cursor: pointer;
+    opacity: 0.5;
+    display: none;
+}
+
+#cms-reports div.items table.reports tr.delivery td.description span.delivery-double {
+    color: #d94040;
+    border-bottom: #d94040 1px dotted;
+    position: absolute;
+    top: 4px;
+    right: 120px;
+    cursor: pointer;
+    opacity: 0.5;
+    display: none;
+}
+
+#cms-reports div.items table.reports tr.delivery td.description span.delivery-cancel:hover, #cms-reports div.items table.reports tr.delivery td.description span.delivery-double:hover {
+    opacity: 1;
+}
+
+#cms-reports div.items table.reports tr:hover.delivery td.description span.delivery-cancel, #cms-reports div.items table.reports tr:hover.delivery td.description span.delivery-double {
+    display: inline;
+}
+
+#cms-reports div.user span.button-res {
+    padding: 0px 5px;
+    color: #fff !important;
+    margin: 0px 0 0px 5px;
+    position: relative;
+    top: 1px;
+    cursor: pointer;
+    white-space: pre;
+    background-color: #8D6A88;
+    border-radius:100px;
+}
+#cms-reports div.user span.button-res.open {
+    background-color: #d9534f;
+}
+#cms-reports div.user.open {
+    color: #d9534f;
+}
+#cms-reports a.window {
+    position: relative;
+}
+#cms-reports div.window-content {
+    position: absolute;
+    background: #fff;
+    width: 200px;
+    padding: 5px;
+    border: 1px solid #D6D6D6;
+    border-radius: 3px;
+    top: 25px;
+    left: 0;
+    min-height: 60px;
+    z-index: 200;
+    display: none;
+}
+#cms-reports div.window-content:after, #cms-reports div.window-content:before {
+    bottom: 100%;
+    left: 15%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+}
+
+#cms-reports div.window-content:after {
+    border-color: rgba(255, 255, 255, 0);
+    border-bottom-color: #fff;
+    border-width: 9px;
+    margin-left: -9px;
+}
+#cms-reports div.window-content:before {
+    border-color: rgba(214, 214, 214, 0);
+    border-bottom-color: #D6D6D6;
+    border-width: 10px;
+    margin-left: -10px;
+}
+#cms-reports div.window-content div.item {
+    float: left;
+    margin: 0px 5px 5px 0px;
+}
+
+/* Движение средств */
+#cms-transactions {
+    padding: 0px 0px 0px 0px;
+}
+
+#cms-transactions div.users {
+    width: 590px;
+    float: left;
+}
+
+#cms-transactions div.users div.users-search {
+    padding: 20px 0px 20px 0px;
+    position: relative;
+}
+
+#cms-transactions div.users div.users-search div.input {
+    /* */
+}
+
+#cms-transactions div.users div.users-search div.input input {
+    width: 440px;
+    border: #0C7CA8 1px solid;
+    padding: 4px 4px 4px 4px;
+}
+
+#cms-transactions div.users div.users-search div.button {
+    width: 120px;
+    color: #ffffff;
+    background: #0C7CA8;
+    padding: 5px 0px 5px 0px;
+    text-align: center;
+    position: absolute;
+    right: 0px;
+    bottom: 20px;
+    cursor: pointer;
+}
+
+#cms-transactions div.users div.users-search div.button:hover {
+    background: #692c60;
+}
+
+#cms-transactions div.users div.items {
+    height: 500px;
+    padding: 0px 1px 0px 0px;
+    overflow-y: scroll;
+}
+
+#cms-transactions div.user-data {
+    width: 550px;
+    float: right;
+}
+
+#cms-transactions div.user-data div.info {
+    background: #f8f3d6;
+    border: rgba(12, 124, 168, 0.4) 1px solid;
+    padding: 14px 20px 10px 20px;
+    margin: 20px 0px 20px 0px;
+}
+
+#cms-transactions div.user-data div.info div.item {
+    padding: 0px 0px 5px 0px;
+}
+
+#cms-transactions div.user-data div.requests {
+    background: #f8f3d6;
+    border: rgba(12, 124, 168, 0.4) 1px solid;
+    padding: 14px 9px 6px 20px;
+    margin: 20px 0px 20px 0px;
+}
+
+#cms-transactions div.user-data div.requests div.item {
+    padding: 0px 0px 9px 0px;
+}
+
+#cms-transactions div.user-data div.requests div.item div.date {
+    width: 125px;
+    float: left;
+    color: #999999;
+}
+
+#cms-transactions div.user-data div.requests div.item div.money {
+    width: 245px;
+    float: left;
+}
+
+#cms-transactions div.user-data div.requests div.item div.actions {
+    width: 145px;
+    float: right;
+    text-align: right;
+}
+
+#cms-transactions div.user-data div.requests div.item div.actions span.button {
+    font-size: 11px;
+    color: #ffffff;
+    background: #0C7CA8;
+    border-radius: 2px;
+    padding: 3px 5px 4px 5px;
+    margin: 0px 3px 0px 3px;
+    cursor: pointer;
+}
+
+#cms-transactions div.user-data div.requests div.item div.actions span.button:hover {
+    background: #692c60;
+}
+
+#cms-transactions div.user-data div.requests div.empty {
+    padding: 0px 0px 9px 0px;
+}
+
+#cms-transactions div.user-data div.money-out {
+    padding: 0px 0px 20px 0px;
+    position: relative;
+}
+
+#cms-transactions div.user-data div.money-out div.money {
+    width: 90px;
+    float: left;
+    position: relative;
+}
+
+#cms-transactions div.user-data div.money-out div.money input.money {
+    width: 60px;
+    border: #0C7CA8 1px solid;
+    padding: 4px 4px 4px 4px;
+}
+
+#cms-transactions div.user-data div.money-out div.money span.label {
+    color: #999999;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+
+#cms-transactions div.user-data div.money-out div.comments {
+    width: 380px;
+    float: left;
+    position: relative;
+}
+
+#cms-transactions div.user-data div.money-out div.comments input.comments {
+    width: 350px;
+    border: #0C7CA8 1px solid;
+    padding: 4px 4px 4px 4px;
+}
+
+#cms-transactions div.user-data div.money-out div.comments span.label {
+    color: #999999;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+
+#cms-transactions div.user-data div.money-out div.button {
+    width: 120px;
+    color: #ffffff;
+    background: #0C7CA8;
+    padding: 5px 0px 5px 0px;
+    text-align: center;
+    position: absolute;
+    right: 0px;
+    bottom: 20px;
+    cursor: pointer;
+}
+
+#cms-transactions div.user-data div.money-out div.button:hover {
+    background: #692c60;
+}
+
+#cms-transactions table.transactions {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#cms-transactions table.transactions th {
+    font-size: 10px;
+    font-weight: normal;
+    color: #909090;
+    padding: 0px 0px 4px 4px;
+    text-align: left;
+    vertical-align: bottom;
+}
+
+#cms-transactions table.transactions td {
+    border: rgba(12, 124, 168, 0.4) 1px solid;
+}
+
+#cms-transactions table.transactions tr.item:hover td {
+    background: #f8f3d6;
+}
+
+#cms-transactions table.transactions tr.grey {
+    background: #f4f4f4;
+}
+
+#cms-transactions table.transactions td {
+    padding: 4px 4px 4px 4px;
+}
+
+#cms-transactions table.transactions td.datetime {
+    width: 120px;
+    padding: 4px 0px 4px 0px;
+    text-align: center;
+}
+
+#cms-transactions table.transactions td.order-id {
+    width: 80px;
+    text-align: center;
+}
+
+#cms-transactions table.transactions td.phone {
+    width: 100px;
+}
+
+#cms-transactions table.transactions td.email {
+    width: 240px;
+}
+
+#cms-transactions table.transactions td.money {
+    width: 70px;
+    text-align: right;
+}
+
+#cms-transactions table.transactions td.bonus {
+    width: 70px;
+    text-align: right;
+}
+
+/* Календарь */
+div.calendar {
+    width: 97px;
+    background: #ffffff;
+    border: #0C7CA8 1px solid;
+    padding: 4px 26px 4px 4px;
+    position: relative;
+}
+
+div.calendar input {
+    width: 100%;
+    border: 0px;
+    text-align: center;
+}
+
+div.calendar div.table {
+    width: 232px;
+    background: #ffffff;
+    border: #0C7CA8 2px solid;
+    box-shadow: 0px 0px 6px #606060;
+    padding: 2px 0px 0px 0px;
+    position: absolute;
+    top: 28px;
+    right: -1px;
+    z-index: 9;
+    display: none;
+}
+
+div.calendar div.table div.months {
+    height: 26px;
+    background: #0C7CA8;
+    margin: 0px 2px 0px 2px;
+    position: relative;
+}
+
+div.calendar div.table div.months div {
+    font-size: 11px;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+}
+
+div.calendar div.table div.months div.month {
+    width: 128px;
+    padding: 5px 0px 5px 0px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+div.calendar div.table div.months div.month-left {
+    width: 28px;
+    padding: 5px 0px 5px 0px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    cursor: pointer;
+}
+
+div.calendar div.table div.months div.month-right {
+    width: 28px;
+    padding: 5px 0px 5px 0px;
+    position: absolute;
+    top: 0px;
+    left: 100px;
+    cursor: pointer;
+}
+
+div.calendar div.table div.months div.month-left:hover, div.calendar div.table div.months div.month-right:hover {
+    background: #692c60;
+}
+
+div.calendar div.table div.months div.year {
+    width: 98px;
+    padding: 5px 0px 5px 0px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+div.calendar div.table div.months div.year-left {
+    width: 28px;
+    padding: 5px 0px 5px 0px;
+    position: absolute;
+    top: 0px;
+    right: 70px;
+    cursor: pointer;
+}
+
+div.calendar div.table div.months div.year-right {
+    width: 28px;
+    padding: 5px 0px 5px 0px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    cursor: pointer;
+}
+
+div.calendar div.table div.months div.year-left:hover, div.calendar div.table div.months div.year-right:hover {
+    background: #692c60;
+}
+
+div.calendar div.table div.days {
+    margin: 1px 1px 1px 1px;
+}
+
+div.calendar div.table div.days table th {
+    width: 33px;
+    background: #f0eaca;
+    border: 0px;
+    padding: 0px;
+}
+
+div.calendar div.table div.days table td {
+    width: 33px;
+    background: #f8f3d6;
+    border: 0px;
+    padding: 0px;
+}
+
+div.calendar div.table div.days table th div, div.calendar div.table div.days table td div {
+    font-size: 11px;
+    border: #ffffff 1px solid;
+    padding: 5px 0px 5px 0px;
+    text-align: center;
+}
+
+div.calendar div.table div.days table td.day div {
+    cursor: pointer;
+}
+
+div.calendar div.table div.days table td.day.open {
+    background: #e5dfbf;
+}
+
+div.calendar div.table div.days table td.day:hover {
+    background: #e5dfbf;
+}
+
+div.calendar div.date-button {
+    width: 21px;
+    height: 20px;
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    background: #f8f8f8 url('/images/calendar.png') 3px 2px no-repeat;
+    cursor: pointer;
+}
+
+div.calendar div.date-button:hover {
+    background-color: #f4f4f4;
+}
+
+span.unknowtag {
+    color: red;
+}
+
+div.button_action {
+    display: inline-block;
+    padding: 2px 5px;
+    margin-left: 5px;
+    background-color: #8D6A88;
+    color: #fff;
+    cursor: pointer;
+}
+
+.list_no_confirm li {
+    margin: 5px 0px;
+}
+
+.tag_place_edit {
+    width: 500px;
+}
+
+.tag_place_edit table {
+    width: 100%;
+}
+
+.tag_place_edit tr {
+    height: 30px;
+}
+
+.tag_place_edit td input[type="text"] {
+    width: 221px;
+}
+
+.tag_place_edit td {
+    background: #F3F3F3;
+}
+
+.tag_place_edit tr:nth-child(2n+1) td {
+    background: #f8f8f8;;
+    border: 1px solid #f8f8f8;;
+}
+
+.tag_place_edit input.button_action {
+    float: right;
+    display: inline-block;
+    padding: 2px 5px;
+    margin-left: 5px;
+    background-color: #8D6A88;
+    color: #fff;
+    cursor: pointer;
+}
+
+a.button_action {
+    margin-top: 16px;
+    display: inline-block;
+    border: none;
+    background: #0C7CA8;
+    color: #fff;
+    padding: 2px 10px;
+    margin-left: 20px;
+    font-size: 12px;
+    font-weight: normal;
+}
+
+.chainItem {
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 5px;
+    background-color: #FD1;
+    margin-bottom: 5px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.wrapperChain {
+    float: right;
+    width: 870px;
+    margin-left: 0px;
+    height: 311px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    position: relative;
+}
+
+.deleteChainItem {
+    position: relative;
+    font-weight: bold;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.dd {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.chain_search {
+    width: 221px;
+    margin-top: -100px;
+}
+
+.chain_search input[type="text"].search_tag {
+    width: 150px;
+    float: left;
+    display: inline;
+}
+
+.chain_search div.button_action {
+    float: right;
+}
+
+.searchItemWrapper {
+    position: absolute;
+    background: #fff;
+    margin-top: 20px;
+    padding-left: 10px;
+    min-width: 119px;
+    min-width: 119px;
+    overflow: auto;
+}
+
+.searchItemWrapper div.searchItem {
+    cursor: pointer;
+}
+
+/*Модлаьная окно */
+#shadow div.window.cms {
+    width: 70%;
+    min-width: 680px;
+    padding: 0px 30px;
+}
+
+div.shadow_cms {
+    background: none !important;
+    position: absolute !important;
+}
+
+/*Карирования избражения */
+#crop_img {
+    min-height: 460px;
+}
+
+#crop_img div.item_images {
+    float: left;
+    margin: 0px 10px 0px 0px;
+    width: 85%;
+}
+
+#crop_img div.item_images div img {
+
+}
+
+#crop_img div.thumbs_img {
+    float: left;
+    outline: 1px solid;
+    width: 170px;
+}
+
+#crop_img div.thumbs_img div img {
+    background: rosybrown none repeat scroll 0 0;
+    margin: 0 0 5px;
+    width: 170px;
+}
+
+#crop_img div.button {
+    margin: 20px 0px 0px 0px;
+}
+
+#crop_img div.button div.crop, #crop_img div.button div.save {
+    width: 150px;
+    float: left;
+    margin: 0px 20px 0px 0px;
+}
+
+#crop_img div.message {
+    color: #41a900;
+    font-size: 26px;
+    margin: 20px 0px;
+    text-align: center;
+}
+
+#cms-form span.crop {
+    margin: 0;
+    position: absolute;
+    right: -82px;
+    top: 25px;
+}
+
+/*Кадрирования*/
+.cropit-image-preview {
+    background-color: #f8f8f8;
+    background-size: cover;
+    border: 5px solid #ccc;
+    border-radius: 3px;
+    margin-top: 7px;
+    width: 250px;
+    height: 250px;
+    cursor: move;
+}
+
+.cropit-image-background {
+    opacity: .2;
+    cursor: auto;
+}
+
+.image-size-label {
+    margin-top: 10px;
+}
+
+.export {
+    margin-top: 10px;
+}
+
+/*Таблиц Общий стиль*/
+table.cms-table tr {
+    background: #F8F8F8;
+}
+
+table.cms-table td.images {
+    padding: 15px 5px;
+}
+
+table.cms-table tr.on {
+    background: #F08080;
+}
+
+/*Список записей*/
+div.button_pun.cms {
+    border-bottom: 3px solid #6e4b69;
+    border-radius: 3px;
+    margin: 5px 0;
+    padding: 7px 5px 5px;
+    width: 100px;
+    float: right;
+}
+
+div.reset_button.cms {
+    width: 86px;
+    border-bottom: 3px solid #b2b2b2;
+    margin: 5px 0;
+    padding: 7px 5px 5px;
+}
+
+/*Автоперелинковка*/
+#cms-autolinks div.items {
+    float: left;
+    margin: 0px 10px 0px 0px;
+    padding: 5px 0px;
+    width: 716px;
+}
+
+#cms-autolinks div.form-cms {
+    float: left;
+    margin: 0;
+    width: 450px;
+}
+
+#cms-autolinks div.items div.item {
+    background: #0C7CA8;
+    float: left;
+    padding: 5px 10px;
+    margin: 0px 10px 10px 0px;
+    cursor: pointer;
+    position: relative;
+    color: #ffffff;
+}
+
+#cms-autolinks div.items div.item .delete {
+    background: papayawhip url("/images/delete_min.png") no-repeat scroll 0 0 / 14px auto;
+    border-radius: 100px;
+    height: 12px;
+    padding: 1px;
+    position: absolute;
+    right: -5px;
+    top: -7px;
+    width: 11px;
+    z-index: 30;
+}
+
+#cms-autolinks div.items div.item .delete:hover {
+    background-position: 0px -14px;
+}
+
+#cms-autolinks div.items div.item.off {
+    background: #dd364f;
+    color: #fff;
+}
+
+#cms-autolinks div.items div.item.off:hover {
+    background: #f64f68;
+}
+
+#cms-autolinks div.items div.item:hover {
+    background: #8e5185;
+}
+
+#cms-autolinks div.items div.item span.meta {
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+#cms-autolinks input.string {
+    width: 100%;
+}
+
+#cms-autolinks div.button_pun.cms {
+    float: none;
+}
+
+/*Инструмент Техподержка для Call*/
+#cms-feedback div.nav {
+    padding: 10px 0px;
+    margin: 0px 0px 45px;
+}
+
+#cms-feedback div.nav div.item {
+    background: #6b2e62;
+    border-radius: 3px;
+    float: left;
+    margin: 0px 10px 0px 0px;
+    padding: 7px 15px;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+}
+
+#cms-feedback div.nav div.item:hover, #cms-feedback div.nav div.item.open {
+    background: #3e0135;
+}
+
+#cms-feedback div.nav div.item a {
+    border: none;
+    font-size: 14px;
+    color: #fff;
+}
+
+#cms-feedback div.string {
+
+}
+
+/*Таблица оформления*/
+#cms-feedback .cms-table {
+
+}
+
+#cms-feedback table.phone {
+    width: 650px;
+}
+
+#cms-feedback .my-table th {
+    padding: 5px;
+    color: #5e5e5e;
+    background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+    font-size: 12px;
+}
+
+#cms-feedback .cms-table tr.none {
+    background: none;
+}
+
+#cms-feedback .cms-table tr td.action {
+    width: 140px;
+    font-size: 12px;
+}
+
+#cms-feedback .cms-table tr td.status {
+    width: 15px;
+}
+
+#cms-feedback .cms-table tr td.img {
+    padding: 2px;
+    text-align: unset;
+    width: 70px;
+}
+
+#cms-feedback .cms-table tr td.img a {
+    border: medium none;
+    display: block;
+    float: left;
+    margin: 2px;
+}
+
+#cms-feedback .cms-table tr td.img img {
+    width: 30px;
+    height: 25px;
+}
+
+#cms-feedback .cms-table tr td {
+    padding: 5px;
+    border: 1px solid #d0d0d0;
+    font-size: 13px;
+}
+
+#cms-feedback .cms-table tr.yes {
+    background: #FFDAB9;
+}
+
+#cms-feedback .cms-table tr td.string, #cms-feedback .cms-table tr td.text {
+    text-align: left;
+}
+
+#cms-feedback .cms-table tr td.text {
+    width: 465px;
+}
+
+#cms-feedback .all-currents {
+    padding: 3px 7px 1px;
+    position: absolute;
+    top: -10px;
+}
+#cms-feedback div.filters a {
+    margin: 0 0px 0 10px;
+}
+#pages {
+    margin: 25px 0px 0px 0px;
+    font-size: 15px;
+}
+
+#pages a {
+    padding: 0 3px;
+}
+
+/*Категория*/
+div.menu-category {
+    width: 400px;
+}
+
+div.menu-category div.item, div.menu-category div.i {
+    margin: 5px 0;
+    outline: 1px solid;
+    padding: 6px 5px;
+}
+
+div.menu-category div.group {
+    padding: 6px 5px 6px 20px;
+}
+
+div.menu-category div.i {
+
+}
+
+div.menu-category div.name {
+
+}
+
+/*---Отчёт о продажах (общий)---*/
+
+#report-sales .loader {
+    width: 50px;
+    height: 24px;
+    background: url('/images/load_filter.gif') 50% 50% no-repeat;
+    position: absolute;
+    display: none;
+}
+
+#report-sales #table1 td, #table1 th {
+    font-size: 20px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#report-sales #table2 td {
+    font-size: 20px;
+}
+
+#report-sales #table2 {
+    display: none;
+}
+
+#report-sales #chart_div {
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+
+#report-sales tfoot {
+    border-top: 2px solid #ddd;
+    font-weight: 600;
+}
+
+#report-sales #table2 .bb {
+    font-weight: 600;
+}
+
+#report-sales table tr {
+    white-space: nowrap;
+}
+
+#report-sales thead td {
+    white-space: pre-line;
+}
+
+@media only screen and (max-width: 1198px) {
+    #shop_management #report-sales table.table {
+        width: 100%;
+    }
+    #table1 td, #table1 th {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #report-sales table td {
+        width: 60px;
+    }
+}
+
+/* Индекс покупателя */
+
+#profile #table_total td {
+    font-size: 18px;
+}
+
+#profile #table_total td:nth-child(even) {
+    font-weight: 600;
+    text-align: center;
+}
+
+#profile #table_features td {
+    font-size: 18px;
+}
+
+#profile #table_features td:nth-child(even) {
+    font-weight: 600;
+    text-align: center;
+}
+
+#profile #profileForm {
+    padding-bottom: 50px;
+}
+
+#profile .rate {
+    padding: 10px 0;
+}
+/*-- XML/YML --*/
+div.content-xml {
+
+}
+div.content-xml div.category-select{
+    margin: 5px 0;
+}
+div.content-xml div.path-f {
+    padding: 18px 0;
+}
+div.content-xml div.files {
+    margin: 10px 0px;
+}
+div.content-xml div.files .xml,div.content-xml div.path-content{
+    background: #fcfcfc;
+    border: 1px solid #9f9f9f;
+    border-radius: 3px;
+    height: 110px;
+    margin: 5px 0;
+    overflow: auto;
+    padding: 5px 10px;
+    width: 50%
+}
+div.content-xml div.path-content {
+    min-width: 360px;
+    width: 100%;
+}
+div.content-xml div.path-content div{
+    padding: 5px 0;
+    width: 100%;
+}
+div.content-xml div.files div{
+    padding: 4px 0;
+}
+div.content-xml div.files div span {
+    margin: 0 0 0 5px;
+    top: 2px
+}
+div.content-xml .xml-form {
+    margin: 5px 0;
+}
+div.content-xml button.btn  {
+    margin: 8px 10px 0 0;
+}
+div.content-xml button.close  {
+    color: red;
+    float: none;
+    padding-left: 3px;
+    position: relative;
+    top: 3px;
+}
+/*Color*/
+#w0 tr.danger-com {
+    background-color: rgba(217, 79, 79, 0.74) ;
+}
+#cke_pages-text {
+    margin: 0 0 0 auto;
+    display: block !important;
+}
+ul li{
+    margin: 0px;
+}
+/*---Прием товара---*/
+
+div.filter-list {
+    padding: 10px;
+    border-radius: 5px;
+}
+#ownerorderfilter-staff label {
+    /*padding: 0 7px 0 0px;*/
+}
+/*Загрузка товаров*/
+#repost_order_list {
+    margin-top: 15px;
+}
+#repost_order_list div.items {
+    border: 1px solid #c7c7c7;
+    margin-bottom: 15px;
+}
+#repost_order_list div.items .order-info{
+    padding: 8px 15px;
+    border-bottom: 1px solid #c7c7c7;
+    background: #0C7CA8;
+    color: #fff;
+    cursor: pointer;
+}
+#repost_order_list div.items .order-info.open{
+    background: #d9534f;
+}
+#repost_order_list div.items .order-info.new{
+    background: #208b0b;
+}
+#repost_order_list div.items .order-info.warning:nth-of-type(5){
+    background-color: #f0ad4e;
+}
+#repost_order_list div.items .order-info div.glyphicon {
+    float: right;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+}
+#repost_order_list div.items .order-info .order {
+    font-size: 14px;
+}
+#repost_order_list div.items .order-info .info-user {
+   color:#fff;
+    float: left;
+    width: 90%;
+}
+#repost_order_list div.items .panel-user {
+    background: #F8F2D6;
+    position: relative;
+    padding: 5px 15px;
+
+}
+#repost_order_list div.items .panel-user .goodsMetro {
+    padding: 5px 5px;
+    font-size: 11px;
+    float: right;
+}
+#repost_order_list div.items .panel-user div {
+    margin: 3px 0 3px 0;
+    font-size: 12px;
+}
+#repost_order_list div.items .panel-user div b{
+    margin: 0 5px 0 0px;
+    display: inline-block;
+}
+#repost_order_list div.items .panel-user .button-res{
+    padding: 0 0 0 5px;
+    cursor: pointer
+}
+#repost_order_list div.items .header-table {
+    border-bottom: 1px solid #c7c7c7;
+    border-top: 1px solid #c7c7c7;
+}
+#repost_order_list div.items .header-table div{
+    border-left: 1px solid #c7c7c7;
+    border-right: 1px solid #c7c7c7;
+}
+#repost_order_list div.items .order-item-image{
+    width: 55px;
+    height: 55px;
+    float: left;
+    margin-right: 10px;
+    cursor: pointer;
+}
+#repost_order_list .order-item-product {
+    position: relative;
+}
+#repost_order_list .order-item-product .status {
+    padding: 0 !important;
+    margin: 5px 0 -5px;
+
+}
+#repost_order_list  .cancel{
+
+    float: right;
+}
+#repost_order_list .deliveries-group{
+    float: right;
+}
+#repost_order_list .deliveries-group span{
+    margin: 0px 5px 0px 0px;
+    white-space: pre;
+    display: inline-block;
+}
+#repost_order_list  .cancel, #repost_order_list  .delivery-cancel ,#repost_order_list  .delivery-double  {
+    cursor: pointer;
+    color: #d9534f;
+    border-bottom: 1px dashed;
+}
+#repost_order_list  .cancel:hover,#repost_order_list  .delivery-cancel:hover ,#repost_order_list  .delivery-double:hover{
+    border: none;
+}
+#repost_order_list div.items .order-item-product div.bold{
+    font-size: 11px;
+}
+#repost_order_list div.items .order-item-product div.variants{
+   color: #909090;
+}
+
+#repost_order_list div.items .status .btn  {
+  /*  float: right;*/
+    padding: 2px 5px;
+    font-size: 11px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+#repost_order_list div.items .table {
+    background: #fff;
+}
+#repost_order_list div.goods-item td.name{
+    min-width: 440px;
+}
+#repost_order_list .input-group-addon{
+    background: #0C7CA8;
+    color: #fff;
+    padding: 0 6px;
+}
+#repost_order_list div.items .panel-user .input-group.date{
+    width: 60%;
+    float: left;
+    margin: 0px;
+}
+#repost_order_list .input-group.date input{
+    font-size: 11px;
+}
+#repost_order_list div.items .panel-user  div.time{
+
+}
+#repost_order_list div.items .panel-user  div.time .btn{
+    width: 35%;
+    margin-left: 5px;
+}
+/*Сплывающий окошка*/
+#repost_order_list div.shop-list-fixed-position {
+    position: fixed;
+    background: rgba(0,0,0,0.5);
+    width: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 500;
+}
+#repost_order_list div.shop-list-fixed-position div.content-shop{
+    margin: 5%auto 0;
+    max-width: 590px;
+    background: #fff;
+    padding: 15px;
+    width: 100%;
+}
+#repost_order_list div.shop-list-fixed-position div.content-shop .change-status {
+    padding: 2px 0px;
+}
+/*Замена товара Модалка*/
+div.goods-list-modal {
+
+}
+div.goods-list-modal .content-goods{
+    border: 1px solid #CFCFCF;
+    border-radius: 3px;
+    margin: 3px -12px;
+}
+div.goods-list-modal div.images{
+
+}
+div.goods-list-modal div.block {
+
+}
+div.goods-list-modal div.block div {
+    font-size: 11px;
+    margin-bottom: 5px;
+}
+div.goods-list-modal div.block div.sum{
+    font-size: 13px;
+    padding-bottom: 7px;
+}
+div.goods-list-modal div.block .form-control {
+    padding: 0px 5px;
+    height: 27px;
+}
+div.goods-list-modal div.block button {
+
+}
+div.goods-list-modal div.block div.name{
+    white-space: pre-line;
+    height: 15px;
+    overflow: hidden;
+}
+/*Загрузка изображения*/
+div.content.cms .file-drop-zone-title {
+    text-align: center;
+    font-size: 18px;
+    color:#0C7CA8;
+}
+div.content.cms .file-drop-zone ,div.content.cms .file-preview{
+    border-color: #0C7CA8;
+}
+
+.images-all .panel-ad{
+    padding: 5px 0px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background: rgb(255, 255, 255);
+    background: rgba(255, 255, 255, 0.8);
+}
+.images-all .panel-ad span {
+    cursor: pointer;
+    font-size: 21px;
+    margin: 0 0 0 5px;
+}
+.glyphicon {
+    font-family: 'Glyphicons Halflings' !important;
+}
+.images-all .panel-ad span.glyphicon-remove-sign {
+    margin: 0 5px 0 0;
+    float: right;
+}
+#cms-goods {
+    position: relative;
+}
+#cms-goods div.content-good {
+    max-width: 900px;
+    width: 100%;
+    min-width: 320px;
+}
+#cms-goods .review  {
+    margin: 0px 0px 0px 20px;
+}
+
+#promo-calendar {
+
+}
+#promo-calendar div.filter-date {
+    margin: 15px 0;
+}
+#promo-calendar div.filter-date a{
+    margin-right: 10px;
+}
+#promo-calendar button.show-filter {
+    margin-bottom: 10px;
+}
+/*---Новый отчет о продажах---*/
+#order-reports-new {
+
+}
+
+div.filter-header {
+    margin: 15px 0 0 0;
+}
+div.filter-header .calendar-fast {
+    padding: 0px 0 10px;
+}
+div.filter-header .calendar-fast a {
+    margin-right: 4px;
+    white-space: pre;
+    line-height: 25px;
+}
+div.filter-header .calendar-fast a.show-filter{
+   /* color: #d9534f;*/
+}
+div.filter-header .select2-search__field {
+    width: 100% !important;
+}
+div.filter-header div.content-form-checkbox div.form-group .checkbox,
+div.filter-header div.content-form-radio .radio {
+    font-size: 11px;
+}
+div.filter-header div.content-form-checkbox div.form-group .checkbox input,
+div.filter-header div.content-form-radio .radio input {
+    margin-top: 2px;
+}
+div.filter-header div.content-form-checkbox div.form-group,
+div.filter-header div.content-form-checkbox div.form-group .checkbox,
+div.filter-header div.content-form-radio .radio {
+    padding: 0;
+    margin: 0;
+}
+div.filter-header .button-mod{
+    width: 100%;
+    margin: 17px 0 0px 0;
+}
+#panel-content {
+    border: 1px solid #A4A4A4;
+    border-radius: 0px;
+}
+#panel-content .panel-heading {
+    font-size: 20px;
+}
+#panel-content .panel-body {
+    background: #F8F3D6;
+}
+#panel-content .panel-body .orders-num {
+    font-size: 48px;
+    line-height: 48px;
+    font-weight: bold;
+}
+#panel-content .report-numder {
+    padding: 2px 0;
+}
+#panel-content .toggleCloseAllNew {
+    cursor: pointer;
+    position: absolute;
+    right: 10px;
+    top: 105px;
+    border-bottom: 1px dashed;
+}
+#panel-content .btn-group {
+    float: right;
+}

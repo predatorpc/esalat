@@ -1,0 +1,289 @@
+
+/* Список товара */
+/*
+@media only screen and (min-width: 550px) and (max-width: 992px) {
+    div.mod___goods_list div.items div.item {
+        width: 50%;
+    }
+}
+@media only screen and (max-width:550px) {
+    div.mod___goods_list div.items div.item {
+        width: 100%;
+    }
+}*/
+/*Меню ЛК*/
+@media only screen and (max-width:768px) {
+    div.my-list table td.date,
+    div.my-list table td.code,
+    div.my-list table td.money,
+    div.my-list table td.count,
+    div.my-list table td.delivery,
+    div.my-list table td {
+        padding: 5px;
+        text-align: left;
+        width: 100%;
+    }
+    div.my-promo div.button {
+        width: 100%;
+        top:0px;
+        margin: 10px 0px;
+    }
+    div.my-promo div.button input.button_pun {
+        text-align: center;
+        width: 100%;
+    }
+    div.my-promo {
+        margin: 0px 0px 70px 0px;
+    }
+}
+@media only screen and (max-width:795px) {
+    div.promo_bg .input_forever {
+        width: 97.5%;
+    }
+}
+@media only screen and (max-width:560px) {
+    div.promo_bg .input_forever {
+        width: 95.5%;
+    }
+}
+@media only screen and (max-width:640px) {
+    div.form-cms {
+        width: 265px;
+    }
+}
+/*-----Корзина----*/
+@media only screen and (min-width: 800px) and (max-width: 993px) {
+    .goods__tile div.item div.block-1, .goods__tile div.item div.block-2 {
+        float: none;
+        width: 100%;
+        margin: 0;
+    }
+    .goods__tile div.item div.container-goods {
+        float: left;
+        margin: 0px 0px 0px 5px;
+    }
+}
+@media only screen and (min-width: 442px) and (max-width: 800px) {
+    .goods__tile div.item .name {
+        font-size:18px;
+    }
+    .goods__tile div.item div.block-1, .goods__tile div.item div.block-2 {
+        float: none;
+        width: 100%;
+        margin: 0;
+    }
+    .goods__tile div.item div.block-1 {
+        padding-bottom: 0px;
+    }
+    .goods__tile div.item div.block-2 span.s {
+        display: none;
+    }
+    .goods__tile div.item div.block-2 b {
+        display: inline;
+    }
+    .goods__tile div.item div.block-2 span.price.discount,
+    .goods__tile div.item div.block-2 span.money.discount {
+        display: inline-block;
+        margin: 0 10px;
+    }
+    .goods__tile div.item div.block-2 div.price, .goods__tile div.item div.block-2 div.money{
+        display: block;
+    }
+    .goods__tile div.item div.block-2 div.money {
+        border-top: 2px dashed #929292;
+        font-size: 20px;
+        padding: 12px 0px 0px;
+        text-align: right;
+    }
+    .goods__tile div.item div.block-2 .count__com {
+        display: block;
+        margin: 10px;
+        clear: left;
+    }
+    div.tags.tags__info div.tags-items div.tags-item {
+        font-size: 14px;
+        white-space: pre-wrap;
+    }
+    #basket div.promo {
+        float: none;
+    }
+    #basket div.details {
+        margin:0px;
+    }
+    .overBlockWindow .basketCheckDataWindow {
+        min-width: 312px;
+        padding: 20px 15px;
+        margin: 10px auto 0;
+    }
+    .overBlockWindow .basketCheckDataWindow .right .button,
+    .overBlockWindow .basketCheckDataWindow .left .button {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width:442px) {
+    .step__wid div.step-item div.title {
+        font-size: 22px;
+    }
+    .goods__tile div.item div.images {
+        float:none;
+        width: 100%;
+        height: 100%;
+    }
+    .goods__tile div.item .name {
+        font-size:18px;
+    }
+    .goods__tile div.item div.block-1, .goods__tile div.item div.block-2 {
+        float: none;
+        width: 100%;
+        margin: 0;
+    }
+    .goods__tile div.item div.container-goods {
+        padding: 0 5px;
+    }
+    .goods__tile div.item div.block-1 {
+        padding-bottom: 0px;
+    }
+    .goods__tile div.item div.block-2 span.s {
+        display: none;
+    }
+    .goods__tile div.item div.block-2 b {
+        display: inline;
+    }
+    .goods__tile div.item div.block-2 span.price.discount,
+    .goods__tile div.item div.block-2 span.money.discount {
+        display: inline-block;
+        margin: 0 10px;
+    }
+    .goods__tile div.item div.block-2 div.price, .goods__tile div.item div.block-2 div.money{
+        display: block;
+        padding: 0px 0px 0px 5px;
+    }
+    .goods__tile div.item div.block-2 div.money {
+        border-top: 2px dashed #929292;
+        font-size: 20px;
+        padding: 12px 0px 0px;
+        text-align: right;
+    }
+    .goods__tile div.item div.block-2 .count__com {
+        display: block;
+        margin: 10px 5px;
+        clear: left;
+    }
+    div.tags.tags__info div.tags-items div.tags-item {
+        font-size: 14px;
+        white-space: pre-wrap;
+    }
+    #basket div.promo {
+        float: none;
+    }
+    #basket div.details {
+        margin:0px;
+    }
+    .overBlockWindow .basketCheckDataWindow {
+        min-width: 312px;
+        padding: 20px 15px;
+        margin: 10px auto 0;
+    }
+    .overBlockWindow .basketCheckDataWindow .right .button,
+    .overBlockWindow .basketCheckDataWindow .left .button {
+        width: 100%;
+    }
+}
+/*Адаптация таблица 2 - вариант*/
+@media only screen and (max-width: 768px) {
+    table.mob-table {
+        width: 100%;
+    }
+    div.my-address table.my-table b.m {
+        display: block;
+        margin: 0px 0px 5px;
+
+    }
+    table.mob-table tr, table.mob-table td,table.mob-table th{
+        box-sizing: border-box;
+        clear: left;
+        float: left;
+        width: 100%;
+        display: block;
+    }
+    table.mob-table tr {
+        padding: 5px 5px 15px;
+        background: #fff;
+    }
+    table.mob-table td {
+        padding: 5px 0px;
+        text-align: left;
+    }
+    table.mob-table td b {
+        margin: 0px 5px 0px 0px;
+    }
+    table.mob-table th.ac {
+        cursor: pointer;
+    }
+    table.mob-table b {
+        display: inline;
+    }
+    table.mob-table tr.res, table.mob-table td.number {
+        display: none;
+    }
+    table.mob-table td.checkbox {
+        display: block;
+        float: right;
+        margin: 40px 0px 0px;
+        width: 25px;
+    }
+}
+/*Категория в группе*/
+@media only screen and (max-width: 510px) {
+    div.main-category div.items div.item div.title a {
+        font-size: 13px;
+    }
+}
+/*Список товара*/
+@media only screen and (min-width: 830px) and (max-width: 993px) {
+    div.mod___goods_list div.items div[data-key]{
+        width: 33%;
+    }
+}
+@media only screen and (min-width: 565px) and (max-width: 830px) {
+    div.mod___goods_list div.items div[data-key] {
+        width: 49%;
+    }
+}
+@media only screen and (max-width: 565px) {
+    div.mod___goods_list div.items div[data-key] {
+        width: 100%;
+    }
+}
+
+/*Список продукты*/
+@media only screen and (max-width:680px) {
+    .module___images div.item {
+        max-width: none;
+        width: 50%;
+    }
+    .module___images div.item div.images {
+
+    }
+    .module___images div.item div.images div.bottom {
+        width: 96%;
+    }
+}
+@media only screen and (max-width: 445px) {
+    .module___images div.item div.images div.bottom {
+        width: 94%;
+    }
+}
+@media only screen and (max-width: 370px) {
+    .module___images div.item {
+        max-width: none;
+        width: 100%;
+    }
+    .module___images div.item div.images {
+        padding: 0px;
+    }
+    .module___images div.item div.images div.bottom {
+        width: 100%;
+    }
+}

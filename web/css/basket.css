@@ -1,0 +1,127 @@
+.shadowForDisabled{
+    background: rgba(0,0,0,0.7);
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 998;
+}
+.errorStepBlock{
+    background: #CCC;
+    color: #333;
+    position: absolute;
+    z-index: 999;
+}
+.my-payments,
+#basket-page-time
+{
+    position: relative;
+}
+#basket-page-time .times {
+    background: #eee none repeat scroll 0 0;
+    border-radius: 10px;
+    display: inline-block;
+    max-width: 100%;
+    padding: 10px 20px;
+}
+#basket-page-time .times .day{
+    border-bottom:1px solid #CCC;
+}
+#basket-page-time .times .day div{
+    color: #333;
+    cursor: pointer;
+    display: inline-block;
+    margin-right: 20px;
+}
+#basket-page-time .times .day .set{
+    background: red;
+}
+#basket-page-time .times .day .label{
+    cursor: default;
+}
+.preparationBlock{
+    background: rgba(0,0,0,0.7);
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 998;
+}
+.tag-value-group-item{
+    cursor: pointer;
+    padding: 5px 10px;
+}
+.tag-value-group-item.active{
+    background: #999;
+    border-radius: 5px;
+}
+.tag-value-group-item.passive{
+    background: #444;
+    border-radius: 5px;
+    cursor: default;
+}
+
+/* ----------------------------------- */
+
+.product-list-block{
+    display: none;
+    margin: 5px 25px;
+    padding: 14px 20px;
+}
+.product-list-block .even{
+    background: #ddd;
+}
+.product-list-block .odd{
+
+}
+
+#basket div.product-list-type-title {
+    position: relative;
+}
+#basket div.type_name.product-list-type-title {
+    font-size: 20px;
+    margin: 5px 25px;
+    padding: 8px 20px;
+}
+.product-type-big-block .product-list-type-title::after {
+    border-color: #fff transparent transparent;
+    border-style: solid;
+    border-width: 12px 6px 0;
+    content: "→";
+    cursor: pointer;
+    font-size: 0;
+    height: 0;
+    position: absolute;
+    right: 15px;
+    top: 14px;
+    width: 0;
+}
+.goods-basket.product-list-block div {
+    margin: 0;
+    padding: 3px;
+}
+div.button_oran.right {
+    display: inline-block;
+    margin: 5px 25px 5px auto;
+}
+.save-product-list-block {
+    float: right;
+    margin: 0px;
+    padding: 0;
+    text-align: right;
+}
+.save-product-list-block input{
+    display: inline-block;
+    width: 200px;
+}
+.save-product-list-block p {
+    margin: 15px 10px 0 0px;
+    text-align: center !important;
+    color:#28b245;
+    font-weight: bold;
+}
+.save-product-list-block div.button_oran.right {
+    margin-right: 0px;
+}

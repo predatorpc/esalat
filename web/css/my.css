@@ -1,0 +1,570 @@
+/*----------ЛК----------*/
+div.my-address div.add {
+    font-weight: bold;
+    height: 40px;
+    padding: 0 0 0 5px;
+}
+table.my-table {
+    border-collapse: collapse;
+    width: 100%;
+}
+table.my-table.min {
+    margin: 0;
+}
+table.my-table tr:nth-of-type(2n+1) {
+    background: #eee none repeat scroll 0 0;
+}
+table.my-table th {
+    background: #0C7CA8 none repeat scroll 0 0;
+    color: #fff;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 8px 5px;
+    text-align: center;
+}
+table.my-table td {
+    font-size: 12px;
+    padding: 15px 5px;
+    text-align: center;
+}
+
+table.my-table1 td {
+    font-size: 12px;
+    padding: 2px;
+    text-align: center;
+    vertical-align: top;
+}
+
+table.my-table td.number {
+    width: 40px;
+}
+
+table.my-table1 td {
+    font-size: 12px;
+    padding: 2px;
+    text-align: center;
+    vertical-align: top;
+}
+
+table.my-table td.images {
+    width: 80px;
+    padding: 0px 5px;
+}
+table.my-table td.images img {
+    width: 100%;
+}
+/*Адресс*/
+div.my .add_address a {
+    border-bottom: 1px dashed #0e94c9;
+    color: #0C7CA8;
+    cursor: pointer;
+}
+/*==============Старый====================*/
+div.my-address table.my-table input {
+    padding: 5px 3px;
+}
+div.my-address table.my-table span.phone {
+    padding: 0px 5px 0px 0px;
+}
+div.my-address table.my-table textarea {
+    padding: 5px 3px;
+    width: 160px;
+}
+div.my-address table.my-table select {
+    padding: 3px;
+}
+div.my-address table.my-table div.error {
+    color: #ee3333;
+}
+/*Форма оплата*/
+div.form-pay {
+
+}
+/*Баланс*/
+div.form-pay div.my-balance {
+    margin: 0px 0px 20px 0px;
+    padding: 5px 0px 5px 0px;
+    border-bottom: 1px solid #cbcbcb;
+}
+.my-balance.table-balance {
+    height: 300px;
+    overflow: auto;
+}
+div.form-pay div.my-balance div.item {
+    margin: 0px 0px 10px 0px;
+}
+div.form-pay div.my-balance div.item span.name {
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0px 5px 0px 0px;
+}
+div.form-pay div.my-balance div.item div.money {
+    padding: 0px;
+}
+div.form-pay div.my-balance div.item div.text-micro {
+    padding: 3px 0px 3px 0px;
+}
+/*История заказа*/
+div.my-orders.my-list table {
+    margin: 0 0 20px;
+}
+div.my-orders.my-list table th {
+    background: none;
+    color: #555555;
+    font-family: Helvetica;
+    font-size: 12px;
+    font-weight: normal;
+    padding: 10px 5px;
+}
+div.my-orders.my-list table div.code {
+    text-align: left;
+    position: relative;
+    white-space: nowrap;
+}
+div.my-orders.my-list table div.code.open a {
+    cursor: pointer;
+    border-bottom: 1px dotted;
+    text-decoration: none;
+}
+div.my-orders.my-list table th.code {
+    background: #f8f8f8;
+    border: 1px solid #d1d1d1;
+    border-bottom: none;
+}
+div.my-orders.my-list table th.title {
+    color: #909090;
+    font-size: 10px;
+    font-weight: normal;
+    padding: 0 0 8px;
+    text-align: center;
+    vertical-align: bottom;
+}
+div.my-orders.my-list table td {
+    padding: 5px;
+    text-align: center;
+    border: 1px solid #d1d1d1;
+    font-size: 12px;
+}
+div.my-orders.my-list table td.name {
+    padding: 4px 8px;
+    text-align: left;
+}
+div.my-orders.my-list table td.name  span.num {
+    font-weight: bold;
+    margin: 0px 2px 0px 0px;
+}
+div.my-orders.my-list table td.name span.tag {
+    color: #777777;
+    margin: 0px 0px 0px 18px;
+}
+div.my-orders.my-list table td.status_name {
+    width: 150px;
+}
+div.my-orders.my-list table td.img {
+    width: 10px;
+}
+div.my-orders.my-list table td.delivery-price {
+    text-align: left;
+    border-right: medium none;
+    padding: 4px 8px;
+}
+div.my-orders.my-list table td.delivery div {
+    text-align: center;
+}
+div.my-orders.my-list div.ok,div.my-orders.my-list div.no  {
+    display: inline-block;
+    margin: 0 0 0 15px;
+}
+div.my-orders.my-list table tr.delivery {
+    background: #f8f3d6;
+}
+div.my-orders.my-list table span.total {
+    background: #eeeeee ;
+    border: 1px solid #d1d1d1;
+    font-size: 13px;
+    font-weight: bold;
+    left: 245px;
+    padding: 7px 10px;
+    position: absolute;
+    top: -5px;
+}
+div.my-orders.my-list table .ver_pdf {
+    position: absolute;
+    top: 0px;
+    left: 365px;
+}
+div.my-orders table div.button {
+    text-align: right;
+}
+div.my-orders table div.button input {
+    font-size: 12px;
+    padding: 4px 15px;
+}
+
+div.my-orders table tr.footer {
+    background: #e7e7e7;
+}
+div.my-orders table td.basket b {
+    font-size: 11px;
+    color: #6a6a6a;
+}
+div.my-orders table tr.groups, div.my-orders table th.groups {
+    display: none;
+}
+/*Версия pdf*/
+div.my-orders.my-list.pdf table th.title {
+    font-size: 14px;
+}
+/* Список (ЛК) */
+div.my-list {
+    padding: 0px 0px 0px 0px;
+    position: relative;
+}
+div.my-list table {
+    width: 100%;
+}
+div.my-list table tr.i {
+    background: #F8F8F8;
+}
+div.my-list table tr.grey {
+    background: #f0f0f0;
+}
+div.my-list table th {
+    background: #8d6a88;
+    color: #fff;
+    padding: 10px 5px;
+    text-align: center;
+}
+div.my-list table td {
+    padding: 10px 10px 10px 10px;
+}
+div.my-list table td.min {
+    width: 100px;
+    padding: 10px 0px 10px 0px;
+    text-align: center;
+}
+div.my-list table td.date {
+    width: 100px;
+    padding: 10px 5px 10px 5px;
+    text-align: center;
+}
+div.my-list table td.datetime {
+    width: 145px;
+    padding: 10px 0px 10px 0px;
+    text-align: center;
+}
+div.my-list table td.code {
+    width: 100px;
+    padding: 10px 0px 10px 0px;
+    text-align: center;
+}
+div.my-list table td.money {
+    width: 100px;
+    padding: 10px 0px 10px 0px;
+    text-align: center;
+}
+div.my-list table td.count {
+    width: 75px;
+    padding: 10px 0px 10px 0px;
+    text-align: center;
+}
+div.my-list table td.delivery span.return {
+    color: #73366A;
+}
+div.my-list table td.delivery span.time {
+    color: #cf0101;
+}
+div.my-list table td span.bonus {
+    color: #73366A;
+}
+div.my-list table td a {
+    border: 0px;
+}
+div.my-list a.button {
+    width: 142px;
+    height: 36px;
+    /*  background: url('/templates/images/button.png') 0px 0px repeat-x;*/
+    border: 0px;
+    border-radius: 5px;
+    padding: 0px 0px 0px 0px;
+    position: absolute;
+    top: -100px;
+    right: 0px;
+}
+div.my-list a.button.min {
+    width: 84px;
+}
+div.my-list a.button div {
+    font-size: 14px;
+    color: #ffffff;
+    padding: 10px 0px 0px 0px;
+    text-align: center;
+}
+div.my-list a.button:hover {
+    background-position: 0px -36px;
+}
+div.my-list td.basket {
+    position: relative;
+}
+div.my-list div.add_basket,.my-table div.add_basket {
+    background: rgba(0, 0, 0, 0) url("/templates/images/add_basket.png") no-repeat scroll 0 0 / 32px auto;
+    cursor: pointer;
+    height: 30px;
+    margin: 0 auto;
+    width: 34px;
+}
+div.my-list td.basket div.no_good,.my-table div.div.no_good {
+    background: rgba(0, 0, 0, 0) url("/templates/images/add_basket.png") no-repeat scroll 0 0 / 32px auto;
+    cursor: pointer;
+    height: 30px;
+    margin: 0 auto;
+    width: 34px;
+}
+div.my-list div.add_basket:hover,.my-table div.add_basket:hover {
+    background-position: 0 -32px;
+}
+div.my-list div.add_basket.no,.my-table div.add_basket.no {
+    background-position: 0 -64px;
+}
+div.my-list div.ok {
+    color: #73366a;
+    font-size: 12px;
+    font-weight: bold;
+}
+div.my-list div.no {
+    color: #ed1c24;
+    font-size: 12px;
+    font-weight: bold;
+}
+/*Промокод в (ЛК)*/
+div.my-promo {
+}
+div.my-promo div.info {
+    margin: 15px 0;
+}
+div.my-promo div.info div.code,
+div.my-promo div.info div.balance {
+    font-size: 14px;
+    padding: 5px 0px;
+}
+div.my-promo div.info div.row {
+    margin: 5px 0px 5px 0px;
+}
+div.my-promo div.row div.title {
+    font-size: 14px;
+    margin: 0px 0px 10px;
+}
+div.my-promo div.info div.i {
+    display: inline;
+    font-size: 10px;
+    font-weight: bold;
+    padding: 0px 15px 0px 15px;
+    vertical-align: top;
+    position: relative;
+}
+div.my-promo div.info div.i div.scale {
+    border-left: 1px solid #b4b4b4;
+    position: absolute;
+    height: 55px;
+    right: -3px;
+    top: 0px;
+}
+div.my-promo div.info div.row div.progess {
+    background: #87ceeb none repeat scroll 0 0;
+    padding: 5px 0px;
+    margin: 5px 0px;
+}
+div.my-promo div.info div.row div.progess span {
+    font-weight: bold;
+    margin: 0px 0px 0px 5px;
+    font-size: 10px;
+}
+div.my-promo div.order-promo {
+    font-size: 14px;
+    margin: 15px 0px 0px;
+}
+div.my-promo div.order-promo span.money {
+    margin: 0px 10px 0px 0px;
+}
+div.my-promo div.calendar {
+    margin: 0px 0px 10px;
+    float: left;
+}
+div.my-promo div.button {
+    float: right;
+    position: relative;
+    top: -13px;
+    width: 126px;
+}
+div.my-promo div.report {
+    margin: 20px 0px;
+}
+div.my-promo table tr.active {
+    cursor: pointer;
+}
+/*Список товаров избраный*/
+div.my_favorites {
+    padding: 0px 1px 80px 0px;
+}
+div.my_favorites div.title {
+    margin: 5px 0 15px;
+}
+div.my_favorites div.title h3 {
+    font-size: 18px !important;
+    display: inline-block;
+}
+div.my_favorites div.add-groups {
+    margin: 0px 0px 15px;
+}
+div.my_favorites div.add-groups a {
+    font-size: 14px;
+    font-weight: bold;
+}
+div.my_favorites input.string {
+    padding: 5px 3px;
+}
+div.my_favorites div.add-box {
+    border-radius: 3px;
+    margin: 10px 0px;
+    padding: 15px;
+    background: #d3d3d3;
+    display: none;
+}
+div.my_favorites div.add-box span.name {
+    color: #282828;
+    margin: 0px 5px 0px 0px;
+}
+div.my_favorites div.add-box div.pr,div.my_favorites div.edit div.pr {
+    display: inline-block;
+    margin: 0px 0px 0px 10px;
+    padding: 8px 5px;
+    width: 100px;
+}div.my_favorites div.add-box div.pr div,div.my_favorites div.edit div.pr div{
+     font-size: 14px;
+ }
+
+div.my_favorites div.icon-edit {
+    background: url("/templates/images/manager/edit.png") no-repeat;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    margin: 0px 0px 0px 10px;
+    vertical-align: text-bottom;
+    cursor: pointer;
+    background-size: 20px;
+}
+div.my_favorites div.icon-edit:hover,div.my_favorites div.icon-delete:hover {
+    background-position: 0px -20px;
+}
+div.my_favorites div.icon-delete {
+    background: url("/templates/images/manager/delete.png") no-repeat;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    margin: 0px 0px 0px 10px;
+    vertical-align: text-bottom;
+    cursor: pointer;
+    background-size: 20px;
+}
+div.my_favorites .money, div.my_favorites .discount_money {
+    font-weight: bold;
+}
+div.my_favorites .discount_money {
+    color: #ED1C24;
+}
+div.my_favorites div.edit  {
+    display: none;
+    float: left;
+}
+div.my_favorites .total {
+    float: right;
+    margin: 5px 0px 0px;
+}
+div.my_favorites .total div.item {
+    font-size: 16px;
+    margin: 0px 0px 5px;
+}
+div.my_favorites .total div.item span {
+    display: inline-block;
+    font-weight: bold;
+    width: 70px;
+}
+/*Обратная связь*/
+div.my-feedback div.form-my {
+    width: 100%;
+    margin: 0px 0px 40px;
+}
+/* Уведомления ЛК*/
+div.my-feedback div.notice {
+    border: 1px solid #acacac;
+    border-radius: 3px;
+    height: 315px;
+    margin: 0px;
+    padding: 5px 10px;
+    width: 100%;
+    background: #f5f5f5;
+}
+div.my-feedback div.notice div.item {
+    background: #fafafa;
+    border: 1px solid #dadada;
+    border-radius: 3px;
+    padding: 10px 15px;
+    margin: 0px 0px 8px;
+}
+div.my-feedback div.notice div.items {
+    border: 1px solid #ffffff;
+    height: 300px;
+    overflow-y: scroll;
+    padding: 5px;
+}
+div.my-feedback div.notice div.item.admin {
+    margin-left: 38px;
+    background: #ececec;
+}
+div.my-feedback div.notice div.item div.name {
+    border-bottom: 1px solid #c4c4c4;
+    color: #7f7f7f;
+    font-size: 12px;
+    padding: 0px 0px 2px;
+}
+div.my-feedback div.notice div.item div.text {
+    margin: 5px 0px 0px;
+}
+div.my-feedback div.notice div.item div.photo,div.my-feedback div.m-notice div.item div.photo {
+    margin: 5px 0;
+}
+div.my-feedback div.notice div.item div.photo img, div.my-feedback div.m-notice div.item div.photo img{
+    height: 27px;
+    padding: 0px 5px 0px 0px;
+    width: 30px;
+}
+div.my-feedback div.notice div.item .date {
+    font-size: 11px;
+    margin: 0px 0px 0px 5px;
+}
+div.my-feedback div.notice div.item div.topic {
+    padding: 5px 0px 0px;
+}
+div.my-feedback div.hint-block {
+    color: #8C8C8C;
+    font-size: 11px;
+    margin: 5px 0px;
+}
+div.my-feedback div.image {
+    width: 50px;
+    height: 50px;
+    float: left;
+    margin: 5px 5px 5px 0px;
+    overflow: hidden;
+}
+div.my-feedback div.image img {
+    width: 50px;
+    height: 50px;
+}
+/*Список продукты */
+.my-list-goods {
+
+}
+.my-list-goods div.my-product-list-title {
+    padding: 5px 0;
+}

@@ -1,0 +1,123 @@
+/*
+.order-element{
+    padding-left:20px;
+    padding-right:20px;
+    padding-top:10px;
+    padding-bottom:10px;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+.order-element.odd{
+    box-shadow: 0 0 100px 100px rgba(0,0,0,0.1) inset;
+}
+.order-element.even{
+    box-shadow: 0 0 100px 100px rgba(0,0,0,0.2) inset;
+}
+.order-element:hover{
+    box-shadow: 0 0 100px 100px rgba(0,0,0,0.3) inset;
+}
+*/
+
+
+.order-item-element{
+    padding-top:10px;
+    padding-bottom:10px;
+    margin-top:10px;
+    margin-bottom:10px;
+    background: #FFF;
+    box-shadow: 0 0 5px 5px rgba(0,0,0,0.3);
+}
+.order-item-element .price-block > div{
+    border-top:1px solid #660000;
+    border-right:1px solid #660000;
+    padding-top:10px;
+    padding-bottom:10px;
+    margin-top:10px;
+    height:4em;
+}
+.order-item-element .btn{
+    white-space: normal;
+}
+.hasDatepicker{
+    display: inline-block;
+    width: 70%;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+    color: #555;
+    font-size: 14px;
+    height: 34px;
+    line-height: 1.42857;
+    padding: 6px 12px;
+    transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+}
+.control-label{
+    display: block;
+}
+.shop-list-fixed-position{
+    background: #666 none repeat scroll 0 0;
+    border-radius: 4px;
+    padding: 15px;
+   /* position: absolute;*/
+    z-index: 999;
+}
+.shop-list-fixed-position div{
+    color: #FFF;
+    cursor: pointer;
+}
+.shop-list-fixed-position div:hover{
+    color: #6FF;
+}
+.order-report-filter-shop-children{
+    margin-bottom: 7px;
+}
+
+.client-list-fixed-position{
+    background: #666 none repeat scroll 0 0;
+    border-radius: 4px;
+    padding: 15px;
+    position: absolute;
+    z-index: 999;
+}
+.client-list-fixed-position div{
+    color: #FFF;
+    cursor: pointer;
+}
+.client-list-fixed-position div:hover{
+    color: #6FF;
+}
+.order-report-filter-client-children{
+    margin-bottom: 7px;
+}
+.order-item-status .shop-list-fixed-position{
+    font-weight: normal;
+    right:0;
+    width: 630px;
+}
+.order-item-status .shop-list-fixed-position .old-transaction{
+    cursor: default;
+}
+.order-item-status .shop-list-fixed-position .old-transaction:nth-child(last){
+    margin-bottom: 20px;
+}
+#shop_management .form-group.field-orderfilter-producttype label,
+#shop_management .form-group.field-ownerorderfilter-producttype label{
+    display:block;
+    width:100%;
+}
+.field-orderfilter-producttype .control-label,
+.field-ownerorderfilter-producttype .control-label{
+    cursor: pointer;
+    color: #0A6A8F;
+}
+.field-orderfilter-producttype .control-label:hover,
+.field-ownerorderfilter-producttype .control-label:hover{
+    color: #00a6e3;
+}
+.orderfilter-producttype{
+
+}
+
+

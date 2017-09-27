@@ -1,0 +1,477 @@
+/*---Контрольная точка 1198---*/
+@media only screen and (max-width: 1198px) {
+    #header {
+        min-height: 100px !important;
+        margin-bottom: -12px;
+    }
+    #shop_management h1 {
+        margin: 0px 0px;
+    }
+
+   /*Отчет о продажи*/
+   div.content.cms div.arrow-menu,#to-top {
+        display: none !important;
+    }
+    #center div.content.cms {
+        margin: 0px;
+    }
+    #cms-reports th.money{
+        position: static;
+    }
+    #cms-reports div.filter div.filter-codes.no-promo,#cms-reports div.filter div.filter-codes.no-promo.basket_sort {
+        top:0px;
+    }
+    #cms-reports div.content-filter-auto-search {
+        z-index: 100;
+        position: static;
+        margin-top: 63px;
+    }
+    #cms-reports div.filter div.content-filter-auto-search div.filter-shops {
+        height: auto;
+        margin-top: 0px;
+    }
+    #cms-reports div.filter div.auto-search input.search {
+        margin-bottom: 0px;
+    }
+    #cms-reports div.filter div.filter-shops, #cms-reports div.filter div.filter-users {
+        width: 100%;
+        float: none;
+    }
+    #cms-reports div.filter div.filter-date {
+        padding: 5px 0 0;
+        width: 100%;
+    }
+    #cms-reports div.items div.item table {
+        /*width: 100%; /*1198px*/
+    }
+    #cms-reports tr.delivery,#cms-reports tr.total,#cms-reports div.toggleClose,#cms-reports .tog {
+        display: none;
+    }
+    #cms-reports div.items div.item {
+        cursor: pointer;
+    }
+
+    /*Отчет о продажах*/
+    #cms-reports {
+        width: 100%;
+        min-width: 320px;
+        padding: 0px;
+        margin-top: -45px;
+    }
+    #cms-reports div.filter {
+        height: auto;
+        width: 360px;
+    }
+
+    #cms-reports div.filter div.filter-date div.calendar {
+        float: none;
+        width: 100%;
+    }
+    #cms-reports div.filter div.filter-date div.calendar-content {
+        width: 49%;
+        float: left;
+    }
+    #cms-reports div.filter div.filter-date div.right-margin {
+        margin-right: 5px;
+    }
+    #cms-reports div.filter div.filter-date div.right-margin div.calendar div.table{
+        right: auto;
+    }
+    #cms-reports div.filter div.filter-date div.calendar-fast {
+        position: static;
+        margin-top: 5px;
+    }
+    #cms-reports div.filter div.filter-date div.calendar-fast a{
+        margin-right: 10px;
+        margin-bottom: 5px;
+        display: inline-block;
+    }
+    #cms-reports div.filter div.filter-date div.label {
+        float: none;
+        text-align: left;
+        font-weight: bold;
+    }
+    #cms-reports div.filter div.filter-shops,#cms-reports div.filter div.filter-users{
+        left: 0;
+        position: relative;
+        top: 0;
+        width: 100%;
+        margin-top: 25px;
+    }
+    #cms-reports div.filter div.auto-search div.auto-search-all,
+    #cms-reports div.filter div.auto-search div.auto-search-load {
+        right: 5px;
+    }
+    #cms-reports div.filter div.auto-search div.auto-search-items {
+        min-width: 200px;
+        width: 98%;
+        top: 30px;
+    }
+    #cms-reports div.filter div.auto-search input.search {
+        width: 100%;
+    }
+    #cms-reports div.filter div.filter-users {
+        margin-top: 45px;
+    }
+    #cms-reports div.filter div.filter-codes {
+        background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+        left: 0;
+        position: relative;
+        width: 100%;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    #cms-reports div.filter div.auto-search div.auto-search-values {
+        height: auto;
+        position: relative;
+        top: 0;
+        width: auto;
+    }
+    #cms-reports div.content-filter-from,div.content-filter-auto-search {
+        width: 100%;
+    }
+    #cms-reports div.filter div.auto-search div.group.group-1 {
+        top: -55px;
+    }
+    #cms-reports div.filter div.auto-search div.group.group-2 {
+        top: -30px;
+    }
+    #cms-reports div.filter .input-form {
+        margin-top: 20px;
+        position: static;
+        top: 55px;
+        width: 100%;
+    }
+    #cms-reports div.filter .input-form input {
+        width: 100%;
+    }
+    div.content-filter-auto-search {
+        top: 185px;
+    }
+    #cms-reports div.content-filter-auto-search div.filter-users.auto-search input.search,
+    #cms-reports div.filter div.filter-codes input.search{
+
+    }
+    #cms-reports div.filter div.filter-date select.type {
+        float: none;
+        width: 100%;
+        margin: 0 0 5px;
+    }
+    #cms-reports div.content-filter-from {
+        margin-bottom: 60px;
+    }
+    #cms-reports div.filter div.filter-default,
+    #cms-reports div.filter div.filter-type_id,
+    #cms-reports div.filter div.filter-delivery,
+    #cms-reports div.filter div.filter-type{
+        position: static;
+        float: none;
+        width: 100%;
+        margin: 0 0 15px;
+        display: none;
+    }
+    #cms-reports div.filter div.filter-type_id {
+
+        display: block;
+    }
+    #cms-reports div.filter div.filter-default select,
+    #cms-reports div.filter div.filter-type_id select,
+    #cms-reports div.filter div.filter-delivery select,
+    #cms-reports div.filter div.filter-type select {
+        width: 100%;
+    }
+    #cms-reports div.filter div.filter-order-id input {
+        text-align: left;
+        padding-left: 5px;
+    }
+    /*Формы*/
+    #cms-reports div.filter div.filter-store {
+        height: 35px;
+    }
+    #cms-reports div.filter div.filter-date {
+        padding: 5px 0;
+    }
+    #cms-reports div.filter div.filter-date,
+    #cms-reports div.filter div.filter-order-id,
+    #cms-reports div.filter div.filter-store,
+    #cms-reports div.filter div.filter-status {
+        position: static;
+    }
+    #cms-reports div.filter-store .label{
+        display: none !important;
+    }
+    /*Номер заказа*/
+    #cms-reports div.filter div.filter-order-id div.label,#cms-reports div.filter div.filter-status div.label {
+        float: none;
+        text-align: left;
+        font-weight: bold;
+        width: auto;
+        margin: 0 0 5px;
+    }
+    #cms-reports div.filter div.filter-order-id, #cms-reports div.filter div.filter-status {
+        float: none;
+        margin: 10px 0;
+        width: 100%;
+        height: auto;
+    }
+
+    #cms-reports div.filter div.filter-store select,
+    #cms-reports div.filter div.filter-store,
+    #cms-reports div.filter div.filter-order-id input,
+    #cms-reports div.filter div.filter-status select,
+    #cms-reports div.filter div.filter-codes input.search {
+        width: 100%;
+    }
+
+    #cms-reports div.filter div.auto-search div.group label {
+        display: inline-block;
+        margin-right: 15px;
+        width: 75px;
+        position: relative;
+        top: -2px;
+        left: 5px;
+    }
+
+    #cms-reports div.filter div.filter-codes div.auto-search-items {
+        width: 115px;
+    }
+    #cms-reports  div.filter-store div.label {
+        width: 70px !important;
+    }
+    #cms-reports div.filter div.filter-button {
+        bottom: 0px;
+        left: 0px;
+        width: 100%;
+    }
+    #cms-reports div.order .total {
+        display: inline;
+    }
+    #cms-reports div.info div.info-count {
+        float: none;
+    }
+    #cms-reports div.info div.info-goods,#cms-reports div.info div.info-pays, #cms-reports div.info div.info-comission,#cms-reports div.info div.info-cancel {
+        margin:0px;
+        width: 50%;
+        border: none;
+        padding: 10px 10px 10px 0px;
+    }
+    #cms-reports div.info div.info-goods-all {
+        padding: 10px 10px 10px 0px;
+        margin: 0px;
+    }
+    #cms-reports div.info div.info-goods,#cms-reports div.info div.info-pays {
+        border: none;
+        border-bottom: 1px solid #909090;
+    }
+    #cms-reports div.items div.item {
+        max-width: 100%;
+        overflow: auto;
+    }
+    #cms-reports div.filter div.filter-button {
+        bottom: -50px;
+    }
+    #cms-reports div.items div.item table {
+        /*width: 1198px;*/
+    }
+    div.m-navigation div.item.reports a {
+        background: #0a90b2;
+    }
+
+    div.m-navigation div.container-menu div.items .reports a:hover {
+        background: #01a9b2 !important;
+    }
+    div.m-navigation div.i.reports a {
+        background: #0565b2;
+    }
+
+    /*---------------------Отчет о продажих (общий)------------------------*/
+    #table1 td, #table1 th {
+        font-size: 20px;
+    }
+    #table2 td, #table2 th {
+        font-size: 20px;
+    }
+    .table-ad {
+        max-width: 100%;
+        overflow: auto;
+    }
+    #table2 td {
+        font-size: 14px;
+    }
+    #report-sales thead td {
+        outline: 1px solid #d3d3d3;
+    }
+   h1 {
+       font-size: 22px;
+    }
+    #shop_management table.table{
+        width: 1198px;
+    }
+
+    /*-------МАГАЗИН ПОСТАВЩИК--------*/
+    #shop_management {
+        margin-top: 10px;
+    }
+    #shop-statistics div.statisticBlock div.row {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    #shop-statistics h5 {
+        font-weight: bold;
+        margin-left: 20px;
+    }
+
+    #shop_management div.container-input .name_label {
+        bottom: 0 !important;
+        font-weight: bold;
+        top: -15px;
+        width: 100%;
+    }
+    #shop_management div.container-input .label-form {
+        display: block;
+    }
+    #shop_management table.kv-grid-table {
+        width: 100%;
+    }
+    #shop_management table.table-w {
+        width: 100%;
+        min-width: 360px;
+    }
+    #cms-reports div.filter div.filter-load {
+        background: rgba(0, 0, 0, 0.5) url("/images/ajax_load.gif") no-repeat scroll center 32%;
+        bottom: auto;
+        display: none;
+        height: 100%;
+        left:0;
+        position: fixed;
+        right: 0;
+        top: 0;
+        width: 100%;
+        background-color: rgba(0,0,0,0.5);
+        z-index: 210;
+    }
+
+
+    /*----Отчет о продаже нов-----*/
+    #repost_order_list div.items .panel-user .goodsMetro {
+        font-size: 11px;
+    }
+
+ }
+/*---------------991---------------------*/
+@media only screen and (max-width: 991px) {
+    .mobile-hidden {
+        display: none;
+    }
+    .desktop-hidden {
+        display: inline;
+    }
+    .filter-header .shops-search .content-f {
+        display: block;
+    }
+    #cms-reports div.info div.info-goods,#cms-reports div.info div.info-pays, #cms-reports div.info div.info-comission,#cms-reports div.info div.info-cancel {
+        width: 100%;
+        float: none;
+        border: none;
+        border-bottom: 1px solid #909090;
+    }
+    #cms-reports div.info div.info-cancel {
+        border: none;
+    }
+    #repost_order_list div.items .panel-user {
+        padding: 5px 0px;
+    }
+    #repost_order_list .deliveries-group {
+        padding: 5px 10px 5px 0px;
+    }
+    #repost_order_list div.items .panel-user .input-group.date {
+        max-width: 150px;
+    }
+    #repost_order_list div.items .panel-user div.time .btn{
+        max-width: 100px;
+    }
+}
+@media only screen and (max-width: 780px){
+
+}
+@media only screen and (max-width: 767px) {
+    /* Hide column labels */
+    table.mobile_ren {
+        width: 100% !important;
+    }
+    table.mobile_ren.table-bordered{
+        border: none;
+    }
+    table.mobile_ren.table-bordered td {
+        border-top: none;
+        border-left: none;
+        border-right: none;
+    }
+    table.mobile_ren thead tr {
+        position: absolute;
+        top: -9999em;
+        left: -9999em;
+    }
+    table.mobile_ren tr {
+        border-bottom: 0;
+    }
+    table.mobile_ren tr + table.mobile_ren tr {
+        margin-top: 1.5em;
+    }
+    table.mobile_ren tr, table.mobile_ren td.max {
+        width: 100% !important;
+    }
+    table.mobile_ren tr, table.mobile_ren td {
+        display: block;
+    }
+    table.mobile_ren td {
+        border: none;
+        padding-left: 0.75em;
+    }
+    table.mobile_ren td:before {
+        content: attr(data-label);
+        display: block;
+        font-weight: bold;
+        line-height: 1.5;
+        margin-bottom: 0.75em;
+        margin-left: 0;
+        width: 100%;
+    }
+
+    table.mobile_ren td span.glyphicon {
+        margin: 0 25px 0 0px;
+    }
+
+
+    #panel-content .btn-group {
+        float: none;
+    }
+    #panel-content .toggleCloseAllNew {
+        position: static;
+        float: right;
+    }
+
+}
+/*---------------400---------------------*/
+@media only screen and (max-width: 400px) {
+    #cms-reports div.filter {
+        width: 100%;
+        height: auto;
+    }
+    #repost_order_list div.items .panel-user div {
+        font-size: 11px;
+    }
+    #repost_order_list div.items .order-info .order,#repost_order_list div.items .order-info{
+        font-size: 12px;
+    }
+}
+
+
+@media only screen and (max-width: 590px) {
+    #panel-content .col-xs-2,#panel-content .col-xs-5 {
+        float: none;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+}

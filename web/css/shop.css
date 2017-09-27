@@ -1,0 +1,47 @@
+.sorter{
+    padding: 0 0 10px;
+    text-align: right;
+}
+.sorter li{
+    margin: 0 0 0 20px;
+    position: relative;
+}
+.sorter li a{
+    position: relative;
+}
+.sorter li a:link, .sorter li a:visited {
+    color: #f07402;
+    outline: medium none;
+    text-decoration: underline;
+}
+
+.box-container a span{
+    display: inline-block;
+}
+.box-container a.oran{
+    text-decoration: none;
+}
+.box-container a.oran:hover{
+    text-decoration: none;
+}
+
+.product-tool-master{
+    display: inline-block;
+    padding: 2px 9px;
+    background: #700;
+    border-radius: 17px;
+    line-height: 2em;
+    color: #FFF;
+    font-weight: bold;
+    margin-left: 5px;
+}
+.product-tool-list{
+    display: inline-block;
+    padding: 2px 9px;
+    background: #070;
+    border-radius: 17px;
+    line-height: 2em;
+    color: #FFF;
+    font-weight: bold;
+    margin-left: 5px;
+}
