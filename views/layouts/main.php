@@ -13,9 +13,6 @@ use yii\bootstrap\Progress;
 use app\modules\pages\models\LoginForm;
 //Yii::$app->cache->flush();
 
-//
-$__model = new LoginForm();
-
 AppAsset::register($this);
 
 ?>
