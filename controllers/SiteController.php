@@ -150,6 +150,7 @@ class SiteController extends FrontController
 
 	public function actionLogin()
     {
+
         $model = new LoginForm();
         return $this->renderAjax('login', [
             'model' => $model,

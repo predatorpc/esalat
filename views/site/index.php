@@ -41,6 +41,7 @@ if(false && !Yii::$app->user->isGuest && ceil((strtotime(Yii::$app->user->identi
         </div>
     </div><!--/Слайд-->
     <?php endif;  ?>
+
     <?php if(false): ?>
         <!--Баннеры категория-->
         <div class="posters hidden_r">
@@ -49,7 +50,6 @@ if(false && !Yii::$app->user->isGuest && ceil((strtotime(Yii::$app->user->identi
             </div>
         </div><!--./Баннеры категория-->
     <?php endif;  ?>
-
 
      <div class="mod___goods_list popular goods-top">
          <?=\app\components\WCatalogProductItem::widget()?>

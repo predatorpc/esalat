@@ -380,15 +380,15 @@ function scroll_top(name) {
     });
 }
 // Открытие окон;
-
+// Открытие окон;
 function window_show(url,title,size,ymapasFlag,loadPage) {
     var modalContainer = $('#windows');
     var modalBody = modalContainer.find('.modal-body');
-     if(loadPage) {
-         $("#windows").on('hide.bs.modal', function () {
-              window.location.reload();
-         });
-     }
+    if(loadPage) {
+        $("#windows").on('hide.bs.modal', function () {
+            window.location.reload();
+        });
+    }
     // Размер окно;
     if(size == 'mid') {
         $("#windows .modal-dialog").addClass('modal-max');
@@ -403,7 +403,7 @@ function window_show(url,title,size,ymapasFlag,loadPage) {
         $("#windows .modal-title").text(title);
     }else{
         $("#windows .modal-title").text('');
-     }
+    }
 
     $.ajax({
         url: '/' + url,
@@ -431,7 +431,6 @@ function window_show(url,title,size,ymapasFlag,loadPage) {
     //grecaptcha.render('gre', {'sitekey': '6LcgjCYTAAAAAOuBjKkPmaqKnmgIfHVywPr54BON'});
     return false;
 }
-
 // Отправка данных формы;
 function modal_form_action(name,url) {
     var result;

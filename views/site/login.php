@@ -10,13 +10,13 @@ use yii\widgets\MaskedInput;
  * @var yii\widgets\ActiveForm $form
  */
 $this->title = Yii::t('app', 'Вход');
-if(false) {
+
 ?>
 <div id="success"> </div> <!-- For success message -->
 <!--Форма-->
 <div class="form___gl gb-user-form">
     <?php $form = ActiveForm::begin(['options' => ['class' => 'login-form']]); ?>
-        <?= $form->field($model, 'phone',['template' => '<span class="phone">'.Yii::t('app','+7').'</span>{input}{error}{hint}'] )->textInput(['maxlength' => 10 ,'type'=>'tel', 'class'=>'form-control placeholder phone', 'autofocus' => true ,'id' => 'phone','placeholder'=>Yii::t('app', 'Телефон'),'data-text'=>Yii::t('app', 'Телефон')])->label('')?>
+        <?= $form->field($model, 'phone',['template' => '<span class="phone">'.Yii::t('app','+7').'</span>{input}{error}{hint}'] )->textInput(['maxlength' => 10 ,'type'=>'tel', 'class'=>'form-control placeholder phone','id' => 'phone','placeholder'=>Yii::t('app', 'Телефон'),'data-text'=>Yii::t('app', 'Телефон')])->label('')?>
         <?= $form->field($model, 'password')->passwordInput(['maxlength' => 32,'class'=>'form-control placeholder','placeholder'=>Yii::t('app', 'Пароль'),'data-text'=>Yii::t('app', 'Пароль')])->label('') ?>
         <?php /*$form->field($model, 'rememberMe',['template' => '{input}  {label}<a href="#" class="link hidden">Я забыл пароль</a>'] )->checkbox(['label' => ''])->label('Запомнить меня') */?>
         <div class="form-grou" style="text-align: center;"><?=\Yii::t('app', 'Введите данные для входа или зарегистрируйтесь')?> <br><br>
@@ -28,4 +28,4 @@ if(false) {
         <a class="btn-danger btn-sm" href="/forgot-password" style="text-decoration: none;color:#FFF;"><?=\Yii::t('app', 'Забыли пароль')?></a>
     </div>
 </div> <!--/Форма-->
-<?php } ?>
+
