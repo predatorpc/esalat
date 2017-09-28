@@ -195,7 +195,7 @@ class SiteController extends FrontController
 //        return $this->render('signup', [
 //            'model' => $model,
 //        ]);
-        return $this->render('signup', [
+        return $this->renderAjax('signup', [
             'model' => $model,
         ]);
     }

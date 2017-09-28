@@ -15,12 +15,12 @@ textarea {
 }
 /*Набор ссылки*/
 a:link, a:visited {
-    color: #0c7ca8;
+    color: #1d7c0a; /*#0c7ca8;*/
     text-decoration: underline;
     outline:none;
 }
 a:hover,a:focus {
-    color: #0e94c9;
+    color: #1d7c0a; /*#0c7ca8;*/
     text-decoration: none;
     border-bottom: none;
     outline-offset:0px;

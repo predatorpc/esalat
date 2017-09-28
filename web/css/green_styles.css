@@ -1,8 +1,23 @@
+a:link, a:visited{
+    /*color: #1d7c0a;*/
+}
+
 a.blue{
     color: #1d7c0a;
 }
+#to-top {
+    background-color: #2ec911;
+}
 #footer div.item div.name-main,#footer div.contacts .phone{
     color: #1d7c0a;
+}
+div.button_oran,button.button_oran, input.button_oran,a.button_oran {
+    background: #208b0b;
+}
+button.button_oran:hover,
+a.button_oran:hover,
+div.button_oran:hover,input.button_oran:hover {
+    background: #27aa0d;
 }
 #header div.header-content.desktop div.top{
     background: #208b0b;
@@ -22,6 +37,15 @@ a.blue{
 #menu-top div.bg {
     background: #208b0b;
 }
+#menu-top div.items div.catalog-goods div.item-menu a.menu-top._bg:hover::before,
+#menu-top div.items div.catalog-goods div.item-menu a.menu-top._bg.open::before{
+    border-color: transparent transparent transparent #208b0b;
+}
+#menu-top div.items div.catalog-goods div.item-menu a.menu-top._bg:hover,
+#menu-top div.items div.catalog-goods div.item-menu a.menu-top._bg.open {
+    color: #208b0b;
+}
+
 #menu-top div.items div.item.catalog-goods {
     background: #1b740a !important;
 }
@@ -49,10 +73,58 @@ a.blue{
 .count__com {
     border-color: #22980b;
 }
+div.category___sidebar div.i div.open{
+    color: #1b740a;
+}
 #basket div.type_name{
     background: #208b0b;
 }
 
+#header div.header-content.desktop div.top a.item-header,
+#header div.header-content.desktop div.top div.user a.user,
+#header div.header-content.desktop div.fix-content-panel.affix div.block a {
+    color:#ffffff;
+}
+div.good.compact div.content-images .goods-carousel-min div.item img.open,
+div.good.compact div.content-images .goods-carousel-min div.item img:hover {
+    border-color: #22980b;
+}
+div.compact-good .modal-header .close,div.prices .price.normal {
+    color:#22980b !important;
+}
+div.mod___goods_list div.items div.item div.block:hover,.ef:hover{
+    border-color: #22980b !important;
+}
+#header div.header-content.desktop div.bottom div.basket div.block div.money::after {
+    border-color: #22980b transparent transparent
+}
+#header div.header-content.desktop div.bottom div.basket div.block div.money,#basket div.my-deliveries div.address a{
+    color:#22980b;
+}
+
+.goods__tile div.item .close,#basket div.details .sum .i span.total-money,#header div.header-content.desktop div.fix-content-panel.affix div.basket-content .count {
+    color:#22980b;
+}
+.select__form div.container-select,.select__form div.row {
+    border-color:#22980b;
+}
+.select__form div.container-select div.selectbox::after {
+    border-color :#22980b transparent transparent
+}
+.select__form div.row div.option:hover, .select__form div.row.top div.option.open{
+    background:#22980b;
+}
+label.radio__label::after,.radio__label input:disabled + span.radio-checked::after,.form___gl .form-control{
+    border-color:#22980b !important;
+}
+
+div.good div.content-images div.images img.open, div.good div.content-images div.images img:hover{
+    outline: 2px solid #22980b;
+}
+.module__tab div.nav-tabs .item span,div.my .add_address a{
+    border-color: #22980b;
+    color: #22980b;
+}
 
 /*---------------------------SCREEN MOBILE---------------------*/
 

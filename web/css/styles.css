@@ -395,7 +395,7 @@ div.m-navigation,
     top: 0px;
     background: url('/images/counts_cat.png') no-repeat;
     width: 24px;
-    height: 23px;
+  /*  height: 23px;*/
     padding: 4px 0;
 }
 #header div.header-content.desktop div.bottom div.basket div.block {

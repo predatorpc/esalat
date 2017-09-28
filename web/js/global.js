@@ -281,7 +281,7 @@ $(document).on('mouseenter','#header .user-profile a.user',function() {
     clearTimeout($.data(this, 'timer'));
     $(this).addClass('active');
     $(this).siblings('#header .user-profile .box-container').stop(true, true).slideDown(100);
-    $("#header div.top  div.user a.user").css({'color':'#0c7ca8','text-decoration':'none','background-position':'5px -12px'});
+    $("#header div.top  div.user a.user").css({'color':'#22980b','text-decoration':'none','background-position':'5px -12px'});
 }).on('mouseleave','.user-container',function() {
     // Интервал закрытия блок;
     $.data(this, 'timer', setTimeout($.proxy(function () {
