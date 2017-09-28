@@ -5,6 +5,9 @@ a:link, a:visited{
 a.blue{
     color: #1d7c0a;
 }
+#to-top {
+    background-color: #2ec911;
+}
 #footer div.item div.name-main,#footer div.contacts .phone{
     color: #1d7c0a;
 }
