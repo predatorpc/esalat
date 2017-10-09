@@ -270,6 +270,7 @@ $(document).ready( function(){
     });
 
     // Запускаем одинь раз;
+    /*
     if($("#star_time").length) {
         $.post('/ajax/timer-ajax', {
             'time_start': true
@@ -280,10 +281,20 @@ $(document).ready( function(){
     }
     if($('#begin_time').length) {
         timer_set();
+    }*/
+
+    if($('#goods-main-all').length > 0) {
+        $("#loadAjaxContent").show();
+        // Загрузка контент;
+        $.post('/ajax/main-all-goods', {'goods': true}, function (html) {
+            if(html.length > 0) {
+                $('#goods-main-all').html(html);
+                $("#loadAjaxContent").hide();
+            }
+        });
     }
-
-
 });
+
 // Таймер обратного отчета;
 function timer_set() {
     var beginTime = $("#begin_time").attr('data-time');
@@ -384,6 +395,8 @@ $(document).on('click','#searchGoUser',function(){
     },'JSON');
     return false;
 });
+
+
 
 
 

@@ -409,11 +409,19 @@
     }
 
     /*Логотип*/
-    #header div.top div.logo{
-        background: url("/images/mobil/logo.png") no-repeat scroll center top / 125px auto;
+    #header div.top .logo{
+        /*background: url("/images/mobil/logo.png") no-repeat scroll center top / 125px auto;*/
         height: 30px;
-        margin: 12px auto 0px;
+        margin: 15px auto 0px;
+        color:#fff;
+        display: block;
+        text-align: center;
+        text-decoration: none;
+        font-size: 25px;
+        font-family: sans-serif;
+        font-weight: bold;
     }
+
     /*Корзина*/
     #header div.top a.basket {
         display: block;
@@ -436,7 +444,8 @@
     #header div.basket-content.mobile {
         display: block;
         margin: 0px 0px 0px auto;
-        width: 110px;
+       /* width: 110px;*/
+        float: right;
     }
     #header div.top div.basket.desktop {
         display: none;

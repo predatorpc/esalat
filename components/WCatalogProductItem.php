@@ -25,7 +25,7 @@ class WCatalogProductItem extends Widget {
     public function run(){
 
         //$categories = Category::find()->where(['active' => 1,'level'=>0])->orderBy('level, sort')->all();
-        $categories = Category::find()->where('1=0')->orderBy('level, sort')->all();
+        $categories = Category::find()->where(['active' => 1,'level'=>0])->orderBy('level, sort')->all();
 
         ?>
         <div id="list-wrapper" class="product-list js-product-list mod___goods_list goods-list">

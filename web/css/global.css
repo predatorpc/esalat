@@ -1105,6 +1105,28 @@ div.button_load {
 #loadAjax div.loader {
     background: url("/images/ajax_load.gif") no-repeat;
 }
+/*---Content load---*/
+#loadAjaxContent {
+    position: absolute;
+    left: 45%;
+    top: 60%;
+    background: none;
+    width: 2.875em;
+    height: 2.875em;
+    margin-left: -1.4375em;
+    margin-top: -1.4375em;
+    z-index: 210;
+    display: none;
+}
+#loadAjaxContent, div.loader {
+    height: 4.76em;
+    margin: 0px;
+    padding: 0.0625em;
+    width: 4.75em;
+}
+#loadAjaxContent div.loader {
+    background: url("/images/ajax_load.gif") no-repeat;
+}
 
 /*---Затемнения область---*/
 .br-shadow,#br-show {

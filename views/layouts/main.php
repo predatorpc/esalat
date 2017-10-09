@@ -81,6 +81,7 @@ $allflash = Yii::$app->session->getAllFlashes();
         <div class="br-shadow"></div>
         <div id="loadAjax"><div class="loader"></div></div>
 
+
         <!--Главная container-->
     <div class="container shop-container" data-page="<?= \Yii::$app->controller->uniqueId?>">
             <!--Шапка-->
@@ -221,15 +222,15 @@ $allflash = Yii::$app->session->getAllFlashes();
                       <div id="basket-total-info"></div>
                       <div class="top push">
                           <div class="row">
-                              <div class="col-xs-2 grid">
+                              <div class="col-xs-4 grid">
                                   <!--Пользватель-->
                                   <div class="user menu-qml menu-qml-icon js-catalog-menu"><span></span></div>  <!--./Пользватель -->
                               </div>
-                              <div class="col-xs-6">
+                              <div class="col-xs-4">
                                 <?php if(Yii::$app->params['en']): ?>
                                     <a href="/" class="no-border text-center" style="color: rgb(255, 255, 255); display: block; font-size: 16px; margin-top: 14px;">GH Cafe</a>
                                 <?php else: ?>
-                                    <a href="/"><div class="logo"></div></a>
+                                    <a href="/" class="logo">Esalat</a>
                                 <?php endif; ?>
                               </div>
                               <div class="col-xs-4 grid basket small-basket-block">
