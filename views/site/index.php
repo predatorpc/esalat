@@ -51,9 +51,10 @@ if(false && !Yii::$app->user->isGuest && ceil((strtotime(Yii::$app->user->identi
         </div><!--./Баннеры категория-->
     <?php endif;  ?>
 
-     <div class="mod___goods_list popular goods-top">
-         <?=\app\components\WCatalogProductItem::widget()?>
+     <div class="mod___goods_list popular goods-top" id="goods-main-all">
+         <?php  //\app\components\WCatalogProductItem::widget()?>
      </div>
+    <div id="loadAjaxContent"><div class="loader"></div></div>
     <div class="clear"></div>
 </div>
 

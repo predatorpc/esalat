@@ -688,5 +688,15 @@ class AjaxController extends FrontController
         }
     }
 
+    // Main goods all;
+    public function actionMainAllGoods()
+    {
+        if (Yii::$app->request->post('goods')) {
+            return \app\components\WCatalogProductItem::widget();
+        }
+    }
+
+
+
 
 }
