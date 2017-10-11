@@ -282,7 +282,7 @@ $(document).ready( function(){
     if($('#begin_time').length) {
         timer_set();
     }*/
-
+    var limit_g = 50;
     if($('#goods-main-all').length > 0) {
         $("#loadAjaxContent").show();
         // Загрузка контент;
@@ -290,10 +290,24 @@ $(document).ready( function(){
             if(html.length > 0) {
                 $('#goods-main-all').html(html);
                 $("#loadAjaxContent").hide();
+                load_content(limit_g);
+                $(".more__js").on('click',function () {
+                    limit_g += 30;
+                    load_content(limit_g);
+                });
             }
         });
     }
 });
+
+function load_content(limit) {
+    var element = $('#goods-main-all');
+    element.find('div.items .item').slice(0,limit).removeClass('hidden').parents('.main_title_js').removeClass('hidden');
+    element.find('div.items .item:visible').parents('.main_title_js').removeClass('hidden');
+
+    console.log('Loade');
+}
+
 
 // Таймер обратного отчета;
 function timer_set() {

@@ -444,9 +444,19 @@ div.button_blue.right {
 }
 
 /*Кнопка еще подгрузить*/
-div.more {
+div.more_r {
+    padding: 10px 0px;
+    border: 1px solid #909090;
+    border-radius: 3px;
+    width: 150px;
+    margin: 10px auto 0px;
+    cursor: pointer;
+    background: #fff;
+
+}
+div.more_r div {
+    font-size: 16px;
     text-align: center;
-    padding: 25px 0px;
 }
 div.more a {
     position: relative;
@@ -1108,17 +1118,17 @@ div.button_load {
 /*---Content load---*/
 #loadAjaxContent {
     position: absolute;
-    left: 45%;
+    left: 0px;
+    right: 0px;
     top: 60%;
     background: none;
     width: 2.875em;
     height: 2.875em;
-    margin-left: -1.4375em;
-    margin-top: -1.4375em;
     z-index: 210;
     display: none;
+    margin: 10% auto;
 }
-#loadAjaxContent, div.loader {
+#loadAjaxContent div.loader {
     height: 4.76em;
     margin: 0px;
     padding: 0.0625em;

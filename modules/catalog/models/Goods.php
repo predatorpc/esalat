@@ -698,7 +698,7 @@ class Goods extends \app\modules\common\models\UpdateLogs
         $productImages = GoodsImagesLinks::find()->where(['good_id' => $this->id,'status' => 1])->orderBy('position')->one();
         if(!$productImages){
             $productImages = GoodsImages::find()
-                ->where(['cover'=>1,'good_id' => $this->id,'status' => 1])
+                ->where(['good_id' => $this->id,'status' => 1])
                 ->one();
 
             if($productImages){
