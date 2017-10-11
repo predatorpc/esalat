@@ -135,6 +135,11 @@ class SiteController extends FrontController
         }*/
       //  $this->layout =  '@app/views/layouts/main_en';
 
+
+
+
+
+
         return $this->render($nameTemplate, [
             'model'=> $model,
             'list' => $list,

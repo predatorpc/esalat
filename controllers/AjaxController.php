@@ -23,6 +23,7 @@ use app\modules\managment\models\ShopsImages;
 use app\modules\managment\models\ShopsStores;
 use app\modules\questionnaire\models\QuestionnaireAnswers;
 use app\modules\questionnaire\models\QuestionnaireQuestions;
+use app\modules\catalog\models\Category;
 use app\modules\shop\models\Orders;
 use app\modules\shop\models\OrdersGroups;
 use app\modules\shop\models\OrdersItems;
@@ -691,11 +692,26 @@ class AjaxController extends FrontController
     // Main goods all;
     public function actionMainAllGoods()
     {
+
         if (Yii::$app->request->post('goods')) {
-            return \app\components\WCatalogProductItem::widget();
+            // Загрузка категориt level 0;
+            $categories = Category::find()->where(['active' => 1,'level'=>0])->orderBy('level, sort')->limit(1)->all();
+
+
+            return \app\components\WCatalogProductItem::widget(['categories'=>$categories]);
         }
     }
 
+    // Подгрузка товар в контент;
+    public function actionMainLoadGoods()
+    {
+        if (Yii::$app->request->post('goodsLoad')) {
+            $cat_limit = !empty(Yii::$app->request->post('cat_col')) ? Yii::$app->request->post('cat_col') : 0;
+            $categories = Category::find()->where(['active' => 1,'level'=>0])->orderBy('level, sort')->limit(1)->offset($cat_limit)->all();
+            $limit = !empty(Yii::$app->request->post('col')) ? Yii::$app->request->post('col') : 0;
+            return \app\components\WCatalogProductItem::widget(['categories'=>$categories,'limit'=>$limit]);
+        }
+    }
 
 
 

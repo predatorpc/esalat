@@ -282,32 +282,84 @@ $(document).ready( function(){
     if($('#begin_time').length) {
         timer_set();
     }*/
-    var limit_g = 50;
+
     if($('#goods-main-all').length > 0) {
+        var limit_g = 0;
+        var couts_category;
+        var cat_col = 0;
+
         $("#loadAjaxContent").show();
         // Загрузка контент;
         $.post('/ajax/main-all-goods', {'goods': true}, function (html) {
             if(html.length > 0) {
                 $('#goods-main-all').html(html);
                 $("#loadAjaxContent").hide();
-                load_content(limit_g);
-                $(".more__js").on('click',function () {
-                    limit_g += 30;
-                    load_content(limit_g);
+                var inProcessMain = true;
+                $(window).scroll(function () {
+                    if ($('#goods-main-all .more__load_js').length > 0 && $(window).scrollTop() + $(window).height() >= $(document).height() - 600 && inProcessMain) {
+
+                            inProcessMain = false;
+                            $("div.content-load").show();
+
+                            console.log(inProcessMain);
+
+                            var couts_category = $('.more__load_js').attr('data-count');
+                            limit_g += 1;
+                            couts_category--;
+
+                            if(couts_category < 1) {
+                                cat_col += 1;
+                                $('#goods-main-all').attr('data-cat-count',cat_col);
+                                limit_g = 0;
+                            }
+
+                            $('.more__load_js').remove();
+                                console.log(couts_category);
+
+                                $.post('/ajax/main-load-goods', {
+                                    'goodsLoad': true,
+                                    'col': (limit_g ? limit_g : 0),
+                                    'cat_col': $('#goods-main-all').attr('data-cat-count')
+                                }, function (response) {
+                                    if (response.length > 0) {
+                                        $('.content-load').remove();
+                                        $('#goods-main-all').append(response);
+                                        //
+                                        if (couts_category < 1) {
+                                            couts_category = $('.more__load_js').attr('data-all-cont');
+                                        }
+                                        $('.more__load_js').attr('data-count', couts_category);
+                                        console.log('Loade Content');
+                                        inProcessMain = true;
+                                    }
+                                });
+
+
+                    }
                 });
             }
         });
+
+        // Подгрузка контент;
+        $(document).on('click','.more__js',function () {
+            var couts_category = $('.more__load_js').attr('data-count');
+            limit_g += 1;
+            couts_category--;
+
+            if(couts_category < 1) {
+                cat_col += 1;
+                $('#goods-main-all').attr('data-cat-count',cat_col);
+                limit_g = 0;
+            }
+            $(this).remove();
+           // load_content_goods(limit_g,couts_category);
+        });
+
+
+
+
     }
 });
-
-function load_content(limit) {
-    var element = $('#goods-main-all');
-    element.find('div.items .item').slice(0,limit).removeClass('hidden').parents('.main_title_js').removeClass('hidden');
-    element.find('div.items .item:visible').parents('.main_title_js').removeClass('hidden');
-
-    console.log('Loade');
-}
-
 
 // Таймер обратного отчета;
 function timer_set() {
