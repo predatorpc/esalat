@@ -22,20 +22,29 @@ use Yii;
  */
 class WCatalogProductItem extends Widget {
 
+    public $limit;
+    public $categories;
+
+    public function init() {
+        parent::init();
+        if ($this->categories === null) {
+            $this->categories = false;
+        }
+        $this->limit  =  (!empty($this->limit) ? $this->limit : 0);
+
+    }
+
     public function run(){
-
-        //$categories = Category::find()->where(['active' => 1,'level'=>0])->orderBy('level, sort')->all();
-        $categories = Category::find()->where(['active' => 1,'level'=>0])->orderBy('level, sort')->all();
-
+        $counts_category_parents = 0;
         ?>
-        <div id="list-wrapper" class="product-list js-product-list mod___goods_list goods-list">
-            <div id='sort' class='items' style="overflow: hidden;">
+
                 <?php
-                   foreach ($categories as $category) {
+                   foreach ($this->categories as $category) {
 
+                    $counts_category_parents = $category->getCategories()->count();
 
-                    foreach ($category->categories as $category_parent) {
-                          print '<div class="main_title_js hidden">';
+                    foreach ($category->getCategories()->limit(1)->offset($this->limit)->all() as $category_parent) {
+                          print '<div class="main_title_js ">';
                                 if(!empty($category_parent->categories)) {
                                         print '<h3 class="title"><b>' . $category_parent->title . '</b></h3>';
                                         ?>
@@ -44,7 +53,7 @@ class WCatalogProductItem extends Widget {
                                                 $stickers = Goods::findProductStickers([$product->id]);
                                                 $url = (!empty($product->catalogUrl)) ? $product->catalogUrl : '/';
                                                 ?>
-                                                <div id="<?= $product->id ?>" class="item hidden item-<?= $product->id ?>">
+                                                <div id="<?= $product->id ?>" class="item  item-<?= $product->id ?>">
                                                     <div class="block"
                                                          onclick="return show_modal_compact('/catalog/compact',' ','<?= $product->id ?>');">
                                                         <div class="images">
@@ -86,7 +95,7 @@ class WCatalogProductItem extends Widget {
                                 if(!empty($category_parent->categories)) {
                                     foreach ($category_parent->categories as $category_i) {
                                         echo '<div class="clear"></div>';
-                                        print '<div class="main_title_js hidden">';
+                                        print '<div class="main_title_js">';
                                             print '<h3 class="title">' . $category_i->title . '</h3>';
                                             ?>
                                             <div class="items">
@@ -94,7 +103,7 @@ class WCatalogProductItem extends Widget {
                                                     $stickers = Goods::findProductStickers([$product->id]);
                                                     $url = (!empty($product->catalogUrl)) ? $product->catalogUrl : '/';
                                                     ?>
-                                                    <div id="<?= $product->id ?>" class="item hidden item-<?= $product->id ?>">
+                                                    <div id="<?= $product->id ?>" class="item item-<?= $product->id ?>">
                                                         <div class="block"
                                                              onclick="return show_modal_compact('/catalog/compact',' ','<?= $product->id ?>');">
                                                             <div class="images">
@@ -144,9 +153,10 @@ class WCatalogProductItem extends Widget {
 
                 }
                 ?>
-                <div class="more_r more__js"><div>More</div></div>
-            </div>
-        </div>
+                <?php if($counts_category_parents > 0): ?>
+                   <div class="more more__load_js" data-count="<?=$counts_category_parents?>" data-all-cont="<?=$counts_category_parents?>"></div>
+                   <div class="content-load" style="margin-top: 40px"></div>
+                <?php  endif; ?>
 
         <?php
     }

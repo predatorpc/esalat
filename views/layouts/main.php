@@ -230,7 +230,7 @@ $allflash = Yii::$app->session->getAllFlashes();
                                 <?php if(Yii::$app->params['en']): ?>
                                     <a href="/" class="no-border text-center" style="color: rgb(255, 255, 255); display: block; font-size: 16px; margin-top: 14px;">GH Cafe</a>
                                 <?php else: ?>
-                                    <a href="/" class="logo">Esalat</a>
+                                    <a href="/" class="logo"><img src="/images/mobil/logo-m.png"  style="margin: 0px; width: 90px; position: relative; top: -8px;"/> </a>
                                 <?php endif; ?>
                               </div>
                               <div class="col-xs-4 grid basket small-basket-block">

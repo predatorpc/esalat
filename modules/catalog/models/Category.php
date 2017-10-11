@@ -114,6 +114,11 @@ class Category extends \yii\db\ActiveRecord
         return $this->hasMany(Category::className(), ['parent_id' => 'id'])->where(['active' => 1])->orderBy('sort');
     }
 
+    public function getCategoriesLoad()
+    {
+        return $this->hasMany(Category::className(), ['parent_id' => 'id'])->where(['active' => 1])->orderBy('sort');
+    }
+
     public function getAllChildCategories(){
 
     }
@@ -482,25 +487,10 @@ class Category extends \yii\db\ActiveRecord
     }
 
     public function getProductsClear(){
-        $session = Yii::$app->session;
-
+            $session = Yii::$app->session;
             return $this->hasMany(Goods::className(), ['id' => 'product_id'])
                 ->where(['status' => 1, 'show' => 1, 'confirm' => 1])
                 ->viaTable(CategoryLinks::tableName(), ['category_id' => 'id'])->orderBy('position ASC');
-
-//        ->via('categoryLinks');
-//        return Goods::find()
-//            ->leftJoin('category_links','category_links.product_id = goods.id')
-//            ->where([
-//                'category_links.category_id' => $this->id,
-//                'goods.status' => 1,
-//                'goods.show' => 1,
-//                'goods.confirm' => 1,
-//            ])
-//            ->all();
-//        return $this->hasMany(Goods::className(), ['id' => 'product_id'])
-//            ->where(['status' => 1,'show' => 1,'confirm' => 1])
-//            ->viaTable(CategoryLinks::tableName(), ['category_id' => 'id']);
     }
 
     public function getCategoryLinks(){
