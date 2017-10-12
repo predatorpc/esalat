@@ -284,6 +284,7 @@ $(document).ready( function(){
     }*/
 
     if($('#goods-main-all').length > 0) {
+
         var limit_g = 0;
         var couts_category;
         var cat_col = 0;
@@ -295,6 +296,7 @@ $(document).ready( function(){
             if(html.length > 0) {
                 $('#goods-main-all').html(html);
                 $("#loadAjaxContent").hide();
+                shop.reloadBasketSmall(2);
                 var inProcessMain = true;
                 $(window).scroll(function () {
                     if ($('#goods-main-all .more__load_js').length > 0 && $(window).scrollTop() + $(window).height() >= $(document).height() - 600 && inProcessMain) {

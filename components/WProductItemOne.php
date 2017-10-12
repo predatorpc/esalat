@@ -58,6 +58,7 @@ class WProductItemOne extends Widget {
                     }
                 }
             }
+
             if(!empty($allVariations[0])){
 
             }else{
@@ -75,6 +76,9 @@ class WProductItemOne extends Widget {
                     }
                 }
             }
+
+
+
             // Состояние окно;
             $session = Yii::$app->session;
             if(Yii::$app->session->get('shopMaster',0) > 0){
@@ -107,20 +111,6 @@ class WProductItemOne extends Widget {
                                 <div class="rating-icon rating-<?=$this->model->rating?>"></div>
                             </div>
                             <a class="blue comment" href="#" onclick="return show_modal_compact('/catalog/comments','Оставить отзыв',<?=$this->model->id?>);">Отзывы <?=(count($this->model->goodsComments) > 0 ? '('.count($this->model->goodsComments).')' : '')?></a>
-                            <?php
-                            
-                            // Количество покупки;
-                        /*    $count_buy = 0;
-                            $ordersItems = OrdersItems::find()->where(['status'=>1,'good_id'=> $this->model->id])->All();
-                            
-                            foreach ($ordersItems as $ordersItem){
-                            $count_buy = $count_buy + $ordersItem->count;
-                            }
-                            */
-                            ?>
-                            <?php // if($count_buy > 0):?>
-                               <!-- div class="purchased">Куплен: <?php //=ModFunctions::numberSize($count_buy)?> раз</div -->
-                            <?php // endif; ?>
 
                         </div>  <!--/block max-->
                         <div class="clear"></div>
@@ -148,7 +138,7 @@ class WProductItemOne extends Widget {
                                 }
                             }?>
                         </div>
-
+                        <!--Купить-->
                         <div class="row-private js-variants-select">
                             <div class="tag-value-list">
                                 <div class="options tags-item select__form_multi">
@@ -182,9 +172,6 @@ class WProductItemOne extends Widget {
                                                      data-first="<?=$firstVariant->id?>"
                                                     <?=(empty($dataJson)?'':"data-json='" . json_encode($dataJson)) . "'"?>
                                                 >
-
-
-
                                                     <div
                                                         class="button-basket-icon center basket_button"
                                                         data-action="bay"
@@ -207,6 +194,7 @@ class WProductItemOne extends Widget {
                                 </div>
                             </div>
                         </div>
+                        <!--./Купить-->
 
                         <!--Стикеры-->
                         <div class="stickers stickers__com">

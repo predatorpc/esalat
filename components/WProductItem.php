@@ -182,6 +182,7 @@ class WProductItem extends Widget {
                             </div>
                         </div>
                     </div>
+
                     <div class="stickers stickers__com">
                         <?= isset($this->sticker['discount'])?'<div class="stikers-icon discount"></div>':''?>
                         <?= isset($this->sticker['bonus'])?'<div class="stikers-icon bonus"></div>':''?>

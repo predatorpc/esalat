@@ -364,7 +364,13 @@ $(document).ready(function(){
                     //console.log('variant');
                     //console.log(currentProduct.parent().data('variant'));
                     $('div.button-ajax[data-id="' + currentProduct.parent().data('variant') +'"] div.load').hide();
+                    console.log(catalog.page.find('.js-control-buttons-for-variant[data-variant='+currentProduct.parent().data('variant')+']').length);
+                    console.log(currentProduct.parent().data('variant'));
+                    console.log(catalog.page.has('.js-control-buttons-for-variant[data-variant='+currentProduct.parent().data('variant')+']').length);
+                    console.log(catalog.page.find('.js-control-buttons-for-variant[data-variant='+currentProduct.parent().data('variant')+']'));
+
                     if(catalog.page.find('.js-control-buttons-for-variant[data-variant='+currentProduct.parent().data('variant')+']').length > 0){
+
                         catalog.reloadProductButton(currentProduct.parent().data('variant'));
                     }
                     shop.reloadBasketSmall(2);
