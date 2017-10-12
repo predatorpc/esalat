@@ -45,7 +45,9 @@ div.button_oran:hover,input.button_oran:hover {
 #menu-top div.items div.catalog-goods div.item-menu a.menu-top._bg.open {
     color: #208b0b;
 }
-
+.goods__tile div.item div.block-2 span.money,#basket div.goods-basket div.tags div.tags-item{
+    color: #208b0b;
+}
 #menu-top div.items div.item.catalog-goods {
     background: #1b740a !important;
 }
