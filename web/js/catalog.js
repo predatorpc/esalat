@@ -193,6 +193,7 @@ function loadGoodsCategory(type) {
 }
 // Подгрзука контент;
 function loadGoods(type) {
+
     if($('#center').has('.goods').length && type){
         // Ленивая загрузка товаров;
         var inProcess = false;
@@ -216,8 +217,7 @@ function loadGoods(type) {
                         }
                     }).done(function (html) {
                         $("div.content-load").hide();
-                        //$("div.goods div.more a").show();
-                       // console.log(html);
+
                         if (html) {
                             catalog.page.find('.more').data('page-id', catalog.page.find('.more').data('page-id') + 1);
                             // Добавляем список товаров;

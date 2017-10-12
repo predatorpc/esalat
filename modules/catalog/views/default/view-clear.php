@@ -168,7 +168,8 @@ if(Yii::$app->session->get('shopMaster',0) > 0){
                             class="more"
                             data-page-id="2"
                             data-category-id="<?= $model->id?>"
-                            data-page-size="<?= !empty($_GET['page-size']) ? intval($_GET['page-size']) : 20?>"
+                            data-page-size="<?= !empty($_GET['page-size']) ? intval($_GET['page-size']) : 40?>"
+                            style="margin-top: 40px"
                         ></div>
                         <div class="content-load"></div>
                     </div>

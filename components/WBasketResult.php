@@ -12,9 +12,6 @@ class WBasketResult extends Widget{
         //\Yii::$app->basket->setDeliveryPrice();
         //\Yii::$app->action->getCurrentBasket();
         ?>
-
-        <div style="display: none">
-        </div>
         <div class="sum" data-basket-id="<?= $this->basket->id?>">
             <div class="i"><?=\Yii::t('app','Сумма');?>: <?= ModFunctions::money($this->basket->basketPrice)?> </div>
             <div class="i"><?=\Yii::t('app','Бонусы');?>: <?= ($this->basket->basketBonus > 0 ? '-' : '' ) . ModFunctions::money($this->basket->basketBonus)?></div>
