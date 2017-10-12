@@ -30,14 +30,10 @@ $pagesOptions = \app\modules\pages\models\PagesOptions::pagesOptions();
     <?php if(!empty(Yii::$app->params['mobile'])): ?>
         <meta name="apple-mobile-web-app-capable" content="yes" />
     <?php endif; ?>
-    <meta name="theme-color" content="#0C7CA8">
+    <meta name="theme-color" content="#208b0b">
     <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no" />
     <?= Html::csrfMetaTags() ?>
     <?php $this->head() ?>
-    <meta name="yandex-verification" content="7ef6ad82f324d076" />
-    <meta name="yandex-verification" content="59b3df0bbfde7230" />
-    <meta name="yandex-verification" content="7ef8ba088516092f" />
-    <meta name='wmail-verification' content='205d519a9d38dbaff767419f0eb76233' />
 
     <title><?= Html::encode($this->title) ?></title>
 

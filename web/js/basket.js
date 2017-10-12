@@ -293,7 +293,7 @@ $(document).ready(function(){
 
         try {
             // Отправка данных в Яндекс.Метрику 20160818 - Для сбора данные при нажатие кнопка оформить;
-            yaCounter30719268.reachGoal('pay_001');
+          //  yaCounter30719268.reachGoal('pay_001');
 //40642635
         } catch (err) {
             // ;
