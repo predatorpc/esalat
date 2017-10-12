@@ -362,8 +362,8 @@ $allflash = Yii::$app->session->getAllFlashes();
                         </div>
                         <div class="col-md-3 col-xs-3 item">
                             <div class="contacts">
-                                <div class="phone">8 383 349-92-09</div>
-                                <div class="mail"><a href="mailto:info@Esalad.ru">info@Esalad.ru</a></div>
+                                <div class="phone"><?=$pagesOptions['phone']?></div>
+                                <div class="mail"><a href="mailto:<?=$pagesOptions['email']?>"><?=$pagesOptions['email']?></a></div>
                                 <div class="time">Время работы операторов: <br><b><?=$pagesOptions['time']?></b></div>
 
                                 <div class="call"><a href="#" onclick="return window_show('call','Заказ звонка');">Заказать звонок</a></div>
