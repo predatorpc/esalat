@@ -284,16 +284,19 @@ $(document).ready( function(){
     }*/
 
     if($('#goods-main-all').length > 0) {
+
         var limit_g = 0;
         var couts_category;
         var cat_col = 0;
 
         $("#loadAjaxContent").show();
+
         // Загрузка контент;
         $.post('/ajax/main-all-goods', {'goods': true}, function (html) {
             if(html.length > 0) {
                 $('#goods-main-all').html(html);
                 $("#loadAjaxContent").hide();
+                shop.reloadBasketSmall(2);
                 var inProcessMain = true;
                 $(window).scroll(function () {
                     if ($('#goods-main-all .more__load_js').length > 0 && $(window).scrollTop() + $(window).height() >= $(document).height() - 600 && inProcessMain) {
@@ -339,25 +342,6 @@ $(document).ready( function(){
                 });
             }
         });
-
-        // Подгрузка контент;
-        $(document).on('click','.more__js',function () {
-            var couts_category = $('.more__load_js').attr('data-count');
-            limit_g += 1;
-            couts_category--;
-
-            if(couts_category < 1) {
-                cat_col += 1;
-                $('#goods-main-all').attr('data-cat-count',cat_col);
-                limit_g = 0;
-            }
-            $(this).remove();
-           // load_content_goods(limit_g,couts_category);
-        });
-
-
-
-
     }
 });
 

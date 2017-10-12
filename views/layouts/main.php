@@ -30,14 +30,10 @@ $pagesOptions = \app\modules\pages\models\PagesOptions::pagesOptions();
     <?php if(!empty(Yii::$app->params['mobile'])): ?>
         <meta name="apple-mobile-web-app-capable" content="yes" />
     <?php endif; ?>
-    <meta name="theme-color" content="#0C7CA8">
+    <meta name="theme-color" content="#208b0b">
     <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1.0, user-scalable=no" />
     <?= Html::csrfMetaTags() ?>
     <?php $this->head() ?>
-    <meta name="yandex-verification" content="7ef6ad82f324d076" />
-    <meta name="yandex-verification" content="59b3df0bbfde7230" />
-    <meta name="yandex-verification" content="7ef8ba088516092f" />
-    <meta name='wmail-verification' content='205d519a9d38dbaff767419f0eb76233' />
 
     <title><?= Html::encode($this->title) ?></title>
 
@@ -366,8 +362,8 @@ $allflash = Yii::$app->session->getAllFlashes();
                         </div>
                         <div class="col-md-3 col-xs-3 item">
                             <div class="contacts">
-                                <div class="phone">8 383 349-92-09</div>
-                                <div class="mail"><a href="mailto:info@Esalad.ru">info@Esalad.ru</a></div>
+                                <div class="phone"><?=$pagesOptions['phone']?></div>
+                                <div class="mail"><a href="mailto:<?=$pagesOptions['email']?>"><?=$pagesOptions['email']?></a></div>
                                 <div class="time">Время работы операторов: <br><b><?=$pagesOptions['time']?></b></div>
 
                                 <div class="call"><a href="#" onclick="return window_show('call','Заказ звонка');">Заказать звонок</a></div>
