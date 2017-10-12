@@ -99,7 +99,7 @@ $(document).ready( function(){
         rel_id = Number(rel_id.match(/\d+/));
         var itemCounts = $('#nav-' + rel_id + ' a.main').size();
         var i = 1;
-        if (itemCounts > 7) {
+        if (itemCounts > 6) {
             i = 2;
         } else if (itemCounts > 14) {
             i = 3;

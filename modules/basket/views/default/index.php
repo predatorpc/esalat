@@ -66,7 +66,6 @@ $basket = Yii::$app->action->applyActions();
                                     'sort' => 3
                                 ]);
                                 ?>
-
                             </div>
                         </div>
                     <?php endif; ?>
@@ -107,11 +106,12 @@ $basket = Yii::$app->action->applyActions();
                         </div>  <!--/Оформит заказ-->
                     </div>
                     <?php endif;?>
-                    <?php if(!Yii::$app->user->isGuest): /* ?>
+
+                    <?php if(!Yii::$app->user->isGuest):  ?>
                         <!--Оформит заказ-->
                         <div class="button_pay button-ajax">
                             <div
-                                class="button_oran center button__a yMapsActive"
+                                class="button_oran center button__a"
                                 onclick="return shop.windowShow('/ajax-basket/basket-check-data','<?=\Yii::t('app','Проверьте данные вашего заказа');?>','mid',false);"
                                 data-url="/ajax-basket/basket_check_data"
                                 data-title="Проверьте данные"
@@ -121,7 +121,7 @@ $basket = Yii::$app->action->applyActions();
                             </div>
                             <div class="load"></div>
                         </div> <!--Оформит заказ-->
-                    <?php */ else: ?>
+                    <?php else: ?>
                         <!--Оформит заказ-->
                         <div class="button_pay button-ajax">
                             <div class="button_oran center button__a" onclick="return window_show('login','<?=\Yii::t('app','Вход');?>');">

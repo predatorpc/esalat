@@ -26,7 +26,7 @@ class Category extends \yii\db\ActiveRecord
 {
     public $productSortField = 'position';
     public $pageId = 1;
-    public $pageSize = 20;
+    public $pageSize = 40;
 
     /**
      * @inheritdoc
@@ -199,8 +199,8 @@ class Category extends \yii\db\ActiveRecord
                 ]
             ],
             'pagination' => [
-                'pageSize' => 20,
-                'defaultPageSize' => 20,
+                'pageSize' => 40,
+                'defaultPageSize' => 40,
                 'pageParam' => 'page',
                 'forcePageParam' => false,
             ]
@@ -522,7 +522,7 @@ class Category extends \yii\db\ActiveRecord
         return $result;
     }
 
-    public function getCategoryActiveProducts($params,$new = false, $pageSize = 20){
+    public function getCategoryActiveProducts($params,$new = false, $pageSize = 40){
         $query = $this->getCategoryActiveProductsQuery() ? $this->getCategoryActiveProductsQuery($new) : false;
         if($new){
             $pageSize = 50;
@@ -537,7 +537,7 @@ class Category extends \yii\db\ActiveRecord
             ],
             'pagination' => [
                 'pageSize' => $pageSize,
-                'defaultPageSize' => 20,
+                'defaultPageSize' => 40,
                 'pageParam' => 'page',
                 'forcePageParam' => false,
             ]

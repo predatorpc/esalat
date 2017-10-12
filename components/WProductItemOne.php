@@ -223,18 +223,21 @@ class WProductItemOne extends Widget {
                         </div> <!-- Наклейки -->
                         <!-- Управление -->
                         <?php if((\Yii::$app->user->can('categoryManager') || \Yii::$app->user->can('conflictManager') || \Yii::$app->user->can('GodMode'))): ?>
+
                         <div class="manager manager___shop list-good">
                             <div class="items">
                                 <div class="i edit" title="Редактировать" onclick="return good_edit('<?=$this->model->id?>');"></div>
                                 <div class="i position <?=$cat <= 0 ? 'js-position' : ''?> js-position-option" title="Смена позиций"></div>
                                 <div class="clear"></div>
                             </div>
-                            <div class="option hidden">
-                                <input class="position-input res" type="text" value="<?=$this->model->position?>">
-                                <div class="btn btn-primary js-position-update res" data-id="<?=$this->model->id?>">Ок</div>
-                                <input type="hidden" name="_csrf" value="<?=Yii::$app->request->csrfToken?>">
-                                <div class="button_load"></div>
-                            </div>
+                            <?php if(false): ?>
+                                <div class="option hidden">
+                                    <input class="position-input res" type="text" value="<?=$this->model->position?>">
+                                    <div class="btn btn-primary js-position-update res" data-id="<?=$this->model->id?>">Ок</div>
+                                    <input type="hidden" name="_csrf" value="<?=Yii::$app->request->csrfToken?>">
+                                    <div class="button_load"></div>
+                                </div>
+                            <?php endif; ?>
                         </div>
                        <?php  endif;?>
                         <?php if($this->model->count_min > 1):?>
