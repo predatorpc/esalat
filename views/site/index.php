@@ -53,7 +53,7 @@ if(false && !Yii::$app->user->isGuest && ceil((strtotime(Yii::$app->user->identi
     <?php endif;  ?>
      <!--- Загрузка все товары   <div class="mod___goods_list popular goods-top product-list" id="goods-main-all" style="position: relative; padding: 0px" data-cat-count=""> -->
 
-          <div id="goods-main-all"  class="product-list js-product-list mod___goods_list goods-top" style="position: relative;" data-cat-count="">
+     <div id="goods-main-all"  class="product-list js-product-list mod___goods_list goods-top" style="position: relative; padding: 0px" data-cat-count="">
           <div id="loadAjaxContent"><div class="loader"></div></div>
      </div> <!---./Загрузка все товары -->
 

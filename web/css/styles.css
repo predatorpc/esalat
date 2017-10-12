@@ -128,18 +128,20 @@ div.m-navigation,
     display: none;
 }
 #header div.header-content.desktop div.fix-content-panel.affix div.basket-content .count {
-    color: #0e94c9;
+    color: #239d0b;
     font-family: Tahoma;
     font-size: 11px;
     font-weight: bold;
-    height: 21px;
-    padding: 2px 0;
+    height: 19px;
+    padding: 1px 0;
     position: absolute;
     right: -8px;
     text-align: center;
     top: -5px;
-    width: 20px;
+    width: 19px;
     background-size: 20px auto;
+    border-radius: 100%;
+    background: #fff;
 }
 #header div.header-content.desktop div.fix-content-panel.affix div.basket-content .basket {
     display: block;
@@ -148,7 +150,8 @@ div.m-navigation,
     margin: -3px 5px 0 0px;
     position: relative;
     width: 31px;
-    background-position: 0 -5px;
+    background-position: 0 -2px;
+    background-size: 28px auto;
 }
 #header div.header-content.desktop div.fix-content-panel.affix div.block .user-icon {
     background-position: 0 1px;
