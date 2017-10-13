@@ -106,8 +106,8 @@ $basket = Yii::$app->action->applyActions();
                         </div>  <!--/Оформит заказ-->
                     </div>
                     <?php endif;?>
-
-                    <?php if(!Yii::$app->user->isGuest):  ?>
+                    <?php if(false): ?>
+                        <?php if(!Yii::$app->user->isGuest): ?>
                         <!--Оформит заказ-->
                         <div class="button_pay button-ajax">
                             <div
@@ -137,7 +137,7 @@ $basket = Yii::$app->action->applyActions();
                             <?php endif;  ?>
                         </div>
                     <?php endif;?>
-
+                    <?php endif; ?>
                 </div><!--/Пошаговая констркуция--><?php
                 $form->end();?>
             <?php else:?>
