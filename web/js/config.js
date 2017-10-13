@@ -1,4 +1,4 @@
-var domain = 'http://www.Esalad.ru';
+var domain = 'http://www.esalad.ru';
 
 var generalAjaxPath = '/ajax/';
 var basketAjaxPath = '/ajax-basket/';

@@ -496,15 +496,15 @@
     }
 
     #header div.top .basket div.count {
-        height: 20px;
+        height: 18px;
         position: absolute;
         right: -9px;
         text-align: center;
         top: -4px;
-        width: 21px;
+        width: 19px;
         color: #208b0b;
         font-family: Tahoma;
-        font-size: 11px;
+        font-size: 10px;
         font-weight: bold;
         padding: 2px 0;
         background: #fff;
