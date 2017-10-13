@@ -297,6 +297,7 @@ $(document).ready( function(){
                 $('#goods-main-all').html(html);
                 $("#loadAjaxContent").hide();
                 shop.reloadBasketSmall(2);
+                catalog.getBasketVariantIds();
                 var inProcessMain = true;
                 $(window).scroll(function () {
                     if ($('#goods-main-all .more__load_js').length > 0 && $(window).scrollTop() + $(window).height() >= $(document).height() - 600 && inProcessMain) {

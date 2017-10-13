@@ -46,6 +46,7 @@ class BasketComponent extends Component{
     }
 
     public function displayButtonBlockForCatalogList($variantId){
+
         return WCatalogListButtonBlock::widget([
             'basketItem' => $this->basket->getProductByVariantId($variantId),
         ]);

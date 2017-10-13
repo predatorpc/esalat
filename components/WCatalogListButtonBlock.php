@@ -21,10 +21,15 @@ class WCatalogListButtonBlock extends Widget
 {
     public $basketItem;
 
-    public function run(){?>
+    public function run(){
+
+
+        ?>
+
         <?php if(isset($this->basketItem->count)):?>
             <?= $this->basketItem->count > 1 ? '<div class="count-basket-icon js-count-button"><div>'.$this->basketItem->count.'</div></div>':'<div class="success-basket-icon js-count-button"></div>' ?>
         <?php endif; ?>
+
         <div class="counts count__com">
             <span
                 class="minus count-select-button product-list-plus-minus"
