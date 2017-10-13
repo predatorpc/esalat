@@ -111,7 +111,7 @@ $basket = Yii::$app->action->applyActions();
                         <!--Оформит заказ-->
                         <div class="button_pay button-ajax">
                             <div
-                                class="button_oran center button__a"
+                                class="button_oran center button__a yMapsActive"
                                 onclick="return shop.windowShow('/ajax-basket/basket-check-data','<?=\Yii::t('app','Проверьте данные вашего заказа');?>','mid',false);"
                                 data-url="/ajax-basket/basket_check_data"
                                 data-title="Проверьте данные"
