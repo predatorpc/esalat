@@ -31,6 +31,7 @@ class AppAsset extends AssetBundle
             'css/screen.css',
             'css/shop-management/admin_screen.css',
             'css/shop-management/shop.css',
+            'css/catalog.css',
             'css/green_styles.css',
 
     ];
