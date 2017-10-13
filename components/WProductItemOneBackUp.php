@@ -167,7 +167,9 @@ class WProductItemOne extends Widget {
                                             }
                                         }
                                         if(!isset($jsonList[json_encode($dataJson)])){
-                                            $jsonList[json_encode($dataJson)] = 1;?>
+                                            $jsonList[json_encode($dataJson)] = 1;
+
+                                            ?>
 
                                             <div class="control-buttons-for-variant js-control-buttons-for-variant <?=$activeClass?>"
                                                  data-variant="<?=$variantItem->id?>"

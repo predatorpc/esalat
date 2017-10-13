@@ -105,7 +105,10 @@ catalog.getBasketVariantIds = function(){
         success   :   function(response){
             if(response.length > 0){
                 $.each(response,function(i,element){
+                   // console.log(element);
+                  //  console.log(catalog.page.find('.js-control-buttons-for-variant[data-variant='+element+']'));
                     if(catalog.page.find('.js-control-buttons-for-variant[data-variant='+element+']').length > 0){
+                        //console.log('++count++');
                         catalog.reloadProductButton(element);
                     }
                 });
@@ -124,6 +127,8 @@ catalog.reloadProductButton = function(elementId){
             if(response.length > 0){
                 $('div.button-ajax[data-id="' + elementId +'"] div.load').hide();
                 findBasketVariant = catalog.page.find('.js-control-buttons-for-variant[data-variant='+elementId+']');
+              //  console.log(response);
+               // console.log(findBasketVariant);
                 findBasketVariant.html(response);
                 shop.reloadBasketSmall();
             }
