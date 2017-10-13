@@ -36,6 +36,7 @@ routerStore.getClientAddress = function(){
 }
 
 routerStore.checkStores = function(statusAjax){
+        console.log(statusAjax + 'A');
         console.log(routerStore.status + ' ' + routerStore.statusMetro);
         if (routerStore.status == 1 && routerStore.statusMetro == 1) {
             setTimeout(function () {
@@ -62,6 +63,7 @@ routerStore.metroCountDown = function(){
 }
 
 routerStore.countDown = function(){
+    console.log('countDown end');
     routerStore.count--;
     if(routerStore.count == 0){
         routerStore.end();
@@ -90,10 +92,12 @@ routerStore.getSmall = function(store,length){
 
     if(routerStore.countShopStores[store.shop_group_id] == 0){
         routerStore.countDown();
+
     }
 }
 
 routerStore.end = function(){
+    console.log('end + status');
     if(routerStore.count == 0){
         // console.log(routerStore.storeResult);
 
@@ -133,6 +137,7 @@ routerStore.countOfObject = function(obj) {
 }
 
 routerStore.initMapsForStore = function(){
+
     $(document).on('click','.yMapsActive',function(){
         routerStore.status = 0;
         routerStore.statusMetro = 0;
@@ -182,6 +187,7 @@ routerStore.initMapsForStore = function(){
                         });
                     });
                 }else{
+
                     routerStore.countDown();
                 }
             });

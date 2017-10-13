@@ -126,48 +126,4 @@ $basket = Yii::$app->action->applyActions();
 
 <?php
 
-/*
-print '<pre>$basketProductsTypes';
-print_r($basketProductsTypes);
-print '</pre>';
-print '<pre>$basketProducts';
-print_r($basketProducts);
-print '</pre>';
-print '<pre>$basketProductsVariant';
-print_r($basketProductsVariant);
-print '</pre>';
-print '<pre>$basketVariants';
-print_r($basketVariants);
-print '</pre>';
-print '<pre>$basketProductsVariantTags';
-print_r($basketProductsVariantTags);
-print '</pre>';
-
-
-print '<pre>';
-                print_r($basket);
-                print '</pre>';
-<pre>
-<?php print_r(\Yii::$app->session)?>
-</pre>
-
-<pre>
-<?php print_r(\Yii::$app->session['basket'])?>
-</pre>
-
-*/
-//md5('9137172874');
-/*
-print substr(md5('+79137172874'),1,8);
-print substr(md5('+79137929000'),1,8);
-print '<pre>$basketTest ';
-//print_r($basketTest);
-print '</pre>';
-print '<pre>$basket ';
-//print_r(\Yii::$app->session['basket']['goods']);
-print '</pre>';
-*/
-
-
-
 

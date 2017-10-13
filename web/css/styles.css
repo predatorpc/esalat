@@ -2617,3 +2617,7 @@ div.right-content {
 .poster__left div.item {
     margin-top: 15px;
 }
+#header div.header-content.desktop div.fix-content-panel.affix div.basket-content img {
+    margin: 0 0 0 2px;
+    width: 30px;
+}
