@@ -41,7 +41,8 @@ class WBasketSmall extends Widget {
                 <?php endif; ?>
                 <!-->
                 <a class="basket  no-border" href="/basket/" >
-                    <img src="/images/mobil/icon-basket.png" />
+                    <img src="/images/mobil/icon-basket.png"  class="hidden"/>
+                    <img src="/images/mobil/basket.svg"  width="35px"/>
                     <?php if(!empty($basket) && $basket->getCount() > 0  ): ?><div class="count icon-counts "><?=$basket->count?></div><?php endif; ?>
                 </a>  <!--.Корзина-->
                 <a href="/basket/"><div class="money"><?=ModFunctions::money($basket->basketPrice)?></div></a>

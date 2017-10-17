@@ -88,7 +88,7 @@ $basket = Yii::$app->action->applyActions();
                                 <!--Промокод-->
                                 <div  id="basket-page-promo-code" class="promo">
                                     <div class="promo-code-input-block">
-                                        <?= \app\components\WBasketPromo::widget(['promo' => !empty($basket->promo_code_id) ? $basket->promo_code_id : '','message' => ''])?>
+                                        <?php //= \app\components\WBasketPromo::widget(['promo' => !empty($basket->promo_code_id) ? $basket->promo_code_id : '','message' => ''])?>
                                     </div>
                                     <?= \app\components\WBasketComment::widget(['comment' => ''])?>
                                 </div> <!--./Промокод-->
@@ -106,7 +106,7 @@ $basket = Yii::$app->action->applyActions();
                         </div>  <!--/Оформит заказ-->
                     </div>
                     <?php endif;?>
-                    <?php if(false): ?>
+                    <?php if(true): ?>
                         <?php if(!Yii::$app->user->isGuest): ?>
                         <!--Оформит заказ-->
                         <div class="button_pay button-ajax">

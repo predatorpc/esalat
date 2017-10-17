@@ -381,8 +381,8 @@ class DeliveryGroup
             for ($i = $j; $i < $z; $i++) {
                 $day = strtotime('+'.$i.' day', strtotime(date('Y-m-d')));
                 if(!in_array($day,$blockList)){
-                    $maxTime = 24;
-                    $startTime = 0;
+                    $maxTime = 20;
+                    $startTime = 8;
                     $period = 3600;
                     if(date("w", $day) == 0){
                         $maxTime = 3;
@@ -390,8 +390,8 @@ class DeliveryGroup
                         $period = 3600 * 3;
                     }
 
-                    for ($j = 0; $j <= $maxTime; $j += 1) {
-                        $time = strtotime('+'.$i.' day', strtotime(date('Y-m-d').' '.($startTime + $j).':00:00'));
+                    for ($j = $startTime; $j <= $maxTime; $j += 1) {
+                        $time = strtotime('+'.$i.' day', strtotime(date('Y-m-d').' '.($j).':00:00'));
 //                        if((date("w", $time) != 6)){
                             if($day == strtotime('midnight') && date("H",$time) < date('H')+2){
                                 continue;
@@ -527,13 +527,14 @@ class DeliveryGroup
         }
         return true;*/
         $result = true;
+        /*//rabotalo
         foreach ($this->products as $product){
             //echo $product->product->type_id;
             if($product->product->type_id != 1014 && $product->product->type_id != 1011 && $product->product->type_id != 1001){
                 $result =  false;
                 break;
             }
-        }
+        }*/
 
         /*проверка на то что  сегодня ен суббота и не воскресение и застра не то и не жругое*/
         /*
@@ -571,8 +572,8 @@ class DeliveryGroup
             for ($i = $j; $i < $z; $i++) {
                 $day = strtotime('+'.$i.' day', strtotime(date('Y-m-d')));
                 if(!in_array($day,$blockList)){
-                    $maxTime = 24;
-                    $startTime = 0;
+                    $maxTime = 20;
+                    $startTime = 8;
                     $period = 3600;
                     if(date("w", $day) == 0){
                         $maxTime = 3;
@@ -580,8 +581,8 @@ class DeliveryGroup
                         $period = 3600 * 3;
                     }
 
-                    for ($j = 0; $j <= $maxTime; $j += 1) {
-                        $time = strtotime('+'.$i.' day', strtotime(date('Y-m-d').' '.($startTime + $j).':00:00'));
+                    for ($j = $startTime; $j <= $maxTime; $j += 1) {
+                        $time = strtotime('+'.$i.' day', strtotime(date('Y-m-d').' '.($j).':00:00'));
 //                        if((date("w", $time) != 6)){
                         if($day == strtotime('midnight') && date("H",$time) < date('H')+2){
                             continue;
