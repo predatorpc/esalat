@@ -112,7 +112,7 @@ $allflash = Yii::$app->session->getAllFlashes();
                                 <div class="bonus hidden"><?= ModFunctions::bonus($userInfo['bonus'])?> /</div>
                                 <div class="money"><?=ModFunctions::money($userInfo['money'])?></div>
                                 <div class="user-container">
-                                    <a href="#" class="user user-icon white js-user-menu" data-toggle="dropdown"  onclick="return false;"><?=ModFunctions::userName(Yii::$app->user->identity->name)?></a>
+                                    <a href="#" class="user  white js-user-menu" data-toggle="dropdown"  onclick="return false;"><?=ModFunctions::userName(Yii::$app->user->identity->name)?></a>
                                     <div class="box-container">
                                         <!-- Меню ЛК-->
                                         <?= \app\components\WMyMenu::widget()?>
@@ -121,7 +121,7 @@ $allflash = Yii::$app->session->getAllFlashes();
                                 </div> / <a href="/site/logout" class="out white">Выйти</a>
 
                           <?php else: ?>
-                              <a href="#" class="user user-icon white" onclick="return window_show('login','Вход',false,false,true);">Вход</a> / <a href="#" class="user reg white" onclick="return window_show('signup','Регистрация',false,false,true);">Регистрация</a>  <!--/Войти или авторизоваться-->
+                              <a href="#" class="user white" onclick="return window_show('login','Вход',false,false,true);">Вход</a> / <a href="#" class="user reg white" onclick="return window_show('signup','Регистрация',false,false,true);">Регистрация</a>  <!--/Войти или авторизоваться-->
                           <?php endif; ?>
                           <div class="small-basket-block"></div>
                       </div>
@@ -161,7 +161,7 @@ $allflash = Yii::$app->session->getAllFlashes();
                                     ?>
                                     <div class="user-profile">
                                       <div class="money"><span class="bonus hidden" rel="popover" data-placement="bottom" data-content="Бонусный баланс. Потратить бонусные деньги вы можете в магазине Esalad на товары со значком.β"><?= ModFunctions::bonus($userInfo['bonus'])?></span>  <span class="money" rel="popover" data-placement="bottom" data-content="Баланс интернет-магазина Esalad. Совершайте покупки в интернет-магазине Esalad с удовольствием."><?=ModFunctions::money($userInfo['money'])?></span></div>
-                                       <span class="user-container _master_user"><a href="#" class="user user-icon white" data-toggle="dropdown"  onclick="return false;"><?=ModFunctions::userName(Yii::$app->user->identity->name)?></a>
+                                       <span class="user-container _master_user"><a href="#" class="user  white" data-toggle="dropdown"  onclick="return false;"><?=ModFunctions::userName(Yii::$app->user->identity->name)?></a>
                                            <div class="box-container">
                                                 <!-- Меню ЛК-->
                                                <?= \app\components\WMyMenu::widget()?>
@@ -171,7 +171,7 @@ $allflash = Yii::$app->session->getAllFlashes();
                                        </span> / <?php if(\Yii::$app->user->can('callcenterOperator')):?><a href="/user/inviteuser" class="out white">AP</a> / <?php endif ?><a href="/site/logout" class="out white">Выйти</a>
                                     </div>
                                 <?php else: ?>
-                                   <a href="#" class="user user-icon white" onclick="return window_show('login','Вход',false,false,true);">Вход</a> / <a href="#" class="user reg white" onclick="return window_show('signup','Регистрация',false,false,true);">Регистрация</a>  <!--/Войти или авторизоваться-->
+                                   <a href="#" class="user white" onclick="return window_show('login','Вход',false,false,true);">Вход</a> / <a href="#" class="user reg white" onclick="return window_show('signup','Регистрация',false,false,true);">Регистрация</a>  <!--/Войти или авторизоваться-->
                                 <?php endif; ?>
 
                             </div>
@@ -348,7 +348,7 @@ $allflash = Yii::$app->session->getAllFlashes();
                         </div>
                         <div class="col-md-6 col-xs-6 item">
                             <div class="row">
-                                <div class="col-md-8 col-xs-8 ">
+                                <div class="col-xs-9">
                                     <div class="menu-footer">
                                         <?php
                                         // Загрузка Меню;
@@ -362,7 +362,7 @@ $allflash = Yii::$app->session->getAllFlashes();
                         </div>
                         <div class="col-md-3 col-xs-3 item">
                             <div class="contacts">
-                                <div class="phone"><?=$pagesOptions['phone']?></div>
+                                <div class="phone"><a href="tel:<?=$pagesOptions['phone']?>" class="white"><?=$pagesOptions['phone']?></a></div>
                                 <div class="mail"><a href="mailto:<?=$pagesOptions['email']?>"><?=$pagesOptions['email']?></a></div>
                                 <div class="time">Время работы операторов: <br><b><?=$pagesOptions['time']?></b></div>
 
@@ -378,8 +378,7 @@ $allflash = Yii::$app->session->getAllFlashes();
                     <div class="clear"></div>
 
                     <div class="row">
-                        <div class="col-md-4 col-xs-4"><div class="copyright">© Esalad 2015 Все права защищены.</div></div>
-                        <div class="col-md-7 col-xs-7"><div class="version"><a class="hidden" href="http://www.esalad.ru/?version=yes">Мобильная версия</a></div></div>
+                        <div class="col-md-4 col-xs-4"><div class="copyright">© Esalad 2017 Все права защищены.</div></div>
                         <div class="clear"></div>
                     </div>
                 </div>  <!--/Десктоп-->

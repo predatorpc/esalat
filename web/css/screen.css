@@ -447,6 +447,12 @@
        /* width: 110px;*/
         float: right;
     }
+    #header div.basket-content.mobile img{
+        left: 5px;
+        position: relative;
+        top: 2px;
+        width: 30px;
+    }
     #header div.top div.basket.desktop {
         display: none;
     }
@@ -500,7 +506,7 @@
         position: absolute;
         right: -9px;
         text-align: center;
-        top: -4px;
+        top: -3px;
         width: 19px;
         color: #208b0b;
         font-family: Tahoma;

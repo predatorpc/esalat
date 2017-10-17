@@ -87,6 +87,12 @@ div.category___sidebar div.i div.open{
 #header div.header-content.desktop div.fix-content-panel.affix div.block a {
     color:#ffffff;
 }
+#header div.header-content.desktop div.fix-content-panel.affix a.user {
+    padding: 7px 10px 10px;
+}
+#header div.box-container div.item a{
+    color:#22980b !important;
+}
 div.good.compact div.content-images .goods-carousel-min div.item img.open,
 div.good.compact div.content-images .goods-carousel-min div.item img:hover {
     border-color: #22980b;
