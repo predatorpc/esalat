@@ -160,8 +160,8 @@ $allflash = Yii::$app->session->getAllFlashes();
                                         }
                                     ?>
                                     <div class="user-profile">
-                                      <div class="money"><span class="bonus hidden" rel="popover" data-placement="bottom" data-content="Бонусный баланс. Потратить бонусные деньги вы можете в магазине Esalad на товары со значком.β"><?= ModFunctions::bonus($userInfo['bonus'])?></span>  <span class="money" rel="popover" data-placement="bottom" data-content="Баланс интернет-магазина Esalad. Совершайте покупки в интернет-магазине Esalad с удовольствием."><?=ModFunctions::money($userInfo['money'])?></span></div>
-                                       <span class="user-container _master_user"><a href="#" class="user  white" data-toggle="dropdown"  onclick="return false;"><?=ModFunctions::userName(Yii::$app->user->identity->name)?></a>
+                                      <div class="money"><span class="bonus hidden" rel="popover" data-placement="bottom" data-content="Бонусный баланс. Потратить бонусные деньги вы можете в магазине Esalad на товары со значком.β"><?= ModFunctions::bonus($userInfo['bonus'])?></span>  <span class="money" rel="popover" data-placement="bottom" data-content="Баланс интернет-магазина Esalat. Совершайте покупки в интернет-магазине Esalat с удовольствием."><?=ModFunctions::money($userInfo['money'])?></span></div>
+                                       <span class="user-container _master_user"><a href="#" class="user user-icon white" data-toggle="dropdown"  onclick="return false;"><?=ModFunctions::userName(Yii::$app->user->identity->name)?></a>
                                            <div class="box-container">
                                                 <!-- Меню ЛК-->
                                                <?= \app\components\WMyMenu::widget()?>
@@ -241,7 +241,7 @@ $allflash = Yii::$app->session->getAllFlashes();
                       <div class="search">
                           <form action="/search/" method="post">
                               <div class="input">
-                                  <input type="text" name="search" value="" maxlength="64" autocomplete="off" placeholder="Найти на Esalad" onfocus="$(this).attr('placeholder','')" onblur="$(this).attr('placeholder','Найти на Esalad')" />
+                                  <input type="text" name="search" value="" maxlength="64" autocomplete="off" placeholder="Найти на Esalat" onfocus="$(this).attr('placeholder','')" onblur="$(this).attr('placeholder','Найти на Esalat')" />
                                   <input type="hidden" name="_csrf" value="<?=Yii::$app->request->csrfToken?>">
                               </div>
                               <div class="button" onclick="$(this).parents('form').submit();"></div>
@@ -378,7 +378,7 @@ $allflash = Yii::$app->session->getAllFlashes();
                     <div class="clear"></div>
 
                     <div class="row">
-                        <div class="col-md-4 col-xs-4"><div class="copyright">© Esalad 2017 Все права защищены.</div></div>
+                        <div class="col-md-4 col-xs-4"><div class="copyright">© Esalad <?=Date('Y')?> Все права защищены.</div></div>
                         <div class="clear"></div>
                     </div>
                 </div>  <!--/Десктоп-->
@@ -407,7 +407,7 @@ $allflash = Yii::$app->session->getAllFlashes();
 <!--/Мастер помощник-->
 
 <!--Таймер-->
-<?= \app\components\html\WTimer::widget()?>
+<?= \app\components\html\WTimer::widt()?>
 <!--/Таймер-->
 
 <!--Акция-->
@@ -422,7 +422,7 @@ $allflash = Yii::$app->session->getAllFlashes();
     <!--Онлайн консультант-->
     <?php // \app\components\html\WChat::widget()?>
 <?php endif; ?>
-
+ge
 <script type="text/javascript">
     $(window).load(function(){
 

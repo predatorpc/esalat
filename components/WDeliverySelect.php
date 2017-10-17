@@ -27,7 +27,7 @@ class WDeliverySelect extends Widget{
 
         <div id="basket-page-deliveries" class="my-deliveries <?= ((isset($_SESSION['modalDeliveryFree']) || $moneyDeliveryFree >= 3000) ? 'no' : '')?>" data-address-base="<?= $this->basket->delivery_id?>:<?= $this->basket->address_id?>">
             <div class="address"><?= WAddressAddModal::widget();?> </div>
-
+<?php /* vibor dostavki na club
             <select
                 name="delivery-address-select"
                 class="delivery-club-address-list form-control select-input"
@@ -48,7 +48,7 @@ class WDeliverySelect extends Widget{
                 ><?= $item['address']?></option><?php
 
             }?>
-            </select><?php
+            </select><?php */
 
             foreach(\Yii::$app->basket->deliveryAddresses() as $item) {
                 $deliveryId = !empty($item['delivery_id']) ? $item['delivery_id'] : $item['id'];

@@ -164,14 +164,15 @@ class WBasketProductVOne extends Widget
                                  echo '<div class="delivery">Ближайшая доставка:  <b>' . $textDay . '</b></div>';
                              }else{
                                  $textDay = '';
-                                 if(date('N')==5){
+                                 /*if(date('N')==5){
                                      $textDay = 'послезавтра';
-                                 }else{
+                                 }
+                                 else{
                                      $textDay = 'завтра';
                                  }
-                                 if($this->product->product->type_id == 1014){
+                                 if($this->product->product->type_id == 1014){*/
                                      $textDay = 'сегодня';
-                                 }
+                                 //}
                                  echo '<div class="delivery">Ближайшая доставка:  <b>' . $textDay . '</b></div>';
                              }
                          ?>

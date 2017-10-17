@@ -298,6 +298,7 @@ class GoodsVariations extends \app\modules\common\models\UpdateLogs //\app\modul
     }
 
     public function getDateOfAvailible($storeId){
+        /*
         $minday = strtotime("midnight"); //начало текущего дня
 //        if($minday == strtotime('midnight') && date('H')>=8){
 //            $minday = $minday + 60*60*24;
@@ -333,7 +334,14 @@ class GoodsVariations extends \app\modules\common\models\UpdateLogs //\app\modul
             return ($minday - strtotime("midnight"))/60/60/24;
             //echo ($minday - strtotime("midnight"))/60/60/24;
         }
-        return false;
+        */
+        if(Date('H')>20){
+            $result=1;
+        }
+        else{
+            $result=0;
+        }
+        return $result;
 
     }
 
