@@ -65,13 +65,13 @@ class PagesMenus extends \app\modules\common\models\ActiveRecordRelation
                 'label' => Yii::t('app','Мои адреса'),
                 'url'   => '/my/'
             ];
-            $subItems[] = [
+            /*$subItems[] = [
                 'label' => Yii::t('app','Операции с балансом'),
                 'url'   => '/my/balance-operation/'
-            ];
+            ];*/
         }
         if(!Yii::$app->user->isGuest) {
-            $subItems[] =   [
+            /*$subItems[] =   [
                 'label' => Yii::t('app','История заказов'),
                 'url' => '/my/orders-history/'
             ];
@@ -86,7 +86,7 @@ class PagesMenus extends \app\modules\common\models\ActiveRecordRelation
             $subItems[] =   [
                 'label' => Yii::t('app','Промо код'),
                 'url' => '/my/promo/'
-            ];
+            ];*/
             $subItems[] =   [
                 'label' => Yii::t('app','Обратная связь'),
                 'url' => '/my/feedback/'
