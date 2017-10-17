@@ -14,7 +14,7 @@ use app\modules\pages\models\PagesMenus;
  * @var string $url
  *
  */
-// Класс родительского блока "product-item" - якорь для javascript. НЕ УДАЛЯТЬ и не навешивать на него стили !!!!
+
 class WMyMenuMobile extends Widget
 {
 
@@ -23,12 +23,16 @@ class WMyMenuMobile extends Widget
         $iNumber = 0;
         foreach(PagesMenus::getPagesMyMenu() as $key => $menu){
                $iNumber++;
-            ?>
 
-            <div class="item">
-                <a href="<?=$menu['url']?>" class="<?php if($foo == $iNumber):?>no<?php endif;?> no-border"><?=$menu['label']?></a>
-            </div>
-            <?php
+            if($key != 8 && $key != 7) {
+                ?>
+
+                <div class="item">
+                    <a href="<?= $menu['url'] ?>"
+                       class="<?php if ($foo == $iNumber): ?>no<?php endif; ?> no-border"><?= $menu['label'] ?></a>
+                </div>
+                <?php
+            }
         }
     }
 }

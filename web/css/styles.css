@@ -128,20 +128,19 @@ div.m-navigation,
     display: none;
 }
 #header div.header-content.desktop div.fix-content-panel.affix div.basket-content .count {
+    background: #fff none repeat scroll 0 0;
+    border-radius: 100%;
     color: #239d0b;
     font-family: Tahoma;
-    font-size: 11px;
+    font-size: 10px;
     font-weight: bold;
-    height: 19px;
+    height: 17px;
     padding: 1px 0;
     position: absolute;
-    right: -8px;
+    right: -5px;
     text-align: center;
-    top: -5px;
-    width: 19px;
-    background-size: 20px auto;
-    border-radius: 100%;
-    background: #fff;
+    top: -3px;
+    width: 18px;
 }
 #header div.header-content.desktop div.fix-content-panel.affix div.basket-content .basket {
     display: block;
@@ -185,7 +184,7 @@ div.m-navigation,
     background: #fff none repeat scroll 0 0;
     padding: 8px;
     position: absolute;
-    top: 19px;
+    top: 27px;
     width: 147px;
     display: none;
 }
@@ -224,7 +223,7 @@ div.m-navigation,
     color:#fff;
 }
 #header div.header-content.desktop div.top  div.user a.user {
-    padding: 7px 5px 5px 25px;
+    padding: 7px 10px 5px 10px;
     background-position: 5px 7px;
 }
 
@@ -381,7 +380,7 @@ div.m-navigation,
    /* padding: 7px 0px 0px;*/
     float: left;
     position: relative;
-    top: -14px;
+    top: -10px;
     z-index:110;
     left: -5px;
 }
@@ -390,16 +389,18 @@ div.m-navigation,
 }
 #header div.header-content.desktop div.bottom div.basket div.counts {
     color: #fff;
-    text-align: center;
-    font-size: 11px;
+    font-family: Tahoma;
+    font-size: 10px;
     font-weight: bold;
+    line-height: 15px;
+    padding: 3px 0;
     position: absolute;
-    right: 0px;
-    top: 0px;
-    background: url('/images/counts_cat.png') no-repeat;
+    right: 3px;
+    text-align: center;
+    top: -4px;
     width: 24px;
-  /*  height: 23px;*/
-    padding: 4px 0;
+    background: url('/images/counts_cat.png') no-repeat;
+
 }
 #header div.header-content.desktop div.bottom div.basket div.block {
     padding: 0px 0px 0px 40px;
@@ -499,7 +500,7 @@ div.m-navigation,
 #menu-top {
     height: 50px;
     background: #0c7ca8;
-    margin: 0 -15px;
+    margin: 0 -28px;
     padding: 0 30px;
     position: relative;
 }
@@ -891,7 +892,8 @@ div.main-info div.item p {
     display: block;
     margin: 5px 0px 8px 0px;
     float: left;
-    width: 135px;
+    width: 160px;
+    white-space: pre;
 }
 /*Контакты*/
 #footer div.contacts .phone{
@@ -2618,6 +2620,6 @@ div.right-content {
     margin-top: 15px;
 }
 #header div.header-content.desktop div.fix-content-panel.affix div.basket-content img {
-    margin: 0 0 0 2px;
-    width: 30px;
+    margin: 0 0 0 5px;
+    width: 26px;
 }

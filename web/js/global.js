@@ -300,7 +300,7 @@ $(document).on('mouseenter','#header .js-user-menu',function() {
     clearTimeout($.data(this, 'timer'));
     $(this).addClass('active');
     $(this).siblings('#header .user-container .box-container').stop(true, true).slideDown(100);
-    $(this).css({'color':'#0c7ca8','text-decoration':'none','background-position':'0px -18px'});
+    $(this).css({'color':'#22980b','text-decoration':'none','background-position':'0px -18px'});
 }).on('mouseleave','.user-container',function() {
     // Интервал закрытия блок;
 
