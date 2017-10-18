@@ -25,20 +25,14 @@ if(false && !Yii::$app->user->isGuest && ceil((strtotime(Yii::$app->user->identi
 
 ?>
 <!--class="col-lg-9 right-content"-->
-<div>
+
     <!--Слайд-->
-    <?php if(false): ?>
+    <?php if(true): ?>
     <div class="slides">
         <div class="items">
-          <?php if(Yii::$app->params['en']): ?>
-                <div class="item "><a href="#"><img src="http://www.esalad.ru/files/slides/10000086_en.jpg" alt=""  class="ad"/></a></div>
-                <div class="item "><a href="#"><img src="http://www.esalad.ru/files/slides/10000087_en.jpg" alt=""  class="ad"/></a></div>
-                <div class="item "><a href="#"><img src="http://www.esalad.ru/files/slides/10000088_en.jpg" alt=""  class="ad"/></a></div>
-          <?php else:  ?>
              <?php foreach($slider as $item): ?>
                 <div class="item "><a href="<?=$item['url']?>"><img src="http://www.esalad.ru/files/slides/<?=$item['id']?>.jpg" alt="" class="ad"/></a></div>
              <?php endforeach;?>
-          <?php endif;  ?>
         </div>
     </div><!--/Слайд-->
     <?php endif;  ?>
@@ -53,14 +47,12 @@ if(false && !Yii::$app->user->isGuest && ceil((strtotime(Yii::$app->user->identi
     <?php endif;  ?>
      <!--- Загрузка все товары   <div class="mod___goods_list popular goods-top product-list" id="goods-main-all" style="position: relative; padding: 0px" data-cat-count=""> -->
 
-     <div id="goods-main-all"  class="goods product-list js-product-list mod___goods_list goods-top" style="position: relative; padding: 0px" data-cat-count="">
+     <div id="goods-main-all"  class="goods product-list js-product-list mod___goods_list goods-top" style="position: relative; padding: 0px; min-height: 300px" data-cat-count="">
           <div id="loadAjaxContent"><div class="loader"></div></div>
      </div> <!---./Загрузка все товары -->
 
     <div class="clear"></div>
-</div>
 
-<div class="clear"></div>
 
 
 <?php if(false): ?>
