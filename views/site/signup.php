@@ -43,7 +43,7 @@ $this->title = Yii::t('app', 'Регистрация');
     <!-- div><p class="help-block help-block-error" style="color: #a94442" id="errno"></p></div -->
 
     <div class="clear"></div>
-    <div class="form-group"><button type="submit" id="agree_button" class="button_oran center" onclick="yaCounter30719268.reachGoal('registration_ya'); return modal_form_action('signup-form','submitsignup');"><?=\Yii::t('app', 'Зарегистрировать')?></button></div>
+    <div class="form-group"><button type="submit" id="agree_button" class="button_oran center" onclick="return modal_form_action('signup-form','submitsignup');"><?=\Yii::t('app', 'Зарегистрировать')?></button></div>
     <?php ActiveForm::end(); ?>
 </div> <!--/Форма-->
 

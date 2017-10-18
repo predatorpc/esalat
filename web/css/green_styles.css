@@ -88,7 +88,13 @@ div.category___sidebar div.i div.open{
     color:#ffffff;
 }
 #header div.header-content.desktop div.fix-content-panel.affix a.user {
-    padding: 7px 10px 10px;
+    padding: 7px 10px 11px;
+}
+#header div.header-content.desktop div.fix-content-panel.affix div.block a.user{
+
+}
+#header div.header-content.desktop div.fix-content-panel.affix div.block a.user.reg,#header div.header-content.desktop div.fix-content-panel.affix div.block a.out{
+   padding: 0px 10px;
 }
 #header div.box-container div.item a{
     color:#22980b !important;

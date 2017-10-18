@@ -201,7 +201,7 @@ class BackendController extends GeneralShopController
             ],
         ],
 
-        'promo' => [
+/*        'promo' => [
             'title' => Yii::t('admin','Промо-коды'),
             'status' => 1,
             'link' => '/shop-management/promo-code-statistic?CodesSearch[usetype]=0&CodesSearch[club]=0&CodesSearch[dateStart]='.date('d.m.Y',strtotime('- 1 month')).'&CodesSearch[dateStop]='.date('d.m.Y'),
@@ -223,7 +223,7 @@ class BackendController extends GeneralShopController
                     'title' => Yii::t('admin','Список промокодов'),
                 ],
             ],
-        ],
+        ],*/
 
 
         'seo' => [
@@ -246,7 +246,7 @@ class BackendController extends GeneralShopController
 
             ],
         ],
-
+/*
         'analytics' => [
             'title' => Yii::t('admin','Аналитика'),
             'status' => 1,
@@ -274,7 +274,7 @@ class BackendController extends GeneralShopController
                 ],
             ],
         ],
-
+*/
         'reports' => [
             'title' => Yii::t('admin','Отчеты'),
             'status' => 0,
@@ -322,15 +322,15 @@ class BackendController extends GeneralShopController
                     'link' => '/reports/preorder',
                     'title' => Yii::t('admin','Предзаказ'),
                 ],
-                [
+            /*    [
                     'link' => '/reports/shame-board',
                     'title' => Yii::t('admin','Доска позора'),
-                ],
+                ],*/
                 [
                     'link' => '/reports/abandoned-basket-report',
                     'title' => Yii::t('admin','Просмотр отчета о брошенных корзинах'),
                 ],
-                [
+            /*    [
                     'link' => '/reports/master-statistic',
                     'title' => Yii::t('admin','Просмотр статистики работы мастера продаж'),
                 ],
@@ -349,7 +349,7 @@ class BackendController extends GeneralShopController
                 [
                     'link' => '/reports/reports-orders-month',
                     'title' => Yii::t('admin','Отчет о заказах по месяцам'),
-                ],
+                ],*/
                 [
                     'link' => '/reports/sales-report',
                     'title' => Yii::t('admin','Просмотр отчета о продажах (общий)'),
@@ -456,7 +456,7 @@ class BackendController extends GeneralShopController
         ],
 
 
-        'fake' => [
+    /*    'fake' => [
             'title' => Yii::t('admin','Подмена пользователя'),
             'status' => 1,
             'link' => '/site/login-god',
@@ -466,7 +466,7 @@ class BackendController extends GeneralShopController
                     'title' => Yii::t('admin','Подмена пользователя'),
                 ],
             ],
-        ],
+        ],*/
 
 
 

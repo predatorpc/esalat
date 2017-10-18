@@ -69,10 +69,7 @@ class WBasketSmall extends Widget {
             <div class="block">
                 <?php if($basket->count > 0) :?>
                     <a class="no-border" href="/basket/">
-                        <div class="money">
-                            <?=$basket->basketPrice?>
-                            <small class="rubznak">p.</small>
-                        </div>
+                        <div class="money"><?=$basket->basketPrice?><small class="rubznak">p</small></div>
                     </a>
                 <?php else: ?>
                     <div href="/basket/" class="no"><?=\Yii::t('app', 'Нет товаров')?></div>

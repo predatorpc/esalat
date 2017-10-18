@@ -56,27 +56,27 @@ function ymaps_re () {
 
         getCoordsByAddress("Россия, Новосибирск, ул. Кирова 44/1 ");
         var kirova = new ymaps.Placemark(arrCoords, {balloonContent: 'Кирова 44'}, {preset: 'islands#icon',iconColor: '#0095b6'});
-        myMap.geoObjects.add(kirova);
+        //myMap.geoObjects.add(kirova);
         kirova.events.add('click', function (e) { if(!kirova.balloon.open()) kirova.balloon.open();	else  kirova.balloon.close(); });
 
         getCoordsByAddress("Россия, Новосибирск, пл. Карла Маркса 3");
         var marksa = new ymaps.Placemark(arrCoords, {balloonContent: 'пл К. Маркса 3'}, {preset: 'islands#icon',iconColor: '#0095b6'});
-        myMap.geoObjects.add(marksa);
+       /// myMap.geoObjects.add(marksa);
         marksa.events.add('click', function (e) { if(!marksa.balloon.open()) marksa.balloon.open();	else  marksa.balloon.close(); });
 
         getCoordsByAddress("Россия, Новосибирск, ул. Советская 64 ");
         var soviet = new ymaps.Placemark(arrCoords, {balloonContent: 'Советская 64'}, {preset: 'islands#icon',iconColor: '#0095b6'});
-        myMap.geoObjects.add(soviet);
+       // myMap.geoObjects.add(soviet);
         soviet.events.add('click', function (e) { if(!soviet.balloon.open()) soviet.balloon.open();	else soviet.balloon.close(); });
 
         getCoordsByAddress("Россия, Новосибирск, ул. Семьи Шамшиных ");
         var shamsh = new ymaps.Placemark(arrCoords, {balloonContent: 'Семьи Шамшиных 20'}, {preset: 'islands#icon',iconColor: '#0095b6'});
-        myMap.geoObjects.add(shamsh);
+       // myMap.geoObjects.add(shamsh);
         shamsh.events.add('click', function (e) { if(!shamsh.balloon.open()) shamsh.balloon.open();	else  shamsh.balloon.close(); });
 
         getCoordsByAddress("Россия, Новосибирск, ул. Красный Проспект 220 ");
         var krpr = new ymaps.Placemark(arrCoords, {balloonContent: 'Красный проспект 220'}, {preset: 'islands#icon',iconColor: '#0095b6'});
-        myMap.geoObjects.add(krpr);
+       // myMap.geoObjects.add(krpr);
         krpr.events.add('click', function (e) { if(!krpr.balloon.open()) krpr.balloon.open();	else  krpr.balloon.close(); });
 
         //добавляем полигон на карту иначе не будет искать

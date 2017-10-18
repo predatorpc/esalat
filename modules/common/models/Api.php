@@ -178,7 +178,7 @@ class Api {
         curl_setopt($c, CURLOPT_TIMEOUT, 30);
         curl_setopt ($c, CURLOPT_SSL_VERIFYPEER, 0);
         //curl_setopt($c, CURLOPT_POSTFIELDS, 'operation=send&login=versal_http&onum=EXTREMESHOP&unum='.str_replace('+', '', $phone).'&msg='.urlencode($message).'&sign='.sha1(str_replace('+', '', $phone).urlencode($message).'OEyvkFgA'));
-        curl_setopt($c, CURLOPT_POSTFIELDS, 'operation=send&login=versal_http&onum=Esalad&unum='.str_replace('+', '', $phone).'&msg='.urlencode($message).'&sign='.sha1(str_replace('+', '', $phone).urlencode($message).'8FlWEfwE'));
+        curl_setopt($c, CURLOPT_POSTFIELDS, 'operation=send&login=versal_http&onum=Esalad&unum='.str_replace('+', '', $phone).'&msg='.urlencode($message).'&sign='.sha1(str_replace('+', '', $phone).urlencode($message).'9RJFGTBIK'));
         $data = curl_exec($c);
         curl_close($c);
         // Вывод данных;

@@ -18,20 +18,20 @@ use app\modules\pages\models\PagesMenus;
 class WMyMenuMobile extends Widget
 {
 
-    public function run(){
+    public function run() {
         $foo =  count(PagesMenus::getPagesMyMenu());
         $iNumber = 0;
         foreach(PagesMenus::getPagesMyMenu() as $key => $menu){
                $iNumber++;
 
-            if($key != 8 && $key != 7) {
+            if(empty($menu['id'])) {
                 ?>
 
                 <div class="item">
                     <a href="<?= $menu['url'] ?>"
                        class="<?php if ($foo == $iNumber): ?>no<?php endif; ?> no-border"><?= $menu['label'] ?></a>
                 </div>
-                <?php
+            <?php
             }
         }
     }
