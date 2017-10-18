@@ -96,6 +96,19 @@ div.m-navigation,
     right: 0;
     z-index: 350;
 }
+#header div.header-content.desktop div.fix-content-panel.affix-top div.logo,#header div.header-content.desktop div.fix-content-panel.affix-top .p-text{
+    display: none;
+}
+#header div.header-content.desktop div.fix-content-panel.affix div.logo {
+    display: block;
+    padding: 3px 10px 0 30px;
+}
+#header div.header-content.desktop div.fix-content-panel.affix .p-text {
+    display: block;
+    color:#fff;
+    font-size: 12px;
+    margin: 9px 0px 0px 5px;
+}
 #header div.header-content.desktop div.fix-content-panel div.block {
     display: none;
 }
@@ -113,7 +126,6 @@ div.m-navigation,
 }
 #header div.header-content.desktop div.fix-content-panel.affix div.block div.user-container {
     float: left;
-    margin: 0 5px 0 15px;
     padding: 0;
     position: relative;
 }
@@ -127,6 +139,7 @@ div.m-navigation,
 #header div.header-content.desktop div.fix-content-panel.affix div.basket.desktop {
     display: none;
 }
+
 #header div.header-content.desktop div.fix-content-panel.affix div.basket-content .count {
     background: #fff none repeat scroll 0 0;
     border-radius: 100%;
@@ -134,8 +147,7 @@ div.m-navigation,
     font-family: Tahoma;
     font-size: 10px;
     font-weight: bold;
-    height: 17px;
-    padding: 1px 0;
+    padding: 1px 0px;
     position: absolute;
     right: -5px;
     text-align: center;
@@ -146,9 +158,8 @@ div.m-navigation,
     display: block;
     float: left;
     height: 30px;
-    margin: -3px 5px 0 0px;
+    margin: -3px 5px 0 -20px;
     position: relative;
-    width: 31px;
     background-position: 0 -2px;
     background-size: 28px auto;
 }
@@ -185,13 +196,15 @@ div.m-navigation,
     padding: 8px;
     position: absolute;
     top: 27px;
-    width: 147px;
+    width: 180px;
     display: none;
+    box-shadow: 0 5px 10px -2px #909090;
 }
 #header div.header-content.desktop div.fix-content-panel.affix .box-container .item{
     font-size: 13px;
     padding: 3px 0;
 }
+
 #header div.header-content.desktop div.top a.item-header {
     padding: 0px 20px 0px 0px;
 }
@@ -244,6 +257,9 @@ div.m-navigation,
     position: relative;
     color:#fff;
 }
+#header div.header-content.desktop div.top  div.user div.user-profile a.out{
+    padding-left: 10px;
+}
 #header div.header-content.desktop div.top  div.user div.user-profile .user-container{
     position: relative;
     display: inline-block;
@@ -290,7 +306,7 @@ div.m-navigation,
 #header div.header-content.desktop div.bottom div.search {
     border: 1px solid #b2b2b2;
     border-radius: 3px;
-    margin: 20px auto 0;
+    margin: 20px -33px 0;
     padding: 4px 0;
     position: relative;
     width: 440px/*512px*/;
@@ -324,9 +340,9 @@ div.m-navigation,
 /*Инфо*/
 #header div.header-content.desktop div.bottom div.info-header {
     position: absolute;
-    right: 15px;
-    top: 5px;
-    width: 165px;
+    right: -15px;
+    top: 14px;
+    text-align: right;
 }
 #header div.header-content.desktop div.bottom div.info-header div.social {
     position: absolute;
@@ -339,6 +355,11 @@ div.m-navigation,
 }
 #header div.header-content.desktop div.bottom div.info-header .phone {
     font-size: 22px;
+    white-space: nowrap;
+    color: #1b740a;
+
+    display: block;
+    padding-bottom: 5px;
 }
 #header div.header-content.desktop div.bottom div.info-header .time {
     color: #7c7c7c;
@@ -392,13 +413,13 @@ div.m-navigation,
     font-family: Tahoma;
     font-size: 10px;
     font-weight: bold;
-    line-height: 15px;
-    padding: 3px 0;
+    line-height: 18px;
+    padding: 3px 0px;
     position: absolute;
-    right: 3px;
+    width: 24px;
+    right: 5px;
     text-align: center;
     top: -4px;
-    width: 24px;
     background: url('/images/counts_cat.png') no-repeat;
 
 }
@@ -424,7 +445,7 @@ div.m-navigation,
     display: block;
     height: 0;
     position: absolute;
-    right: -5px;
+    right: -11px;
     top: 5px;
     width: 0;
 }
@@ -438,6 +459,7 @@ div.m-navigation,
     right: -15px;
     top: 30px;
     display: none;
+    box-shadow: 0 8px 15px -5px #6b6b6b;
 }
 #header div.header-content.desktop div.basket div.box-container div.goods {
     border-bottom: 2px dashed #e0e0e0;
@@ -1144,7 +1166,7 @@ div.compact-good div.modal-header{
 }
 div.compact-good .modal-header .close {
     color: #0C7CA8;
-    font-size: 30px;
+    font-size: 45px;
     opacity: 100;
 }
 div.compact-good div.good div.description-normal {

@@ -76,7 +76,10 @@ $allflash = Yii::$app->session->getAllFlashes();
         <div id="br-show"></div>
         <div class="br-shadow"></div>
         <div id="loadAjax"><div class="loader"></div></div>
-
+        <!--preloader-->
+        <div id="preloader">
+            <div class="loading-data"></div>
+        </div>
 
         <!--Главная container-->
     <div class="container shop-container" data-page="<?= \Yii::$app->controller->uniqueId?>">
@@ -85,14 +88,21 @@ $allflash = Yii::$app->session->getAllFlashes();
              <!--Десктопная версия-->
               <div class="header-content desktop">
                   <div class="fix-content-panel">
+                      <!--
                       <div class="total">
                      <?php if(!Yii::$app->user->isGuest && false): ?>
                         <?= \app\components\WBasketDeliveryFree::widget()?>
                         <?= \app\components\WBasketCardFree::widget()?>
                         <?= \app\components\WBasketCardFreeGoldPlus::widget()?>
                      <?php endif; ?>
+                      </div>-->
+                      <div class="logo pull-left">
+                          <img src="/images/mobil/logo-m.png" width="70px" />
+
                       </div>
+                       <div class="p-text pull-left">Продукты с доставкой на дом в Новосибирске, тел.: +7 383 349-92-09</div>
                       <div class="block">
+
                           <?php if(!Yii::$app->user->isGuest):?>
                               <?php
                               if(!empty(Yii::$app->user->id)){
@@ -117,11 +127,10 @@ $allflash = Yii::$app->session->getAllFlashes();
                                         <!-- Меню ЛК-->
                                         <?= \app\components\WMyMenu::widget()?>
                                         <!-- Меню ЛК-->
-                                    </div>
-                                </div> / <a href="/site/logout" class="out white">Выйти</a>
+                                    </div></div>/<a href="/site/logout" class="out white">Выйти</a>
 
                           <?php else: ?>
-                              <a href="#" class="user white" onclick="return window_show('login','Вход',false,false,true);">Вход</a> / <a href="#" class="user reg white" onclick="return window_show('signup','Регистрация',false,false,true);">Регистрация</a>  <!--/Войти или авторизоваться-->
+                              <a href="#" class="user white" onclick="return window_show('login','Вход',false,false,true);">Вход</a>/<a href="#" class="user reg white" onclick="return window_show('signup','Регистрация',false,false,true);">Регистрация</a>  <!--/Войти или авторизоваться-->
                           <?php endif; ?>
                           <div class="small-basket-block"></div>
                       </div>
@@ -161,17 +170,17 @@ $allflash = Yii::$app->session->getAllFlashes();
                                     ?>
                                     <div class="user-profile">
                                       <div class="money"><span class="bonus hidden" rel="popover" data-placement="bottom" data-content="Бонусный баланс. Потратить бонусные деньги вы можете в магазине Esalad на товары со значком.β"><?= ModFunctions::bonus($userInfo['bonus'])?></span>  <span class="money" rel="popover" data-placement="bottom" data-content="Баланс интернет-магазина Esalat. Совершайте покупки в интернет-магазине Esalat с удовольствием."><?=ModFunctions::money($userInfo['money'])?></span></div>
-                                       <span class="user-container _master_user"><a href="#" class="user user-icon white" data-toggle="dropdown"  onclick="return false;"><?=ModFunctions::userName(Yii::$app->user->identity->name)?></a>
+                                       <span class="user-container _master_user"><a href="#" class="user white" data-toggle="dropdown"  onclick="return false;"><?=ModFunctions::userName(Yii::$app->user->identity->name)?></a>
                                            <div class="box-container">
                                                 <!-- Меню ЛК-->
                                                <?= \app\components\WMyMenu::widget()?>
                                                <!-- Меню ЛК-->
 
                                            </div>
-                                       </span> / <?php if(\Yii::$app->user->can('callcenterOperator')):?><a href="/user/inviteuser" class="out white">AP</a> / <?php endif ?><a href="/site/logout" class="out white">Выйти</a>
+                                       </span>/<?php if(\Yii::$app->user->can('callcenterOperator')):?><a href="/user/inviteuser" class="out white">AP</a>/<?php endif ?><a href="/site/logout" class="out white">Выйти</a>
                                     </div>
                                 <?php else: ?>
-                                   <a href="#" class="user white" onclick="return window_show('login','Вход',false,false,true);">Вход</a> / <a href="#" class="user reg white" onclick="return window_show('signup','Регистрация',false,false,true);">Регистрация</a>  <!--/Войти или авторизоваться-->
+                                   <a href="#" class="user white" onclick="return window_show('login','Вход',false,false,true);">Вход</a>/<a href="#" class="user reg white" onclick="return window_show('signup','Регистрация',false,false,true);">Регистрация</a>  <!--/Войти или авторизоваться-->
                                 <?php endif; ?>
 
                             </div>
@@ -195,9 +204,9 @@ $allflash = Yii::$app->session->getAllFlashes();
                                     <div class="button" onclick="$(this).parents('form').submit();"></div>
                                 </form>
                             </div> <!--/Поиск-->
-                            <div class="info-header hidden">
-                                <span class="phone"><?php if(!empty($_SERVER['HTTP_HOST']) && $_SERVER['HTTP_HOST'] == '192.168.0.14' || $_SERVER['HTTP_HOST'] == '192.168.0.11'): ?> <?=$_SERVER['HTTP_HOST']?><?php else: ?>   8 383 349-92-09<?php endif; ?></span>
-                                <span class="version"><a href="mailto:info@esalad.ru">info@esalad.ru</a></span>
+                            <div class="info-header">
+                                <span class="phone"><?php if(!empty($_SERVER['HTTP_HOST']) && $_SERVER['HTTP_HOST'] == '192.168.0.14' || $_SERVER['HTTP_HOST'] == '192.168.0.11'): ?> <?=$_SERVER['HTTP_HOST']?><?php else: ?><?=$pagesOptions['phone']?><?php endif; ?></span>
+                                <span class="version"><a href="mailto:<?=$pagesOptions['email']?>"><?=$pagesOptions['email']?></a></span>
                                 <span class="time"><?=$pagesOptions['time']?></span>
                                 <div class="social hidden">
                                     <a href="https://instagram.com/esalad.ru" rel="nofollow" target="_blank" class="no-border opacity"><img src="/images/instagram.png?123" alt=""> </a>
@@ -241,7 +250,7 @@ $allflash = Yii::$app->session->getAllFlashes();
                       <div class="search">
                           <form action="/search/" method="post">
                               <div class="input">
-                                  <input type="text" name="search" value="" maxlength="64" autocomplete="off" placeholder="Найти на Esalat" onfocus="$(this).attr('placeholder','')" onblur="$(this).attr('placeholder','Найти на Esalat')" />
+                                  <input type="text" name="search" value="" maxlength="64" autocomplete="off" placeholder="Найти продукты или товар" onfocus="$(this).attr('placeholder','')" onblur="$(this).attr('placeholder','Найти продукты или товар')" />
                                   <input type="hidden" name="_csrf" value="<?=Yii::$app->request->csrfToken?>">
                               </div>
                               <div class="button" onclick="$(this).parents('form').submit();"></div>
@@ -362,7 +371,7 @@ $allflash = Yii::$app->session->getAllFlashes();
                         </div>
                         <div class="col-md-3 col-xs-3 item">
                             <div class="contacts">
-                                <div class="phone"><a href="tel:<?=$pagesOptions['phone']?>" class="white"><?=$pagesOptions['phone']?></a></div>
+                                <div class="phone"><?=$pagesOptions['phone']?></div>
                                 <div class="mail"><a href="mailto:<?=$pagesOptions['email']?>"><?=$pagesOptions['email']?></a></div>
                                 <div class="time">Время работы операторов: <br><b><?=$pagesOptions['time']?></b></div>
 
@@ -370,29 +379,29 @@ $allflash = Yii::$app->session->getAllFlashes();
                             </div>
                             <!--
                             <div class="social ">
-                                <a href="https://instagram.com/Esalad.ru" rel="nofollow" target="_blank" class="no-border opacity"><img src="/images/instagram.png" alt=""> </a>
-                                <a href="https://vk.com/Esalad_russia" rel="nofollow" target="_blank" class="no-border opacity"><img src="/images/vk.png" alt=""> </a>
+                                <a href="https://instagram.com/esalat.ru" rel="nofollow" target="_blank" class="no-border opacity"><img src="/images/instagram.png" alt=""> </a>
+                                <a href="https://vk.com/esalat" rel="nofollow" target="_blank" class="no-border opacity"><img src="/images/vk.png" alt=""> </a>
                             </div>-->
                         </div>
                     </div>
                     <div class="clear"></div>
 
                     <div class="row">
-                        <div class="col-md-4 col-xs-4"><div class="copyright">© Esalad <?=Date('Y')?> Все права защищены.</div></div>
+                        <div class="col-md-4 col-xs-4"><div class="copyright">© eSalat.ru <?=Date('Y')?> Все права защищены.</div></div>
                         <div class="clear"></div>
                     </div>
                 </div>  <!--/Десктоп-->
                 <!--Мобильная версия-->
                 <div class="footer-content mobile">
-                    <div class="phone"><div><?=$pagesOptions['phone']?></div></div>
+                    <div class="phone"><a href="tel:<?=$pagesOptions['phone']?>" class="white"><div><?=$pagesOptions['phone']?></div></a></div>
                     <div class="call"><a href="/" class="white" onclick="return window_show('call','Заказ звонка');">Заказать звонок</a> </div>
                     <div class="social">
-                        <div class="item"><a href="https://instagram.com/Esalad.ru" rel="nofollow" target="_blank" class="no-border icon-instagram"></a></div>
-                        <div class="item"><a href="https://vk.com/Esalad_russia" rel="nofollow" target="_blank" class="no-border icon-vk"></a></div>
+                        <div class="item"><a href="https://instagram.com/esalat.ru" rel="nofollow" target="_blank" class="no-border icon-instagram"></a></div>
+                        <div class="item"><a href="https://vk.com/esalat" rel="nofollow" target="_blank" class="no-border icon-vk"></a></div>
                         <div class="clear"></div>
                     </div>
                     <div class="time copyright" style="padding:5px 0px; line-height: 20px;">Время работы операторов:<br><?=$pagesOptions['time']?></div>
-                    <div class="copyright">© Esalad <?= date('Y') ?>  Все права защищены.</div>
+                    <div class="copyright">© eSalad <?= date('Y') ?>  Все права защищены.</div>
                 </div><!--/Мобильная версия-->
             </div><!--/Подвал-->
 
@@ -407,7 +416,7 @@ $allflash = Yii::$app->session->getAllFlashes();
 <!--/Мастер помощник-->
 
 <!--Таймер-->
-<?= \app\components\html\WTimer::widt()?>
+<?php //\app\components\html\WTimer::widt() ?>
 <!--/Таймер-->
 
 <!--Акция-->
@@ -422,7 +431,7 @@ $allflash = Yii::$app->session->getAllFlashes();
     <!--Онлайн консультант-->
     <?php // \app\components\html\WChat::widget()?>
 <?php endif; ?>
-ge
+
 <script type="text/javascript">
     $(window).load(function(){
 

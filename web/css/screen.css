@@ -443,15 +443,15 @@
     }
     #header div.basket-content.mobile {
         display: block;
-        margin: 0px 0px 0px auto;
+        margin: 3px 0px 0px auto;
        /* width: 110px;*/
         float: right;
     }
     #header div.basket-content.mobile img{
-        left: 5px;
+        left: 10px;
         position: relative;
-        top: 2px;
-        width: 30px;
+        top: 6px;
+        width: 25px;
     }
     #header div.top div.basket.desktop {
         display: none;
@@ -502,19 +502,19 @@
     }
 
     #header div.top .basket div.count {
-        height: 18px;
+        font-family: Sans-Serif;
         position: absolute;
-        right: -9px;
+        right: -7px;
         text-align: center;
-        top: -3px;
-        width: 19px;
+        top: 3px;
+        line-height: 15px;
         color: #208b0b;
-        font-family: Tahoma;
         font-size: 10px;
         font-weight: bold;
-        padding: 2px 0;
+        padding: 1px 2px 0;
         background: #fff;
         border-radius: 100%;
+        width: 15px;
     }
     #header div.bottom {
         padding: 8px 10px;

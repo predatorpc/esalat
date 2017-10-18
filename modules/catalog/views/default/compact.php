@@ -12,7 +12,7 @@ use app\modules\shop\models\OrdersItems;
             <!--Изображения-->
             <div class="content-images">
                 <div class="image">
-                       <a href="<?= Goods::getPath($model->id)?>" ><img src="http://www.esalad.ru<?= Goods::findProductImage($model->id);?>" alt="<?=$model->name?>" class="ad" /></a>
+                       <img src="http://www.esalad.ru<?= Goods::findProductImage($model->id);?>" alt="<?=$model->name?>" class="ad" />
                     <!-- Наклейки -->
                     <div class="stickers stickers__com hidden">
                         <?=$model->bonus ? '<div class="stikers-icon bonus"></div>':''?>
