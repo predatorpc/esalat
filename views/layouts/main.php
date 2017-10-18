@@ -97,7 +97,7 @@ $allflash = Yii::$app->session->getAllFlashes();
                      <?php endif; ?>
                       </div>-->
                       <div class="logo pull-left">
-                          <img src="/images/mobil/logo-m.png" width="70px" />
+                          <img src="/images/mobil/logo-m-70.png"/>
 
                       </div>
                        <div class="p-text pull-left">Продукты с доставкой на дом в Новосибирске, тел.: +7 383 349-92-09</div>
