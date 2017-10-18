@@ -1283,7 +1283,7 @@ loader-animation {
     background: url('/images/list-icon.png?123') no-repeat;
 }
 .count-basket-icon {
-    background-position: center -72px;
+    background-position: center -75px;
 }
 .button-basket-icon {
     background-position: center center;
@@ -1962,7 +1962,7 @@ div.mod___goods_list div.items div.item div.prices .price.discount {
     color: #0C7CA8;
 }
 div.mod___goods_list div.items div.item div.product-control-buttons {
-
+    margin-top: 4px;
 }
 /*При  наведения курсор блок увелечивается*/
 div.mod___goods_list div.items div.item div.block.max_block {
@@ -1992,23 +1992,25 @@ div.mod___goods_list div.items div.item div.block div.row-private {
     z-index: 100;
 }
 div.mod___goods_list div.items div.item div.block div.row-private .button-basket-icon {
-    background-size: 35px auto;
-    height: 40px;
-    width: 40px;
+    /*
+    background-size: 35px auto;*/
+    height: 35px;
+    width: 35px;
+    margin-top: 5px;
+    margin-right: 3px;
 }
 div.mod___goods_list div.items div.item div.block div.row-private .button-basket-icon div{
     font-size: 0;
 }
 div.mod___goods_list div.items div.item div.block div.row-private .count-basket-icon {
-    background-size: 35px auto;
-    height: 38px;
-    width: 40px
+    height: 35px;
+    width: 35px;
+    margin-right: 3px;
 }
 div.mod___goods_list div.items div.item div.block div.row-private .success-basket-icon {
-    background-position: 0px 3px;
-    background-size: 35px auto;
-    height: 38px;
-    width: 37px;
+    margin-right: 3px;
+    height: 35px;
+    width: 35px;
 }
 div.mod___goods_list div.items div.item div.block div.row-private .count-basket-icon div {
     color: #fff;
@@ -2017,7 +2019,7 @@ div.mod___goods_list div.items div.item div.block div.row-private .count-basket-
     font-weight: bold;
     position: relative;
     text-align: center;
-    top: 13px;
+    top: 10px;
 }
 /*Кнопка добавить еще товар (Сбросить стиль наложить другой) */
 div.mod___goods_list div.counts {
