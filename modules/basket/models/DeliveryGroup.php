@@ -381,7 +381,7 @@ class DeliveryGroup
             for ($i = $j; $i < $z; $i++) {
                 $day = strtotime('+'.$i.' day', strtotime(date('Y-m-d')));
                 if(!in_array($day,$blockList)){
-                    $maxTime = 20;
+                    $maxTime = 21;
                     $startTime = 8;
                     $period = 3600;
                     if(date("w", $day) == 0){
