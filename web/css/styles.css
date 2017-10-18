@@ -692,6 +692,11 @@ div.m-navigation,
 #menu-top div.items div.item._bg:hover, #menu-top div.items div.item._bg.open {
     background: #0A6589;
 }
+
+#menu-top div.items .counts_goods{
+    margin-left: 3px;
+}
+
 /*Мод..
 #menu-top div.items div.item.selected a.menu-top {
     color: #0A6A8F;

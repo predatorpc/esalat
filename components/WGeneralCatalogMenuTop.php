@@ -24,8 +24,9 @@ class WGeneralCatalogMenuTop extends Widget
         $catalogHash = Category::find()->where(['active' => 1])->orderBy('level, sort')->indexBy('id')->asArray()->all();
         $urls = [];
         $catalogMenu = Catalog::buildTree($catalogHash,$urls);
+        $count_goods = 1;
              // print_arr(Yii::$app->params['userCatalogHide']['status']);
-       // print_arr($catalogMenu);
+
         ?>
         <div class="items">
             <div class="catalog-goods item _bg">
@@ -47,10 +48,10 @@ class WGeneralCatalogMenuTop extends Widget
                                             <?php $iNumber++ ?>
                                             <?php if(isset($subcat['items'])):?>
                                                 <div class="row-container">
-                                                    <div class="item-cat"><a class="menu-cat main blue" href="<?=$subcat['url']?>"><?=$subcat['title']?></a></div>
+                                                    <div class="item-cat"><a class="menu-cat main blue" href="<?=$subcat['url']?>"><?=$subcat['title']?><span class="counts_goods">(<?=Catalog::getCategoryGoodsCount($subcat['id'])?>)</span></a></div>
                                                     <!-- Обход вложения подгруппы -->
                                                     <?php foreach($subcat['items'] as $k=> $i): ?>
-                                                        <div class="item-cat"><a class="menu-cat blue" href="<?=$i['url']?>"><?=$i['title']?></a></div>
+                                                        <div class="item-cat"><a class="menu-cat blue" href="<?=$i['url']?>"><?=$i['title']?><span class="counts_goods">(<?=Catalog::getCategoryGoodsCount($i['id'])?>)</span></a></div>
                                                         <!-- /Обход вложения подгруппы -->
                                                     <?php endforeach;?>
                                                 </div>
@@ -60,7 +61,7 @@ class WGeneralCatalogMenuTop extends Widget
                                                         <div class="item-cat"><a class="menu-cat main blue" href="/catalog/<?=$item['alias']?>" ></a></div>
                                                         <?php foreach($item['items'] as $subcat): ?>
                                                         <?php if(!isset($subcat['items'])):?>
-                                                            <div class="item-cat"><a class="menu-cat <?=$subcat['id'] == 10000289 ? 'danger':'blue'?>  bold" href="<?=$subcat['url']?>"><?=$subcat['title']?></a></div>
+                                                            <div class="item-cat"><a class="menu-cat <?=$subcat['id'] == 10000289 ? 'danger':'blue'?>  bold" href="<?=$subcat['url']?>"><?=$subcat['title']?><span class="counts_goods">(<?=Catalog::getCategoryGoodsCount($subcat['id'])?>)</span></a></div>
                                                         <?php endif; ?>
                                                         <?php endforeach;?><!-- Обход вложения подгруппы -->
                                                     </div>
@@ -98,7 +99,7 @@ class WGeneralCatalogMenuTop extends Widget
                                                 <?php else: ?>
                                                     <?php if($foo == $iNumber):?>
                                                         <div class="row-container">
-                                                            <div class="item-cat"><a class="menu-cat main blue" href="/catalog/<?=$item['alias']?>" ></a></div>
+                                                            <div class="item-cat"><a class="menu-cat main blue" href="/catalog/<?=$item['alias']?>"></a></div>
                                                             <?php foreach($item['items'] as $subcat): ?>
                                                             <?php if(!isset($subcat['items'])):?>
                                                                 <div class="item-cat"><a data-id="<?=$subcat['id']?>" class="menu-cat <?=$subcat['id'] == 10000289 ? 'danger':'blue'?> bold" href="<?=$subcat['url']?>"><?=$subcat['title']?></a></div>
@@ -134,10 +135,10 @@ class WGeneralCatalogMenuTop extends Widget
 
                                   <?php if(isset($subcat['items'])):?>
                                       <div class="row-container">
-                                          <div class="item-cat"><a class="menu-cat main blue" href="/catalog/<?=$item_group['alias']?>/<?=$subcat['alias']?>" ><?=$subcat['title']?></a></div>
+                                          <div class="item-cat"><a class="menu-cat main blue" href="/catalog/<?=$item_group['alias']?>/<?=$subcat['alias']?>" ><?=$subcat['title']?><span class="counts_goods">(<?=Catalog::getCategoryGoodsCount($subcat['id'])?>)</span></a></div>
                                           <!-- Обход вложения подгруппы -->
                                           <?php foreach($subcat['items'] as $k=> $i): ?>
-                                              <div class="item-cat" data-id="<?=$i['id']?>"><a class="menu-cat blue" href="<?=$i['url']?>"><?=$i['title']?></a></div>
+                                              <div class="item-cat" data-id="<?=$i['id']?>"><a class="menu-cat blue" href="<?=$i['url']?>"><?=$i['title']?><span class="counts_goods">(<?=Catalog::getCategoryGoodsCount($i['id'])?>)</span></a></div>
                                           <?php endforeach;?><!-- Обход вложения подгруппы -->
                                       </div>
                                   <?php else: ?>
@@ -150,7 +151,7 @@ class WGeneralCatalogMenuTop extends Widget
                                               <div class="item-cat"><a class="menu-cat main blue" href="/catalog/<?=$item_group['alias']?>" ></a></div>
                                               <?php foreach($item_group['items'] as $subcat): ?>
                                                   <?php if(!isset($subcat['items'])):?>
-                                                      <div class="item-cat"><a data-id="<?=$subcat['id']?>" class="menu-cat <?=$subcat['id'] == 10000289 ? 'danger':'blue'?> bold" href="<?=$subcat['url']?>"><?=$subcat['title']?></a></div>
+                                                      <div class="item-cat"><a data-id="<?=$subcat['id']?>" class="menu-cat <?=$subcat['id'] == 10000289 ? 'danger':'blue'?> bold" href="<?=$subcat['url']?>"><?=$subcat['title']?><span class="counts_goods">(<?=Catalog::getCategoryGoodsCount($subcat['id'])?>)</span></a></div>
                                                   <?php endif; ?>
                                               <?php endforeach;?><!-- Обход вложения подгруппы -->
                                           </div>

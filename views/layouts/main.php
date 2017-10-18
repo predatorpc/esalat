@@ -274,7 +274,7 @@ $allflash = Yii::$app->session->getAllFlashes();
                 <?php if(!Yii::$app->user->isGuest):?>
                     <div class="user-nav">
                         <div class="balance">
-                            <div class="user-name"><?=ModFunctions::userName(Yii::$app->user->identity->name)?> <span style="color:#0C7CA8"><?=ModFunctions::money(Yii::$app->user->identity->money)?></span> <span class="hidden" style="color:#0C7CA8"><?= ModFunctions::bonus(Yii::$app->user->identity->bonus)?></span></div>
+                            <div class="user-name"><?=ModFunctions::userName(Yii::$app->user->identity->name)?> <span style="color:#22980b"><?=ModFunctions::money(Yii::$app->user->identity->money)?></span> <span class="hidden" style="color:#22980b"><?= ModFunctions::bonus(Yii::$app->user->identity->bonus)?></span></div>
                             <div class="money hidden"><span><?=ModFunctions::money(Yii::$app->user->identity->money)?></span>  <div class="hidden"> <span><?= ModFunctions::bonus(Yii::$app->user->identity->bonus)?></span></div></div>
                             <div class="clear"></div>
                         </div>
