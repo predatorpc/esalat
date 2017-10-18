@@ -292,7 +292,7 @@ class SiteController extends FrontController
     }
 
     // Страница отзывы;
-    /*
+
     public function actionFeed()
     {
         // Отрпавить данные;
@@ -344,7 +344,7 @@ class SiteController extends FrontController
             'notice'=>(isset($models) ? $models : ''),
             'pages' => $pages,
         ]);
-    }*/
+    }
 
     public function actionSaveSecretWord(){
 

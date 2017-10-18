@@ -2,6 +2,16 @@
 var versionGlobal = "Global.js version: 10.2.3@20102016";
 console.warn(versionGlobal);
 
+/*Preloder*/
+
+ setTimeout(function () {
+     $("#preloader").delay(100).fadeOut('show');
+     $("#preloader .loading-data").fadeOut();
+ },100);
+
+
+
+
 $(document).ready( function(){
     // Ввод цифр;
     $(document).on("keypress", "input.number", function(e) {

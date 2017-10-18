@@ -18,7 +18,7 @@ class ModFunctions extends \yii\db\ActiveRecord
     // Обработка цены;
     public static function money($value, $decimal = 0)
     {
-        return number_format($value, $decimal, '.', ' ').' <small class="rubznak">p.</small>';
+        return number_format($value, $decimal, '.', ' ').' <small class="rubznak">p</small>';
     }
     // Обработка срезаем запятую цены;
     public static function moneyFloat($value, $decimal = 0)

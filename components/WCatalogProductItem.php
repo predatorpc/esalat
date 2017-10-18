@@ -46,7 +46,7 @@ class WCatalogProductItem extends Widget {
                     foreach ($category->getCategories()->limit(1)->offset($this->limit)->all() as $category_parent) {
                           print '<div class="main_title_js ">';
                                 if(!empty($category_parent->categories)) {
-                                        print '<h3 class="title"><b>' . $category_parent->title . '</b></h3>';
+                                        print '<h2 class="title" style="text-align: left">' . $category_parent->title . '</h2>';
                                         ?>
                                         <div class="items">
                                             <?php foreach ($category_parent->productsClear as $key => $product):

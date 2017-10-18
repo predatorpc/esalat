@@ -96,10 +96,12 @@ class PagesMenus extends \app\modules\common\models\ActiveRecordRelation
 /*        if(Yii::$app->user->can('GodMode') || Yii::$app->user->can('categoryManager') || Yii::$app->user->can('callcenterOperator')  || Yii::$app->user->can('clubAdmin')
             || Yii::$app->user->can('conflictManager') || Yii::$app->user->can('shopOwner')){*/
             $subItems[] =   [
+                'id'=>1001,
                 'label' => Yii::t('app','Управление магазином'),
                 'url' => '/shop-management/'
             ];
             $subItems[] =   [
+                'id'=>1002,
                 'label' => Yii::t('app','Личный кабинет поставщика'),
                 'url' => '/shop/'
             ];
