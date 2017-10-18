@@ -711,7 +711,7 @@ div.m-navigation,
     color: #0A6A8F;
 }*/
 #center div.slides {
-    padding: 0px 0px 0px;
+    padding: 15px 0 0;
     overflow: hidden;
 }
 /*---------Баннер-каталог-----------*/
